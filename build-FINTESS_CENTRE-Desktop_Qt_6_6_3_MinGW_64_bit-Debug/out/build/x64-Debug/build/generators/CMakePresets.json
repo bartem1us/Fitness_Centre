@@ -1,0 +1,47 @@
+{
+    "version": 3,
+    "vendor": {
+        "conan": {}
+    },
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 15,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "conan-default",
+            "displayName": "'conan-default' config",
+            "description": "'conan-default' configure using 'Visual Studio 16 2019' generator",
+            "generator": "Visual Studio 16 2019",
+            "cacheVariables": {
+                "CMAKE_POLICY_DEFAULT_CMP0091": "NEW"
+            },
+            "toolset": {
+                "value": "v142",
+                "strategy": "external"
+            },
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "toolchainFile": "C:\\DB_FINTESS_CENTRE\\build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug\\out\\build\\x64-Debug\\build\\generators\\conan_toolchain.cmake",
+            "binaryDir": "C:\\DB_FINTESS_CENTRE\\build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug\\out\\build\\x64-Debug\\build"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "conan-debug",
+            "configurePreset": "conan-default",
+            "configuration": "Debug",
+            "jobs": 8
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "conan-debug",
+            "configurePreset": "conan-default",
+            "configuration": "Debug"
+        }
+    ]
+}
