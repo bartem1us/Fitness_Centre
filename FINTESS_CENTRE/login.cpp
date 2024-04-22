@@ -42,15 +42,17 @@ void login::on_LoginButton_clicked()
                                                                               password_hash.toStdString()).c_str()),
                                                       PQclear);
 
-    bool a =PQresultStatus(res.get()) != PGRES_TUPLES_OK;
-    int numRows = PQntuples(res.get());
-    std::string foundName = PQgetvalue(res.get(), 0, PQfnumber(res.get(), "fullname"));
-    bool foundIsAdmin = static_cast<bool>(PQgetvalue(res.get(), 0, PQfnumber(res.get(), "is_admin")));
 
-    // Закрываем окно входа
-    MainWindow *mainWindow = new MainWindow();
-    mainWindow->show();
-    this->close();
+    if (PQntuples(res.get())!=0)
+    {
+        const std::string foundName = PQgetvalue(res.get(), 0, PQfnumber(res.get(), "fullname"));
+        const std::string foundIsAdmin = (PQgetvalue(res.get(), 0, PQfnumber(res.get(), "is_admin")));
+        const std::string foundNumber = (PQgetvalue(res.get(), 0, PQfnumber(res.get(), "phonenumber")));
+        MainWindow *mainWindow = new MainWindow(foundName.c_str(),foundNumber.c_str());
+        mainWindow->show();
+        this->close();
+
+    }
 
 }
 

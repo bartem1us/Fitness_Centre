@@ -12,7 +12,6 @@ public:
 
 private:
 
-
 };
 
 #endif // PGCONNECTION_H

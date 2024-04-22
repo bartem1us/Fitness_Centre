@@ -8,13 +8,11 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 }
 
-MainWindow::MainWindow(QString name , QString surname,QString number , QString hash_password ,QWidget *parent)
+MainWindow::MainWindow(QString fullname ,QString number ,QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
-    ,_name(name)
-    ,_surname(surname)
+    ,_fullname(fullname)
     ,_number(number)
-    ,_hash_password(hash_password)
 {
     ui->setupUi(this);
 }

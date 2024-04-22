@@ -14,15 +14,13 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
-    MainWindow(QString name , QString surname,QString number , QString hash_password , QWidget*parent = nullptr);
+    MainWindow(const QString& fullname ,const QString& number , QWidget*parent = nullptr);
     ~MainWindow();
 
 private:
     Ui::MainWindow *ui;
-    QString _name;
-    QString _surname;
+    QString _fullname;
     QString _number;
-    QString _hash_password;
     std::shared_ptr<PostgreSQLConnection> pg;
 
 };
