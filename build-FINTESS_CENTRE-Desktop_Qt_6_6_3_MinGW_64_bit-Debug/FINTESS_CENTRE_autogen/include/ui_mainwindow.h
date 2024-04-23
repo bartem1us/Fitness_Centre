@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QWidget>
 
@@ -23,6 +24,10 @@ public:
     QWidget *centralwidget;
     QTabWidget *tabWidget;
     QWidget *tab;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
+    QPushButton *pushButton_4;
     QWidget *tab_2;
     QWidget *tab_3;
     QWidget *tab_4;
@@ -39,8 +44,24 @@ public:
         tabWidget->setObjectName("tabWidget");
         tabWidget->setEnabled(false);
         tabWidget->setGeometry(QRect(0, 0, 801, 601));
+        tabWidget->setStyleSheet(QString::fromUtf8("QWidget 		  {\n"
+"                          background-image: url(C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/fitnes_image.jpg);\n"
+"                          background-position: center;\n"
+"                          }"));
         tab = new QWidget();
         tab->setObjectName("tab");
+        pushButton = new QPushButton(tab);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(30, 50, 701, 61));
+        pushButton_2 = new QPushButton(tab);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(30, 140, 701, 61));
+        pushButton_3 = new QPushButton(tab);
+        pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setGeometry(QRect(40, 230, 701, 61));
+        pushButton_4 = new QPushButton(tab);
+        pushButton_4->setObjectName("pushButton_4");
+        pushButton_4->setGeometry(QRect(40, 340, 701, 51));
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName("tab_2");
@@ -64,6 +85,10 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "\320\220\320\261\320\276\320\275\320\265\320\274\320\265\320\275\321\202\321\213", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "\320\242\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("MainWindow", "\320\220\320\272\320\272\320\260\321\203\320\275\321\202", nullptr));

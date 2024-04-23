@@ -27,7 +27,7 @@ void Registration::on_RegButton_clicked()
 
     // При нажатии на кнопку "OK" создаем главное окно и отображаем его
 
-    MainWindow *mainWindow = new MainWindow(name,surname,number,password_hash);
+    MainWindow *mainWindow = new MainWindow(name+" "+surname,number);
     mainWindow->show();
     // Закрываем окно входа
     this->close();

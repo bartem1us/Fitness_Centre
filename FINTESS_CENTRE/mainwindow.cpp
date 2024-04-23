@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 }
 
-MainWindow::MainWindow(QString fullname ,QString number ,QWidget *parent)
+MainWindow::MainWindow(const QString& fullname ,const QString& number ,QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     ,_fullname(fullname)
