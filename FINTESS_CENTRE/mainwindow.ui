@@ -24,37 +24,29 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
+      <y>-20</y>
       <width>801</width>
       <height>601</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QWidget 		  {
-                          background-image: url(C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/fitnes_image.jpg);
-                          background-position: center;
-                          }</string>
+     <string notr="true"/>
     </property>
     <property name="currentIndex">
      <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
+     <property name="styleSheet">
+      <string notr="true">
+							background-repeat: no-repeat;
+
+                          background-image: url(C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/fitnes_image.jpg);
+                          background-position: center;
+</string>
+     </property>
      <attribute name="title">
       <string>Абонементы</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>50</y>
-        <width>701</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pushButton_2">
       <property name="geometry">
        <rect>
@@ -89,6 +81,28 @@
         <width>701</width>
         <height>51</height>
        </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>671</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	selection-color: rgb(255, 255, 255);
+	background-color: rgb(226, 226, 226);
+    border: 2px solid gray;
+    border-radius: 10px; /* Радиус закругления */
+    padding: 2px 10px;
+}</string>
       </property>
       <property name="text">
        <string>PushButton</string>
