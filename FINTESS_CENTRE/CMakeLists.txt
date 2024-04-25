@@ -41,6 +41,7 @@ qt_add_executable(FINTESS_CENTRE
         pgconnection.cpp
         query.h
         query.cpp
+        resources.qrc
 
 
     )

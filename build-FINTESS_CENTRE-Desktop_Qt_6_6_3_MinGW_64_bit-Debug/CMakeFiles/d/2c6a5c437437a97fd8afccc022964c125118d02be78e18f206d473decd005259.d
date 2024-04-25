@@ -14,6 +14,7 @@ FINTESS_CENTRE_autogen/timestamp: \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/registration.cpp \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/registration.h \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/registration.ui \
+  C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/resources.qrc \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \

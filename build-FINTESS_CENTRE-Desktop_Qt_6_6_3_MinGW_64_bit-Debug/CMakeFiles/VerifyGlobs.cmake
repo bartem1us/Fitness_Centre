@@ -151,6 +151,7 @@ endif()
 # _directory_contents at C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/*.qrc")
 set(OLD_GLOB
+  "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/resources.qrc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

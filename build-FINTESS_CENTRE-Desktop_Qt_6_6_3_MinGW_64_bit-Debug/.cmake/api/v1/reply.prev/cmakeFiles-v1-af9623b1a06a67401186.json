@@ -1197,38 +1197,12 @@
 			"path" : "C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
 		},
 		{
-			"isGenerated" : true,
-			"path" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/build/generators/fmt-config-version.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/build/generators/fmt-config.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/build/generators/cmakedeps_macros.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/build/generators/fmtTargets.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/build/generators/fmt-debug-x86_64-data.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/build/generators/fmt-Target-debug.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
-		},
-		{
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"path" : "resources.qrc"
 		}
 	],
 	"kind" : "cmakeFiles",

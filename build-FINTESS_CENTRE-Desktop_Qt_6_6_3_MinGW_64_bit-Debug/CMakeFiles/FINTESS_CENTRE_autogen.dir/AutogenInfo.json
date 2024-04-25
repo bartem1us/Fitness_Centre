@@ -287,7 +287,8 @@
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageMessage.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake",
+		"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE",
 	"DEP_FILE" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/FINTESS_CENTRE_autogen/deps",

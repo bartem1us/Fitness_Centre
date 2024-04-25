@@ -23,8 +23,7 @@
 			"include",
 			"find_package",
 			"find_dependency",
-			"_qt_internal_find_qt_dependencies",
-			"set_property"
+			"_qt_internal_find_qt_dependencies"
 		],
 		"files" : 
 		[
@@ -42,10 +41,7 @@
 			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake",
 			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
 			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
-			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
-			"C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/build/generators/fmt-Target-debug.cmake",
-			"C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/build/generators/fmtTargets.cmake",
-			"C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/build/generators/fmt-config.cmake"
+			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
 		],
 		"nodes" : 
 		[
@@ -79,25 +75,19 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 88,
-				"parent" : 0
-			},
-			{
-				"command" : 5,
-				"file" : 1,
-				"line" : 72,
-				"parent" : 0
-			},
-			{
-				"command" : 5,
-				"file" : 1,
-				"line" : 70,
+				"line" : 89,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
 				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 72,
 				"parent" : 0
 			},
 			{
@@ -108,33 +98,33 @@
 			},
 			{
 				"file" : 4,
-				"parent" : 9
+				"parent" : 8
 			},
 			{
 				"command" : 8,
 				"file" : 4,
 				"line" : 164,
-				"parent" : 10
+				"parent" : 9
 			},
 			{
 				"file" : 3,
-				"parent" : 11
+				"parent" : 10
 			},
 			{
 				"command" : 7,
 				"file" : 3,
 				"line" : 52,
-				"parent" : 12
+				"parent" : 11
 			},
 			{
 				"file" : 2,
-				"parent" : 13
+				"parent" : 12
 			},
 			{
 				"command" : 6,
 				"file" : 2,
 				"line" : 61,
-				"parent" : 14
+				"parent" : 13
 			},
 			{
 				"command" : 5,
@@ -146,171 +136,135 @@
 				"command" : 7,
 				"file" : 3,
 				"line" : 40,
-				"parent" : 12
+				"parent" : 11
 			},
 			{
 				"file" : 9,
-				"parent" : 17
+				"parent" : 16
 			},
 			{
 				"command" : 10,
 				"file" : 9,
 				"line" : 39,
-				"parent" : 18
+				"parent" : 17
 			},
 			{
 				"command" : 9,
 				"file" : 8,
 				"line" : 111,
-				"parent" : 19
+				"parent" : 18
 			},
 			{
 				"command" : 8,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 20
+				"parent" : 19
 			},
 			{
 				"file" : 6,
-				"parent" : 21
+				"parent" : 20
 			},
 			{
 				"command" : 7,
 				"file" : 6,
 				"line" : 53,
-				"parent" : 22
+				"parent" : 21
 			},
 			{
 				"file" : 5,
-				"parent" : 23
+				"parent" : 22
 			},
 			{
 				"command" : 6,
 				"file" : 5,
 				"line" : 61,
-				"parent" : 24
+				"parent" : 23
 			},
 			{
 				"command" : 7,
 				"file" : 6,
 				"line" : 41,
-				"parent" : 22
+				"parent" : 21
 			},
 			{
 				"file" : 12,
-				"parent" : 26
+				"parent" : 25
 			},
 			{
 				"command" : 10,
 				"file" : 12,
 				"line" : 39,
-				"parent" : 27
+				"parent" : 26
 			},
 			{
 				"command" : 9,
 				"file" : 8,
 				"line" : 111,
-				"parent" : 28
+				"parent" : 27
 			},
 			{
 				"command" : 8,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 29
+				"parent" : 28
 			},
 			{
 				"file" : 11,
-				"parent" : 30
+				"parent" : 29
 			},
 			{
 				"command" : 7,
 				"file" : 11,
 				"line" : 52,
-				"parent" : 31
+				"parent" : 30
 			},
 			{
 				"file" : 10,
+				"parent" : 31
+			},
+			{
+				"command" : 6,
+				"file" : 10,
+				"line" : 61,
 				"parent" : 32
 			},
 			{
 				"command" : 6,
 				"file" : 10,
-				"line" : 61,
-				"parent" : 33
-			},
-			{
-				"command" : 6,
-				"file" : 10,
 				"line" : 76,
-				"parent" : 33
+				"parent" : 32
 			},
 			{
 				"command" : 9,
 				"file" : 8,
 				"line" : 111,
-				"parent" : 19
+				"parent" : 18
 			},
 			{
 				"command" : 8,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 36
+				"parent" : 35
 			},
 			{
 				"file" : 14,
-				"parent" : 37
+				"parent" : 36
 			},
 			{
 				"command" : 7,
 				"file" : 14,
 				"line" : 52,
-				"parent" : 38
+				"parent" : 37
 			},
 			{
 				"file" : 13,
-				"parent" : 39
+				"parent" : 38
 			},
 			{
 				"command" : 6,
 				"file" : 13,
 				"line" : 61,
-				"parent" : 40
-			},
-			{
-				"command" : 8,
-				"file" : 1,
-				"line" : 18,
-				"parent" : 0
-			},
-			{
-				"file" : 17,
-				"parent" : 42
-			},
-			{
-				"command" : 7,
-				"file" : 17,
-				"line" : 16,
-				"parent" : 43
-			},
-			{
-				"file" : 16,
-				"parent" : 44
-			},
-			{
-				"command" : 7,
-				"file" : 16,
-				"line" : 24,
-				"parent" : 45
-			},
-			{
-				"file" : 15,
-				"parent" : 46
-			},
-			{
-				"command" : 11,
-				"file" : 15,
-				"line" : 74,
-				"parent" : 47
+				"parent" : 39
 			}
 		]
 	},
@@ -326,47 +280,47 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"define" : "MINGW_HAS_SECURE_API=1"
 				},
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"define" : "QT_CORE_LIB"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"define" : "QT_GUI_LIB"
 				},
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"define" : "QT_NEEDS_QMAIN"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"define" : "QT_WIDGETS_LIB"
 				},
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"define" : "UNICODE"
 				},
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"define" : "WIN32"
 				},
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"define" : "WIN64"
 				},
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
 				},
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"define" : "_UNICODE"
 				},
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"define" : "_WIN64"
 				}
 			],
@@ -377,44 +331,39 @@
 					"path" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/FINTESS_CENTRE_autogen/include"
 				},
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.6.3/mingw_64/include/QtCore"
 				},
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.6.3/mingw_64/include"
 				},
 				{
-					"backtrace" : 16,
+					"backtrace" : 15,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.6.3/mingw_64/include/QtWidgets"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.6.3/mingw_64/include/QtGui"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "C:/Program Files/PostgreSQL/12/include"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "C:/Program Files/PostgreSQL/12/include/server"
-				},
-				{
-					"backtrace" : 6,
-					"isSystem" : true,
-					"path" : "C:/Users/\u0412\u0430\u0441\u0438\u043b\u0438\u0439/.conan2/p/b/fmtfd5f9f2081a80/p/include"
 				}
 			],
 			"language" : "CXX",
@@ -422,8 +371,8 @@
 			{
 				"backtraces" : 
 				[
-					16,
-					16
+					15,
+					15
 				],
 				"standard" : "17"
 			},
@@ -435,18 +384,19 @@
 				7,
 				10,
 				14,
-				16
+				16,
+				22
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "FINTESS_CENTRE_autogen::@6890427a1f51a3e7e1df"
+			"id" : "FINTESS_CENTRE_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "FINTESS_CENTRE_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "FINTESS_CENTRE_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "FINTESS_CENTRE::@6890427a1f51a3e7e1df",
@@ -478,77 +428,67 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "-LC:\\Users\\\u0412\u0430\u0441\u0438\u043b\u0438\u0439\\.conan2\\p\\b\\fmtfd5f9f2081a80\\p\\lib",
-				"role" : "libraryPath"
-			},
-			{
-				"backtrace" : 7,
 				"fragment" : "C:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6Widgets.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 8,
+				"backtrace" : 7,
 				"fragment" : "\"C:\\Program Files\\PostgreSQL\\12\\lib\\libpq.lib\"",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 15,
+				"backtrace" : 14,
 				"fragment" : "C:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6Gui.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 16,
+				"backtrace" : 15,
 				"fragment" : "C:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6Core.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 25,
+				"backtrace" : 24,
 				"fragment" : "-lmpr",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 25,
+				"backtrace" : 24,
 				"fragment" : "-luserenv",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 34,
+				"backtrace" : 33,
 				"fragment" : "-lmingw32",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 34,
+				"backtrace" : 33,
 				"fragment" : "C:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6EntryPoint.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 35,
+				"backtrace" : 34,
 				"fragment" : "-lshell32",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 41,
+				"backtrace" : 40,
 				"fragment" : "-ld3d11",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 41,
+				"backtrace" : 40,
 				"fragment" : "-ldxgi",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 41,
+				"backtrace" : 40,
 				"fragment" : "-ldxguid",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 41,
+				"backtrace" : 40,
 				"fragment" : "-ld3d12",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 48,
-				"fragment" : "C:\\Users\\\u0412\u0430\u0441\u0438\u043b\u0438\u0439\\.conan2\\p\\b\\fmtfd5f9f2081a80\\p\\lib\\fmtd.lib",
 				"role" : "libraries"
 			},
 			{
@@ -577,7 +517,8 @@
 				7,
 				10,
 				14,
-				16
+				16,
+				22
 			]
 		},
 		{
@@ -589,7 +530,8 @@
 				8,
 				11,
 				12,
-				20
+				17,
+				21
 			]
 		},
 		{
@@ -601,16 +543,17 @@
 				9,
 				13,
 				15,
-				17,
 				18,
-				19
+				19,
+				20
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				21
+				23,
+				24
 			]
 		}
 	],
@@ -710,6 +653,11 @@
 			"sourceGroupIndex" : 0
 		},
 		{
+			"backtrace" : 4,
+			"path" : "resources.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/FINTESS_CENTRE_autogen/include/ui_registration.h",
@@ -735,8 +683,21 @@
 		},
 		{
 			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/FINTESS_CENTRE_autogen/EWIEGA46WW/qrc_resources.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/FINTESS_CENTRE_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/FINTESS_CENTRE_autogen/EWIEGA46WW/qrc_resources.cpp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

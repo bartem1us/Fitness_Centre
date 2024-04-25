@@ -11,6 +11,7 @@ FINTESS_CENTRE_autogen/timestamp: \
 	C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/query.h \
 	C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/registration.cpp \
 	C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/registration.h \
+	C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/resources.qrc \
 	C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
 	C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake \

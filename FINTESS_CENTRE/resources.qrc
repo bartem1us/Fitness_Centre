@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/tick.svg</file>
+        <file>icons/abonement-check-mark.svg</file>
+    </qresource>
+</RCC>
