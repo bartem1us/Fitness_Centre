@@ -32,8 +32,10 @@ public:
     QTextEdit *textEdit_2;
     QTextEdit *textEdit_3;
     QWidget *tab_2;
+    QTextEdit *textEdit_5;
     QWidget *tab_3;
     QWidget *tab_4;
+    QTextEdit *textEdit_4;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -46,7 +48,7 @@ public:
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName("tabWidget");
         tabWidget->setEnabled(false);
-        tabWidget->setGeometry(QRect(60, 0, 601, 601));
+        tabWidget->setGeometry(QRect(60, 0, 1031, 601));
         tabWidget->setStyleSheet(QString::fromUtf8(""));
         tab = new QWidget();
         tab->setObjectName("tab");
@@ -125,12 +127,31 @@ public:
         pushButton->raise();
         tab_2 = new QWidget();
         tab_2->setObjectName("tab_2");
+        tab_2->setEnabled(false);
+        textEdit_5 = new QTextEdit(tab_2);
+        textEdit_5->setObjectName("textEdit_5");
+        textEdit_5->setGeometry(QRect(20, 0, 291, 411));
+        sizePolicy.setHeightForWidth(textEdit_5->sizePolicy().hasHeightForWidth());
+        textEdit_5->setSizePolicy(sizePolicy);
+        textEdit_5->setMinimumSize(QSize(291, 411));
+        textEdit_5->setMaximumSize(QSize(291, 411));
+        textEdit_5->setStyleSheet(QString::fromUtf8("QTextEdit {\n"
+"    color: white;\n"
+"    background-color: rgb(39, 39, 39);\n"
+"}"));
         tabWidget->addTab(tab_2, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName("tab_3");
         tabWidget->addTab(tab_3, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName("tab_4");
+        textEdit_4 = new QTextEdit(tab_4);
+        textEdit_4->setObjectName("textEdit_4");
+        textEdit_4->setGeometry(QRect(200, 30, 271, 381));
+        textEdit_4->setStyleSheet(QString::fromUtf8("QTextEdit {\n"
+"    color: white;\n"
+"    background-color: rgb(39, 39, 39);\n"
+"}"));
         tabWidget->addTab(tab_4, QString());
         MainWindow->setCentralWidget(centralwidget);
 
@@ -156,20 +177,20 @@ public:
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320\227\320\236\320\226\320\263\320\270 \321\207\320\265\320\273\320\273\320\265\320\275\320\264\320\266</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320\242\320\260\321\200\320\270\321\204</span></p>\n"
-"<p ali"
-                        "gn=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">&quot;\320\230\320\275\320\264\320\270\320\262\320\270\320\264\321\203\320\260\320\273\321\214\320\275\321\213\320\271&quot;</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> <span style=\" font-size:12pt;\">30 \320\264\320\275\320\265\320\271 \320\265\320\266\320\265\320\264\320\275\320\265\320\262\320\275\320\276\320\271 \320\260\320\272\321\202\320\270\320\262\320\275\320\276\321\201\321\202\320\270</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /><span style=\" font-size:12pt;\"> \320\220\320\262\321\202\320\276\321\200\321\201\320\272\320\260\321\217 \320\267\320"
-                        "\260\320\277\320\260\321\202\320\265\320\275\321\202\320\276\320\262\320\260\320\275\320\275\320\260\321\217 \320\274\320\265\321\202\320\276\320\264\320\270\320\272\320\260</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /><span style=\" font-size:12pt;\"> \320\236\320\275\320\273\320\260\320\271\320\275-\320\262\320\265\320\261\320\270\320\275\320\260\321\200\321\213 \321\201 \320\270\320\264\320\265\320\276\320\273\320\276\320\263\320\260\320\274\320\270 \320\277\321\200\320\276\320\265\320\272\321\202\320\260</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /><span style=\" font-size:12pt;\"> \320\241\320\261\320\260\320\273\320\260\320\275\321\201\320\270\321\200\320\276\320\262\320\260\320\275\320\275\321\213\320\265 \321\200\320"
-                        "\265\321\206\320\265\320\277\321\202\321\213 \320\267\320\260\320\262\321\202\321\200\320\260\320\272 , \320\276\320\261\320\265\320\264 \320\270 \321\203\320\266\320\270\320\275</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> <span style=\" font-size:12pt;\">\320\225\320\266\320\265\320\264\320\275\320\265\320\262\320\275\320\260\321\217 \320\277\321\200\320\276\320\262\320\265\321\200\320\272\320\260 \320\270 \320\272\320\276\321\200\321\200\320\265\320\272\321\206\320\270\321\217 \321\200\320\260\321\206\320\270\320\276\320\275\320\276\320\262 \320\277\320\270\321\202\320\260\320\275\320\270\321\217 \321\215\320\272\321\201\320\277\320\265\321\200\321\202\320\260\320\274\320\270 \320\277\321\200\320\276\320\265\320\272\321\202\320\260</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0"
-                        "px;\"><span style=\" font-size:12pt;\">30 \320\264\320\275\320\265\320\271 \321\207\320\265\320\273\320\273\320\265\320\275\320\264\320\266\320\260</span><span style=\" color:#ff55ff;\"> </span><span style=\" font-size:14pt; color:#ff55ff;\">2500 </span><span style=\" font-family:'Google Sans','arial','sans-serif'; font-size:20px; font-weight:500; color:#f451f4;\">\342\202\275</span></p>\n"
-"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\"><br /></p></body></html>", nullptr));
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\320\227\320\236\320\226\320\263\320\270 \321\207\320\265\320\273\320\273\320\265\320\275\320\264\320\266</p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\320\242\320\260\321\200\320\270\321\204</p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margi"
+                        "n-right:0px; -qt-block-indent:0; text-indent:0px;\">&quot;\320\230\320\275\320\264\320\270\320\262\320\270\320\264\321\203\320\260\320\273\321\214\320\275\321\213\320\271&quot;</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> 30 \320\264\320\275\320\265\320\271 \320\265\320\266\320\265\320\264\320\275\320\265\320\262\320\275\320\276\320\271 \320\260\320\272\321\202\320\270\320\262\320\275\320\276\321\201\321\202\320\270</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> \320\220\320\262\321\202\320\276\321\200\321\201\320\272\320\260\321\217 \320\267\320\260\320\277\320\260\321\202\320\265\320\275\321\202\320\276\320\262\320\260\320\275\320\275\320\260\321\217 \320\274\320\265\321\202\320\276\320\264\320\270\320\272\320\260</p>\n"
+"<p style=\""
+                        " margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> \320\236\320\275\320\273\320\260\320\271\320\275-\320\262\320\265\320\261\320\270\320\275\320\260\321\200\321\213 \321\201 \320\270\320\264\320\265\320\276\320\273\320\276\320\263\320\260\320\274\320\270 \320\277\321\200\320\276\320\265\320\272\321\202\320\260</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> \320\241\320\261\320\260\320\273\320\260\320\275\321\201\320\270\321\200\320\276\320\262\320\260\320\275\320\275\321\213\320\265 \321\200\320\265\321\206\320\265\320\277\321\202\321\213 \320\267\320\260\320\262\321\202\321\200\320\260\320\272 , \320\276\320\261\320\265\320\264 \320\270 \321\203\320\266\320\270\320\275</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px;"
+                        " -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> \320\225\320\266\320\265\320\264\320\275\320\265\320\262\320\275\320\260\321\217 \320\277\321\200\320\276\320\262\320\265\321\200\320\272\320\260 \320\270 \320\272\320\276\321\200\321\200\320\265\320\272\321\206\320\270\321\217 \321\200\320\260\321\206\320\270\320\276\320\275\320\276\320\262 \320\277\320\270\321\202\320\260\320\275\320\270\321\217 \321\215\320\272\321\201\320\277\320\265\321\200\321\202\320\260\320\274\320\270 \320\277\321\200\320\276\320\265\320\272\321\202\320\260</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">30 \320\264\320\275\320\265\320\271 \321\207\320\265\320\273\320\273\320\265\320\275\320\264\320\266\320\260<span style=\" color:#ff55ff;\"> </span><span style=\" font-size:12pt; color:#ff55ff;\">2500 </span><span style=\" font-family:'Google Sans','arial','sans-serif'; font-size:12pt; font-weight:500; color:#"
+                        "f451f4;\">\342\202\275</span></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
         textEdit_2->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -181,17 +202,16 @@ public:
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">&quot;5+1 \320\261\320\265\321\201\320\277\320\273\320\260\321"
                         "\202\320\275\320\276&quot;</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/tick2.png\" alt=\"\320\230\320\267\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265\" /> \320\221\320\265\320\267\320\273\320\270\320\274\320\270\321\202\320\275\321\213\320\271 \320\264\320\276\321\201\321\202\321\203\320\277 \320\262 \320\272\320\273\321\203\320\261</p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/tick2.png\" alt=\"\320\230\320\267\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265\" /> \320\242\321\200\320\265\320\275\320\260"
-                        "\320\266\321\221\321\200\320\275\321\213\320\271 \320\267\320\260\320\273</p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/tick2.png\" alt=\"\320\230\320\267\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265\" /> \320\223\321\200\321\203\320\277\320\277\320\276\320\262\321\213\320\265 \321\202\321\200\320\265\320\275\320\270\321\200\320\276\320\262\320\272\320\270</p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/tick2.png\" alt=\"\320\230\320\267\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265\" /> \320\240\320\265\320\263\321\203\320\273\321\217\321\200\320\275\321\213\320\271 \320\260\320\275\320\260\320\273\320\270\320\267 \321\201\320\276\321\201\321\202\320\260\320\262 \321\202\320\265\320\273\320\260 InBod"
-                        "y</p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/tick2.png\" alt=\"\320\230\320\267\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265\" /> \320\244\320\270\320\275\321\201\320\272\320\270\320\265 \321\201\320\260\321\203\320\275\321\213 \320\270 \321\205\320\260\320\274\320\274\320\260\320\274</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> \320\221\320\265\320\267\320\273\320\270\320\274\320\270\321\202\320\275\321\213\320\271 \320\264\320\276\321\201\321\202\321\203\320\277 \320\262 \320\272\320\273\321\203\320\261</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\242\321\200\320\265\320\275\320\260\320\266\321\221\321\200\320\275\321\213\320\271 \320\267\320\260\320\273</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\""
+                        "><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\223\321\200\321\203\320\277\320\277\320\276\320\262\321\213\320\265 \321\202\321\200\320\265\320\275\320\270\321\200\320\276\320\262\320\272\320\270</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\240\320\265\320\263\321\203\320\273\321\217\321\200\320\275\321\213\320\271 \320\260\320\275\320\260\320\273\320\270\320\267 \321\201\320\276\321\201\321\202\320\260\320\262 \321\202\320\265\320\273\320\260 InBody</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\244\320\270\320\275\321\201\320\272\320\270\320\265 \321\201\320\260\321\203\320\275\321\213 \320\270 \321\205\320\260\320\274\320\274\320\260\320\274</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; mar"
+                        "gin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\320\241\321\202\320\276\320\270\320\274\320\276\321\201\321\202\321\214 \320\274\320\265\321"
-                        "\201\321\217\321\206\320\260<span style=\" color:#ff55ff;\"> </span><span style=\" font-size:14pt; color:#ff55ff;\">1690 </span><span style=\" font-family:'Google Sans','arial','sans-serif'; font-size:20px; font-weight:500; color:#f451f4;\">\342\202\275</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\320\241\321\202\320\276\320\270\320\274\320\276\321\201\321\202\321\214 \320\274\320\265\321\201\321\217\321\206\320\260<span style=\" color:#ff55ff;\"> </span><span style=\" font-size:14pt; color:#ff55ff;\">1690 </span><span style=\" font-family:'Google Sans','arial','sans-serif'; font-size:20px; font-weight:500; color:#f451f4;\">\342\202\275</span></p>\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\"><br /></p></body></html>", nullptr));
         textEdit_3->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
@@ -204,18 +224,38 @@ public:
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">&quot;5+1 \320\261\320\265\321\201\320\277\320\273\320\260\321"
                         "\202\320\275\320\276&quot;</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/tick2.png\" alt=\"\320\230\320\267\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265\" /> 6 \320\274\320\265\321\201\321\217\321\206\320\265\320\262 \320\261\320\265\320\267\320\273\320\270\320\274\320\270\321\202\320\275\320\276\320\263\320\276 \320\264\320\276\321\201\321\202\321\203\320\277\320\260 \320\262 \320\276\320\264\320\270\320\275 \320\272\320\273\321\203\320\261</p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/tick2.png\" alt=\"\320\230\320\267\320\276"
-                        "\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265\" /> \320\242\321\200\320\265\320\275\320\260\320\266\321\221\321\200\320\275\321\213\320\271 \320\267\320\260\320\273</p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/tick2.png\" alt=\"\320\230\320\267\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265\" /> \320\223\321\200\321\203\320\277\320\277\320\276\320\262\321\213\320\265 \321\202\321\200\320\265\320\275\320\270\321\200\320\276\320\262\320\272\320\270</p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/tick2.png\" alt=\"\320\230\320\267\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265\" /> \320\240\320\265\320\263\321\203\320\273\321\217\321\200\320\275\321\213\320\271 \320\260\320\275\320\260\320"
-                        "\273\320\270\320\267 \321\201\320\276\321\201\321\202\320\260\320\262 \321\202\320\265\320\273\320\260 InBody</p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/tick2.png\" alt=\"\320\230\320\267\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265\" /> \320\244\320\270\320\275\321\201\320\272\320\270\320\265 \321\201\320\260\321\203\320\275\321\213 \320\270 \321\205\320\260\320\274\320\274\320\260\320\274</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  6 \320\274\320\265\321\201\321\217\321\206\320\265\320\262 \320\261\320\265\320\267\320\273\320\270\320\274\320\270\321\202\320\275\320\276\320\263\320\276 \320\264\320\276\321\201\321\202\321\203\320\277\320\260 \320\262 \320\276\320\264\320\270\320\275 \320\272\320\273\321\203\320\261</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\242\321\200\320\265\320\275\320\260\320\266\321\221\321\200\320\275\321\213\320\271 \320\267\320\260\320\273</p>\n"
+"<p style=\" m"
+                        "argin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\223\321\200\321\203\320\277\320\277\320\276\320\262\321\213\320\265 \321\202\321\200\320\265\320\275\320\270\321\200\320\276\320\262\320\272\320\270</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\240\320\265\320\263\321\203\320\273\321\217\321\200\320\275\321\213\320\271 \320\260\320\275\320\260\320\273\320\270\320\267 \321\201\320\276\321\201\321\202\320\260\320\262 \321\202\320\265\320\273\320\260 InBody</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\244\320\270\320\275\321\201\320\272\320\270\320\265 \321\201\320\260\321\203\320\275\321\213 \320\270 \321\205"
+                        "\320\260\320\274\320\274\320\260\320\274</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\320\241\321\202\320\276\320\270\320\274\320\276\321\201\321\202\321\214 \320\274\320\265\321\201\321\217\321\206\320\260<span style=\" color:#ff55ff;\"> </spa"
-                        "n><span style=\" font-size:14pt; color:#ff55ff;\">1190 </span><span style=\" font-family:'Google Sans','arial','sans-serif'; font-size:20px; font-weight:500; color:#f451f4;\">\342\202\275</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\320\241\321\202\320\276\320\270\320\274\320\276\321\201\321\202\321\214 \320\274\320\265\321\201\321\217\321\206\320\260<span style=\" color:#ff55ff;\"> </span><span style=\" font-size:14pt; color:#ff55ff;\">1190 </span><span style=\" font-family:'Google Sans','arial','sans-serif'; font-size:20px; font-weight:500; color:#f451f4;\">\342\202\275</span></p>\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\"><br /></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "\320\220\320\261\320\276\320\275\320\265\320\274\320\265\320\275\321\202\321\213", nullptr));
+        textEdit_5->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\320\227\320\236\320\226\320\263\320\270 \321\207\320\265\320\273\320\273\320\265\320\275\320\264\320\266</p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\320\242\320\260\321\200\320\270\321\204</p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margi"
+                        "n-right:0px; -qt-block-indent:0; text-indent:0px;\">&quot;\320\230\320\275\320\264\320\270\320\262\320\270\320\264\321\203\320\260\320\273\321\214\320\275\321\213\320\271&quot;</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> 30 \320\264\320\275\320\265\320\271 \320\265\320\266\320\265\320\264\320\275\320\265\320\262\320\275\320\276\320\271 \320\260\320\272\321\202\320\270\320\262\320\275\320\276\321\201\321\202\320\270</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> \320\220\320\262\321\202\320\276\321\200\321\201\320\272\320\260\321\217 \320\267\320\260\320\277\320\260\321\202\320\265\320\275\321\202\320\276\320\262\320\260\320\275\320\275\320\260\321\217 \320\274\320\265\321\202\320\276\320\264\320\270\320\272\320\260</p>\n"
+"<p style=\""
+                        " margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> \320\236\320\275\320\273\320\260\320\271\320\275-\320\262\320\265\320\261\320\270\320\275\320\260\321\200\321\213 \321\201 \320\270\320\264\320\265\320\276\320\273\320\276\320\263\320\260\320\274\320\270 \320\277\321\200\320\276\320\265\320\272\321\202\320\260</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> \320\241\320\261\320\260\320\273\320\260\320\275\321\201\320\270\321\200\320\276\320\262\320\260\320\275\320\275\321\213\320\265 \321\200\320\265\321\206\320\265\320\277\321\202\321\213 \320\267\320\260\320\262\321\202\321\200\320\260\320\272 , \320\276\320\261\320\265\320\264 \320\270 \321\203\320\266\320\270\320\275</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px;"
+                        " -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" /> \320\225\320\266\320\265\320\264\320\275\320\265\320\262\320\275\320\260\321\217 \320\277\321\200\320\276\320\262\320\265\321\200\320\272\320\260 \320\270 \320\272\320\276\321\200\321\200\320\265\320\272\321\206\320\270\321\217 \321\200\320\260\321\206\320\270\320\276\320\275\320\276\320\262 \320\277\320\270\321\202\320\260\320\275\320\270\321\217 \321\215\320\272\321\201\320\277\320\265\321\200\321\202\320\260\320\274\320\270 \320\277\321\200\320\276\320\265\320\272\321\202\320\260</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">30 \320\264\320\275\320\265\320\271 \321\207\320\265\320\273\320\273\320\265\320\275\320\264\320\266\320\260<span style=\" color:#ff55ff;\"> </span><span style=\" font-size:12pt; color:#ff55ff;\">2500 </span><span style=\" font-family:'Google Sans','arial','sans-serif'; font-size:12pt; font-weight:500; color:#"
+                        "f451f4;\">\342\202\275</span></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "\320\242\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("MainWindow", "\320\220\320\272\320\272\320\260\321\203\320\275\321\202", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("MainWindow", "\320\232\320\276\321\200\320\267\320\270\320\275\320\260", nullptr));

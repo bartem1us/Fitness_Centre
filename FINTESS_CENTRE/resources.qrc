@@ -3,4 +3,7 @@
         <file>icons/tick.svg</file>
         <file>icons/abonement-check-mark.svg</file>
     </qresource>
+    <qresource prefix="/image">
+        <file>image/Ivan.jpg</file>
+    </qresource>
 </RCC>

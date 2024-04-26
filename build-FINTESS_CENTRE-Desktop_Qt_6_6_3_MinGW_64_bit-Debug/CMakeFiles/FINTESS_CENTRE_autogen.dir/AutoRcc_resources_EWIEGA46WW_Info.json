@@ -7,6 +7,7 @@
 	"INCLUDE_DIR" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/FINTESS_CENTRE_autogen/include",
 	"INPUTS" : 
 	[
+		"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/image/Ivan.jpg",
 		"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/icons/tick.svg",
 		"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/icons/abonement-check-mark.svg"
 	],
