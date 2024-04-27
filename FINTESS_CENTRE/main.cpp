@@ -8,17 +8,13 @@
 #include "login.h"
 int main(int argc, char *argv[])
 {
-    const char *conninfo = "dbname=FitnessCentre user=postgres password=ghjynj123 hostaddr=127.0.0.1 port=5432";
-    PGconn *conn = PQconnectdb(conninfo);
-    if (PQstatus(conn) != CONNECTION_OK) {
-        std::cout<<"123";
-        PQfinish(conn); // Закрываем соединение
-        return 1;
-    }
+
+
 
 
     QApplication a(argc, argv);
-
+    MainWindow *m=new MainWindow();
+    m->show();
     QTranslator translator;
     const QStringList uiLanguages = QLocale::system().uiLanguages();
     for (const QString &locale : uiLanguages) {
