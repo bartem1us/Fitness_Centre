@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStackedWidget>
@@ -36,8 +37,16 @@ public:
     QWidget *tab_2;
     QStackedWidget *stackedWidget;
     QWidget *page;
-    QTextEdit *textEdit_7;
     QLabel *label;
+    QLineEdit *lineEdit;
+    QLineEdit *lineEdit_2;
+    QTextEdit *textEdit_8;
+    QTextEdit *textEdit_9;
+    QLineEdit *lineEdit_3;
+    QLineEdit *lineEdit_4;
+    QLabel *label_2;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton_5;
     QWidget *page_2;
     QTextEdit *textEdit_6;
     QWidget *page_3;
@@ -139,35 +148,94 @@ public:
         tab_2->setEnabled(false);
         stackedWidget = new QStackedWidget(tab_2);
         stackedWidget->setObjectName("stackedWidget");
-        stackedWidget->setGeometry(QRect(0, 0, 1011, 521));
+        stackedWidget->setGeometry(QRect(0, 0, 1031, 521));
+        stackedWidget->setStyleSheet(QString::fromUtf8("QWidget#page{\n"
+"background-image: url(:/image/image/Weightlifting.jpg);\n"
+"}\n"
+""));
         page = new QWidget();
         page->setObjectName("page");
-        textEdit_7 = new QTextEdit(page);
-        textEdit_7->setObjectName("textEdit_7");
-        textEdit_7->setGeometry(QRect(570, -50, 471, 551));
-        QSizePolicy sizePolicy1(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(textEdit_7->sizePolicy().hasHeightForWidth());
-        textEdit_7->setSizePolicy(sizePolicy1);
-        textEdit_7->setMinimumSize(QSize(291, 411));
-        textEdit_7->setMaximumSize(QSize(16777215, 10000000));
-        textEdit_7->setStyleSheet(QString::fromUtf8("QTextEdit {\n"
-"    color: white;\n"
-"    background-color: rgb(39, 39, 39);\n"
-"}"));
         label = new QLabel(page);
         label->setObjectName("label");
-        label->setGeometry(QRect(20, 10, 101, 101));
+        label->setGeometry(QRect(40, 10, 111, 101));
         label->setStyleSheet(QString::fromUtf8("QLabel#label {\n"
 "	image: url(:/image/image/Sergei.jpg);\n"
 "}"));
+        lineEdit = new QLineEdit(page);
+        lineEdit->setObjectName("lineEdit");
+        lineEdit->setGeometry(QRect(380, 0, 281, 41));
+        QFont font;
+        font.setPointSize(18);
+        lineEdit->setFont(font);
+        lineEdit->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"    color: white;\n"
+"    background-color: rgb(39, 39, 39);\n"
+"}"));
+        lineEdit_2 = new QLineEdit(page);
+        lineEdit_2->setObjectName("lineEdit_2");
+        lineEdit_2->setGeometry(QRect(10, 120, 171, 31));
+        QFont font1;
+        font1.setPointSize(12);
+        lineEdit_2->setFont(font1);
+        lineEdit_2->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"    color: white;\n"
+"    background-color: rgb(39, 39, 39);\n"
+"}"));
+        textEdit_8 = new QTextEdit(page);
+        textEdit_8->setObjectName("textEdit_8");
+        textEdit_8->setGeometry(QRect(210, 110, 761, 91));
+        textEdit_8->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgb(39, 39, 39);"));
+        textEdit_9 = new QTextEdit(page);
+        textEdit_9->setObjectName("textEdit_9");
+        textEdit_9->setGeometry(QRect(210, 250, 751, 91));
+        textEdit_9->setStyleSheet(QString::fromUtf8("background-color: rgb(39, 39, 39);\n"
+"color: rgb(255, 255, 255);"));
+        lineEdit_3 = new QLineEdit(page);
+        lineEdit_3->setObjectName("lineEdit_3");
+        lineEdit_3->setGeometry(QRect(10, 170, 81, 31));
+        QFont font2;
+        font2.setPointSize(13);
+        lineEdit_3->setFont(font2);
+        lineEdit_3->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"color: white;"));
+        lineEdit_3->setFrame(false);
+        lineEdit_4 = new QLineEdit(page);
+        lineEdit_4->setObjectName("lineEdit_4");
+        lineEdit_4->setGeometry(QRect(110, 170, 41, 31));
+        QFont font3;
+        font3.setPointSize(15);
+        lineEdit_4->setFont(font3);
+        lineEdit_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);\n"
+"background-color: transparent"));
+        lineEdit_4->setFrame(false);
+        label_2 = new QLabel(page);
+        label_2->setObjectName("label_2");
+        label_2->setGeometry(QRect(150, 170, 41, 31));
+        QFont font4;
+        font4.setPointSize(7);
+        label_2->setFont(font4);
+        label_2->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star.png);"));
+        pushButton_4 = new QPushButton(page);
+        pushButton_4->setObjectName("pushButton_4");
+        pushButton_4->setGeometry(QRect(20, 390, 71, 61));
+        pushButton_4->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/left_arrow.png);\n"
+"\n"
+"\n"
+""));
+        pushButton_5 = new QPushButton(page);
+        pushButton_5->setObjectName("pushButton_5");
+        pushButton_5->setGeometry(QRect(930, 420, 81, 61));
+        pushButton_5->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/right_arrow.png);"));
         stackedWidget->addWidget(page);
         page_2 = new QWidget();
         page_2->setObjectName("page_2");
         textEdit_6 = new QTextEdit(page_2);
         textEdit_6->setObjectName("textEdit_6");
         textEdit_6->setGeometry(QRect(0, 0, 291, 521));
+        QSizePolicy sizePolicy1(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(textEdit_6->sizePolicy().hasHeightForWidth());
         textEdit_6->setSizePolicy(sizePolicy1);
         textEdit_6->setMinimumSize(QSize(291, 411));
@@ -287,25 +355,33 @@ public:
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\320\241\321\202\320\276\320\270\320\274\320\276\321\201\321\202\321\214 \320\274\320\265\321\201\321\217\321\206\320\260<span style=\" color:#ff55ff;\"> </span><span style=\" font-size:14pt; color:#ff55ff;\">1190 </span><span style=\" font-family:'Google Sans','arial','sans-serif'; font-size:20px; font-weight:500; color:#f451f4;\">\342\202\275</span></p>\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\"><br /></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "\320\220\320\261\320\276\320\275\320\265\320\274\320\265\320\275\321\202\321\213", nullptr));
-        textEdit_7->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        label->setText(QString());
+        lineEdit->setText(QCoreApplication::translate("MainWindow", " \320\242\321\217\320\266\321\221\320\273\320\260\321\217 \320\220\321\202\320\273\320\265\321\202\320\270\320\272\320\260", nullptr));
+        lineEdit_2->setText(QCoreApplication::translate("MainWindow", "\320\242\321\200\320\265\320\275\320\265\321\200 \320\223\320\265\320\275\320\275\320\260\320\264\320\270\320\271", nullptr));
+        textEdit_8->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\"> \320\242\321\217\320\266\321\221\320\273\320\276\320\271 \320\220\321\202\320\273\320\265\321\202\320\270\320\272\320\270:</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">\320\242\321\200\320\265\320\275\320\265"
-                        "\321\200 \320\223\320\265\320\275\320\275\320\260\320\264\320\270\320\271</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/image/image/Sergei.jpg\" /></p>\n"
-"<ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\">\n"
-"<li style=\" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\320\227\320\260\321\201\320\273\321\203\320\263\320\270: \320\236\320\277\321\213\321\202\320\275\321\213\320\271 \321\201\320\277\320\276\321\200\321\202\321\201\320\274\320\265\320\275 \320\270 \321\202\321\200\320\265\320\275\320\265\321\200, \321\203\321\207\320\260\321\201\321\202\320\262\320\276\320\262\320\260\320\273 \320\262 \320\274\320\275\320\276\320\266\320\265\321\201\321\202\320\262\320\265 \321\201\320\276\321\200\320\265\320\262\320\275\320\276\320\262\320\260\320\275\320\270\320\271 \320"
-                        "\277\320\276 \320\277\320\260\321\203\321\215\321\200\320\273\320\270\321\204\321\202\320\270\320\275\320\263\321\203 \320\270 \320\266\320\270\320\274\321\203 \321\210\321\202\320\260\320\275\320\263\320\270. \320\237\320\276\320\274\320\276\320\263 \320\274\320\275\320\276\320\263\320\270\320\274 \320\264\320\276\321\201\321\202\320\270\321\207\321\214 \320\267\320\275\320\260\321\207\320\270\321\202\320\265\320\273\321\214\320\275\321\213\321\205 \321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\320\276\320\262 \320\262 \321\203\320\262\320\265\320\273\320\270\321\207\320\265\320\275\320\270\320\270 \320\274\321\213\321\210\320\265\321\207\320\275\320\276\320\271 \320\274\320\260\321\201\321\201\321\213 \320\270 \321\201\320\270\320\273\321\213.</li></ul>\n"
-"<ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\">\n"
-"<li style=\" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:"
-                        "0px;\">\320\237\321\200\320\276\321\204\320\270\320\273\321\214 \321\200\320\260\320\261\320\276\321\202\321\213: \320\241\320\277\320\265\321\206\320\270\320\260\320\273\320\270\320\267\320\270\321\200\321\203\320\265\321\202\321\201\321\217 \320\275\320\260 \320\270\320\275\321\202\320\265\320\275\321\201\320\270\320\262\320\275\321\213\321\205 \321\201\320\270\320\273\320\276\320\262\321\213\321\205 \321\202\321\200\320\265\320\275\320\270\321\200\320\276\320\262\320\272\320\260\321\205, \321\200\320\260\320\267\321\200\320\260\320\261\320\276\321\202\320\272\320\265 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274 \320\277\320\276\320\264\320\263\320\276\321\202\320\276\320\262\320\272\320\270 \320\272 \321\201\320\276\321\200\320\265\320\262\320\275\320\276\320\262\320\260\320\275\320\270\321\217\320\274 \320\277\320\276 \320\277\320\260\321\203\321\215\321\200\320\273\320\270\321\204\321\202\320\270\320\275\320\263\321\203 \320\270 \320\266\320\270\320\274\321\203 \321\210\321\202\320\260"
-                        "\320\275\320\263\320\270. \320\237\321\200\320\276\320\262\320\276\320\264\320\270\321\202 \321\202\321\200\320\265\320\275\320\270\321\200\320\276\320\262\320\272\320\270 \320\272\320\260\320\272 \320\264\320\273\321\217 \320\275\320\260\321\207\320\270\320\275\320\260\321\216\321\211\320\270\321\205, \321\202\320\260\320\272 \320\270 \320\264\320\273\321\217 \320\276\320\277\321\213\321\202\320\275\321\213\321\205 \320\260\321\202\320\273\320\265\321\202\320\276\320\262.</li></ul></body></html>", nullptr));
-        label->setText(QString());
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:700;\">\320\227\320\260\321\201\320\273\321\203\320\263\320\270:</span><span style=\" font-size:12pt;\"> \320\236\320\277\321\213\321\202\320\275\321\213\320\271 \321\201\320\277\320\276\321\200\321\202\321\201\320\274\320\265\320\275 \320\270 \321\202\321\200\320\265\320\275\320\265\321\200, \321\203\321\207\320\260\321\201\321\202\320\262\320\276\320\262\320"
+                        "\260\320\273 \320\262 \320\274\320\275\320\276\320\266\320\265\321\201\321\202\320\262\320\265 \321\201\320\276\321\200\320\265\320\262\320\275\320\276\320\262\320\260\320\275\320\270\320\271 \320\277\320\276 \320\277\320\260\321\203\321\215\321\200\320\273\320\270\321\204\321\202\320\270\320\275\320\263\321\203 \320\270 \320\266\320\270\320\274\321\203 \321\210\321\202\320\260\320\275\320\263\320\270. \320\237\320\276\320\274\320\276\320\263 \320\274\320\275\320\276\320\263\320\270\320\274 \320\264\320\276\321\201\321\202\320\270\321\207\321\214 \320\267\320\275\320\260\321\207\320\270\321\202\320\265\320\273\321\214\320\275\321\213\321\205 \321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\320\276\320\262 \320\262 \321\203\320\262\320\265\320\273\320\270\321\207\320\265\320\275\320\270\320\270 \320\274\321\213\321\210\320\265\321\207\320\275\320\276\320\271 \320\274\320\260\321\201\321\201\321\213 \320\270 \321\201\320\270\320\273\321\213.</span></p></body></html>", nullptr));
+        textEdit_9->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:700;\">\320\237\321\200\320\276\321\204\320\270\320\273\321\214 \321\200\320\260\320\261\320\276\321\202\321\213: </span><span style=\" font-size:12pt;\">\320\241\320\277\320\265\321\206\320\270\320\260\320\273\320\270\320\267\320\270\321\200\321\203\320\265\321\202\321\201\321\217 \320\275\320\260 \320\270\320\275\321\202\320\265\320\275\321\201\320\270\320"
+                        "\262\320\275\321\213\321\205 \321\201\320\270\320\273\320\276\320\262\321\213\321\205 \321\202\321\200\320\265\320\275\320\270\321\200\320\276\320\262\320\272\320\260\321\205, \321\200\320\260\320\267\321\200\320\260\320\261\320\276\321\202\320\272\320\265 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274 \320\277\320\276\320\264\320\263\320\276\321\202\320\276\320\262\320\272\320\270 \320\272 \321\201\320\276\321\200\320\265\320\262\320\275\320\276\320\262\320\260\320\275\320\270\321\217\320\274 \320\277\320\276 \320\277\320\260\321\203\321\215\321\200\320\273\320\270\321\204\321\202\320\270\320\275\320\263\321\203 \320\270 \320\266\320\270\320\274\321\203 \321\210\321\202\320\260\320\275\320\263\320\270. \320\237\321\200\320\276\320\262\320\276\320\264\320\270\321\202 \321\202\321\200\320\265\320\275\320\270\321\200\320\276\320\262\320\272\320\270 \320\272\320\260\320\272 \320\264\320\273\321\217 \320\275\320\260\321\207\320\270\320\275\320\260\321\216\321\211\320\270\321\205, \321\202\320\260"
+                        "\320\272 \320\270 \320\264\320\273\321\217 \320\276\320\277\321\213\321\202\320\275\321\213\321\205 \320\260\321\202\320\273\320\265\321\202\320\276\320\262.</span></p></body></html>", nullptr));
+        lineEdit_3->setText(QCoreApplication::translate("MainWindow", "\320\240\320\265\320\271\321\202\320\270\320\275\320\263", nullptr));
+        lineEdit_4->setText(QString());
+        label_2->setText(QString());
+        pushButton_4->setText(QString());
+        pushButton_5->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         textEdit_6->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
