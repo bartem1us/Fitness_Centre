@@ -13,5 +13,7 @@
         <file>image/Sergei.jpg</file>
         <file>image/Weightlifting.jpg</file>
         <file>image/yoga.jpg</file>
+        <file>image/Motivation.jpg</file>
+        <file>image/Flexibility.jpg</file>
     </qresource>
 </RCC>
