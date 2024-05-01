@@ -16,6 +16,9 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     MainWindow(const QString& fullname ,const QString& number , QWidget*parent = nullptr);
     ~MainWindow();
+private slots:
+    void on_RightButtonClicked();
+    void on_LeftButtonClicked();
 
 private:
     Ui::MainWindow *ui;

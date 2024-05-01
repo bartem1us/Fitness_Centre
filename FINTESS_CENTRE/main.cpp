@@ -8,13 +8,8 @@
 #include "login.h"
 int main(int argc, char *argv[])
 {
-
-
-
-
     QApplication a(argc, argv);
-    MainWindow *m=new MainWindow();
-    m->show();
+
     QTranslator translator;
     const QStringList uiLanguages = QLocale::system().uiLanguages();
     for (const QString &locale : uiLanguages) {
@@ -24,8 +19,10 @@ int main(int argc, char *argv[])
             break;
         }
     }
-    login *log = new login(nullptr , std::make_shared<PostgreSQLConnection>());
-    log->show();
+    MainWindow *m=new MainWindow();
+    m->show();
+    //login *log = new login(nullptr , std::make_shared<PostgreSQLConnection>());
+    //log->show();
 
 
     return a.exec();

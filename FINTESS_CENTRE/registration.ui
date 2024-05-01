@@ -20,6 +20,9 @@
 }</string>
   </property>
   <widget class="QPushButton" name="pushButton">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -210,7 +213,7 @@ width: 2px;
     <string>+ ()   </string>
    </property>
    <property name="cursorPosition">
-    <number>0</number>
+    <number>18</number>
    </property>
    <property name="placeholderText">
     <string>+7 (999) 999 99 99</string>

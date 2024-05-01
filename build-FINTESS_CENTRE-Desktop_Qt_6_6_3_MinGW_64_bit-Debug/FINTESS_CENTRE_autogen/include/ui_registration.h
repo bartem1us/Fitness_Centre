@@ -43,6 +43,7 @@ public:
 "}"));
         pushButton = new QPushButton(Registration);
         pushButton->setObjectName("pushButton");
+        pushButton->setEnabled(true);
         pushButton->setGeometry(QRect(90, 220, 161, 29));
         pushButton->setStyleSheet(QString::fromUtf8("border-color: rgb(63, 6, 161);\n"
 "background-color: rgb(85, 162, 255);\n"
@@ -116,7 +117,7 @@ public:
 "border: none;\n"
 "width: 2px;\n"
 " }"));
-        lineEdit_3->setCursorPosition(0);
+        lineEdit_3->setCursorPosition(18);
         lineEdit_3->setCursorMoveStyle(Qt::VisualMoveStyle);
 
         retranslateUi(Registration);

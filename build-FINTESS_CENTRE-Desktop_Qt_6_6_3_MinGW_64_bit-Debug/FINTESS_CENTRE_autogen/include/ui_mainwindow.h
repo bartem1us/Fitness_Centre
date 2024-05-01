@@ -18,6 +18,7 @@
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTextEdit>
+#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -28,9 +29,9 @@ public:
     QWidget *centralwidget;
     QTabWidget *tabWidget;
     QWidget *tab;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton;
+    QToolButton *toolButton_2;
+    QToolButton *toolButton_3;
+    QToolButton *toolButton;
     QTextEdit *textEdit;
     QTextEdit *textEdit_2;
     QTextEdit *textEdit_3;
@@ -45,24 +46,24 @@ public:
     QLineEdit *lineEdit_3;
     QLineEdit *lineEdit_4;
     QLabel *label_2;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_5;
-    QPushButton *pushButton_12;
+    QPushButton *Left_button_page_1;
+    QPushButton *Right_button_page_1;
+    QPushButton *push_button;
     QWidget *page_2;
     QLineEdit *lineEdit_5;
     QLineEdit *lineEdit_8;
     QLineEdit *lineEdit_6;
     QTextEdit *textEdit_12;
     QTextEdit *textEdit_11;
-    QPushButton *pushButton_6;
+    QPushButton *Right_button_page_2;
     QLineEdit *lineEdit_7;
-    QPushButton *pushButton_7;
+    QPushButton *Left_button_page_2;
     QLabel *label_3;
     QLabel *label_4;
     QPushButton *pushButton_11;
     QWidget *page_3;
-    QPushButton *pushButton_9;
-    QPushButton *pushButton_8;
+    QPushButton *Left_button_page_3;
+    QPushButton *Right_button_page_3;
     QTextEdit *textEdit_14;
     QTextEdit *textEdit_13;
     QLineEdit *lineEdit_10;
@@ -80,13 +81,14 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
+        MainWindow->setEnabled(true);
         MainWindow->resize(1161, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        centralwidget->setEnabled(false);
+        centralwidget->setEnabled(true);
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName("tabWidget");
-        tabWidget->setEnabled(false);
+        tabWidget->setEnabled(true);
         tabWidget->setGeometry(QRect(0, 30, 1031, 601));
         tabWidget->setStyleSheet(QString::fromUtf8(""));
         tab = new QWidget();
@@ -97,38 +99,38 @@ public:
 "	background-position: center;\n"
 "}\n"
 ""));
-        pushButton_2 = new QPushButton(tab);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(440, 390, 141, 31));
-        pushButton_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        toolButton_2 = new QToolButton(tab);
+        toolButton_2->setObjectName("toolButton_2");
+        toolButton_2->setGeometry(QRect(440, 390, 141, 31));
+        toolButton_2->setStyleSheet(QString::fromUtf8("QToolButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
-        pushButton_3 = new QPushButton(tab);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(770, 390, 141, 31));
-        pushButton_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        toolButton_3 = new QToolButton(tab);
+        toolButton_3->setObjectName("toolButton_3");
+        toolButton_3->setGeometry(QRect(770, 390, 141, 31));
+        toolButton_3->setStyleSheet(QString::fromUtf8("QToolButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
-        pushButton = new QPushButton(tab);
-        pushButton->setObjectName("pushButton");
-        pushButton->setEnabled(false);
-        pushButton->setGeometry(QRect(130, 390, 141, 31));
-        pushButton->setStyleSheet(QString::fromUtf8("QPushButton#pushButton {\n"
+        toolButton = new QToolButton(tab);
+        toolButton->setObjectName("toolButton");
+        toolButton->setEnabled(false);
+        toolButton->setGeometry(QRect(130, 390, 141, 31));
+        toolButton->setStyleSheet(QString::fromUtf8("QToolButton#toolButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
-        pushButton->setAutoRepeat(false);
+        toolButton->setAutoRepeat(false);
         textEdit = new QTextEdit(tab);
         textEdit->setObjectName("textEdit");
         textEdit->setGeometry(QRect(50, 20, 291, 411));
@@ -161,12 +163,12 @@ public:
         textEdit_3->raise();
         textEdit_2->raise();
         textEdit->raise();
-        pushButton_2->raise();
-        pushButton_3->raise();
-        pushButton->raise();
+        toolButton_2->raise();
+        toolButton_3->raise();
+        toolButton->raise();
         tab_2 = new QWidget();
         tab_2->setObjectName("tab_2");
-        tab_2->setEnabled(false);
+        tab_2->setEnabled(true);
         stackedWidget = new QStackedWidget(tab_2);
         stackedWidget->setObjectName("stackedWidget");
         stackedWidget->setGeometry(QRect(0, 0, 1031, 521));
@@ -174,6 +176,7 @@ public:
         stackedWidget->setStyleSheet(QString::fromUtf8(""));
         page = new QWidget();
         page->setObjectName("page");
+        page->setEnabled(true);
         page->setStyleSheet(QString::fromUtf8("QWidget#page{\n"
 "background-image: url(:/image/image/Weightlifting.jpg);\n"
 "}"));
@@ -238,23 +241,28 @@ public:
         font4.setPointSize(7);
         label_2->setFont(font4);
         label_2->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star.png);"));
-        pushButton_4 = new QPushButton(page);
-        pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setGeometry(QRect(20, 390, 71, 61));
-        pushButton_4->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/left_arrow.png);\n"
-"background-color: transparent;\n"
+        Left_button_page_1 = new QPushButton(page);
+        Left_button_page_1->setObjectName("Left_button_page_1");
+        Left_button_page_1->setGeometry(QRect(20, 410, 71, 61));
+        Left_button_page_1->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	image: url(:/icons/icons/left_arrow.png);\n"
+"	background-color: transparent;\n"
+"}\n"
 ""));
-        pushButton_4->setFlat(true);
-        pushButton_5 = new QPushButton(page);
-        pushButton_5->setObjectName("pushButton_5");
-        pushButton_5->setGeometry(QRect(940, 390, 81, 61));
-        pushButton_5->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/right_arrow.png);"));
-        pushButton_5->setFlat(true);
-        pushButton_12 = new QPushButton(page);
-        pushButton_12->setObjectName("pushButton_12");
-        pushButton_12->setGeometry(QRect(400, 450, 231, 41));
-        pushButton_12->setFont(font1);
-        pushButton_12->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        Left_button_page_1->setFlat(true);
+        Right_button_page_1 = new QPushButton(page);
+        Right_button_page_1->setObjectName("Right_button_page_1");
+        Right_button_page_1->setEnabled(true);
+        Right_button_page_1->setGeometry(QRect(940, 420, 71, 61));
+        Right_button_page_1->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"image: url(:/icons/icons/right_arrow.png);\n"
+"}"));
+        Right_button_page_1->setFlat(true);
+        push_button = new QPushButton(page);
+        push_button->setObjectName("push_button");
+        push_button->setGeometry(QRect(400, 450, 231, 41));
+        push_button->setFont(font1);
+        push_button->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
@@ -302,11 +310,11 @@ public:
         textEdit_11->setGeometry(QRect(210, 120, 751, 91));
         textEdit_11->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: rgb(39, 39, 39);"));
-        pushButton_6 = new QPushButton(page_2);
-        pushButton_6->setObjectName("pushButton_6");
-        pushButton_6->setGeometry(QRect(940, 390, 81, 61));
-        pushButton_6->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/right_arrow.png);"));
-        pushButton_6->setFlat(true);
+        Right_button_page_2 = new QPushButton(page_2);
+        Right_button_page_2->setObjectName("Right_button_page_2");
+        Right_button_page_2->setGeometry(QRect(940, 390, 81, 61));
+        Right_button_page_2->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/right_arrow.png);"));
+        Right_button_page_2->setFlat(true);
         lineEdit_7 = new QLineEdit(page_2);
         lineEdit_7->setObjectName("lineEdit_7");
         lineEdit_7->setGeometry(QRect(10, 160, 81, 31));
@@ -314,13 +322,13 @@ public:
         lineEdit_7->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
 "color: white;"));
         lineEdit_7->setFrame(false);
-        pushButton_7 = new QPushButton(page_2);
-        pushButton_7->setObjectName("pushButton_7");
-        pushButton_7->setGeometry(QRect(20, 380, 71, 61));
-        pushButton_7->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/left_arrow.png);\n"
+        Left_button_page_2 = new QPushButton(page_2);
+        Left_button_page_2->setObjectName("Left_button_page_2");
+        Left_button_page_2->setGeometry(QRect(20, 380, 71, 61));
+        Left_button_page_2->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/left_arrow.png);\n"
 "background-color: transparent;\n"
 ""));
-        pushButton_7->setFlat(true);
+        Left_button_page_2->setFlat(true);
         label_3 = new QLabel(page_2);
         label_3->setObjectName("label_3");
         label_3->setGeometry(QRect(40, 20, 101, 71));
@@ -344,18 +352,22 @@ public:
         stackedWidget->addWidget(page_2);
         page_3 = new QWidget();
         page_3->setObjectName("page_3");
-        pushButton_9 = new QPushButton(page_3);
-        pushButton_9->setObjectName("pushButton_9");
-        pushButton_9->setGeometry(QRect(10, 440, 71, 61));
-        pushButton_9->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/left_arrow.png);\n"
+        page_3->setStyleSheet(QString::fromUtf8("QWidget#page_3{\n"
+"	\n"
+"	background-image: url(:/image/image/Motivation.jpg);\n"
+"}"));
+        Left_button_page_3 = new QPushButton(page_3);
+        Left_button_page_3->setObjectName("Left_button_page_3");
+        Left_button_page_3->setGeometry(QRect(10, 440, 71, 61));
+        Left_button_page_3->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/left_arrow.png);\n"
 "background-color: transparent;\n"
 ""));
-        pushButton_9->setFlat(true);
-        pushButton_8 = new QPushButton(page_3);
-        pushButton_8->setObjectName("pushButton_8");
-        pushButton_8->setGeometry(QRect(930, 440, 81, 61));
-        pushButton_8->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/right_arrow.png);"));
-        pushButton_8->setFlat(true);
+        Left_button_page_3->setFlat(true);
+        Right_button_page_3 = new QPushButton(page_3);
+        Right_button_page_3->setObjectName("Right_button_page_3");
+        Right_button_page_3->setGeometry(QRect(930, 440, 81, 61));
+        Right_button_page_3->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/right_arrow.png);"));
+        Right_button_page_3->setFlat(true);
         textEdit_14 = new QTextEdit(page_3);
         textEdit_14->setObjectName("textEdit_14");
         textEdit_14->setGeometry(QRect(220, 120, 721, 121));
@@ -437,7 +449,6 @@ public:
         retranslateUi(MainWindow);
 
         tabWidget->setCurrentIndex(1);
-        pushButton->setDefault(false);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -446,9 +457,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
+        toolButton_2->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
+        toolButton_3->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
+        toolButton->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
         textEdit->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -539,9 +550,9 @@ public:
         lineEdit_3->setText(QCoreApplication::translate("MainWindow", "\320\240\320\265\320\271\321\202\320\270\320\275\320\263", nullptr));
         lineEdit_4->setText(QString());
         label_2->setText(QString());
-        pushButton_4->setText(QString());
-        pushButton_5->setText(QString());
-        pushButton_12->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\202\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
+        Left_button_page_1->setText(QString());
+        Right_button_page_1->setText(QString());
+        push_button->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\202\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
         lineEdit_5->setText(QCoreApplication::translate("MainWindow", "\320\223\320\270\320\261\320\272\320\276\321\201\321\202\321\214", nullptr));
         lineEdit_8->setText(QCoreApplication::translate("MainWindow", "4,8", nullptr));
         lineEdit_6->setText(QCoreApplication::translate("MainWindow", "\320\242\321\200\320\265\320\275\320\265\321\200 \320\223\320\265\320\275\320\275\320\260\320\264\320\270\320\271", nullptr));
@@ -563,14 +574,14 @@ public:
 "</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:700;\">\320\227\320\260\321\201\320\273\321\203\320\263\320\270:</span><span style=\" font-size:12pt;\"> \320\230\320\274\320\265\320\265\321\202 \320\276\320\277\321\213\321\202 \321\200\320\260\320\261\320\276\321\202\321\213 \321\201 \320\272\320\273\320\270\320\265\320\275\321\202\320\260\320\274\320\270 \320\262\321\201\320\265\321\205 \320\262\320\276\320"
                         "\267\321\200\320\260\321\201\321\202\320\276\320\262 \320\270 \321\203\321\200\320\276\320\262\320\275\320\265\320\271 \320\277\320\276\320\264\320\263\320\276\321\202\320\276\320\262\320\272\320\270. \320\237\320\276\320\273\321\203\321\207\320\270\320\273 \321\201\320\265\321\200\321\202\320\270\321\204\320\270\320\272\320\260\321\202\321\213 \320\277\320\276 \320\271\320\276\320\263\320\265 \320\270 \320\277\320\270\320\273\320\260\321\202\320\265\321\201\321\203. \320\237\320\276\320\274\320\276\320\263 \320\274\320\275\320\276\320\263\320\270\320\274 \321\203\320\273\321\203\321\207\321\210\320\270\321\202\321\214 \321\201\320\262\320\276\321\216 \320\263\320\270\320\261\320\272\320\276\321\201\321\202\321\214 \320\270 \320\276\321\201\320\262\320\276\320\261\320\276\320\264\320\270\321\202\321\214\321\201\321\217 \320\276\321\202 \320\261\320\276\320\273\320\265\320\271 \320\262 \321\201\320\277\320\270\320\275\320\265.</span></p></body></html>", nullptr));
-        pushButton_6->setText(QString());
+        Right_button_page_2->setText(QString());
         lineEdit_7->setText(QCoreApplication::translate("MainWindow", "\320\240\320\265\320\271\321\202\320\270\320\275\320\263", nullptr));
-        pushButton_7->setText(QString());
+        Left_button_page_2->setText(QString());
         label_3->setText(QString());
         label_4->setText(QString());
         pushButton_11->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\202\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
-        pushButton_9->setText(QString());
-        pushButton_8->setText(QString());
+        Left_button_page_3->setText(QString());
+        Right_button_page_3->setText(QString());
         textEdit_14->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

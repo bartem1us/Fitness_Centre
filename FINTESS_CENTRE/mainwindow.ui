@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -15,11 +18,11 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <widget class="QTabWidget" name="tabWidget">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -47,7 +50,7 @@
      <attribute name="title">
       <string>Абонементы</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QToolButton" name="toolButton_2">
       <property name="geometry">
        <rect>
         <x>440</x>
@@ -57,7 +60,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton {
+       <string notr="true">QToolButton {
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);
 	color: white;
     border: 2px solid gray;
@@ -69,7 +72,7 @@
        <string>Купить тариф</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QToolButton" name="toolButton_3">
       <property name="geometry">
        <rect>
         <x>770</x>
@@ -79,7 +82,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton {
+       <string notr="true">QToolButton {
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);
 	color: white;
     border: 2px solid gray;
@@ -91,7 +94,7 @@
        <string>Купить тариф</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QToolButton" name="toolButton">
       <property name="enabled">
        <bool>false</bool>
       </property>
@@ -104,7 +107,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton#pushButton {
+       <string notr="true">QToolButton#toolButton {
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);
 	color: white;
     border: 2px solid gray;
@@ -116,9 +119,6 @@
        <string>Купить тариф</string>
       </property>
       <property name="autoRepeat">
-       <bool>false</bool>
-      </property>
-      <property name="default">
        <bool>false</bool>
       </property>
      </widget>
@@ -251,13 +251,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <zorder>textEdit_3</zorder>
      <zorder>textEdit_2</zorder>
      <zorder>textEdit</zorder>
-     <zorder>pushButton_2</zorder>
-     <zorder>pushButton_3</zorder>
-     <zorder>pushButton</zorder>
+     <zorder>toolButton_2</zorder>
+     <zorder>toolButton_3</zorder>
+     <zorder>toolButton</zorder>
     </widget>
     <widget class="QWidget" name="tab_2">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <attribute name="title">
       <string>Тренера</string>
@@ -278,6 +278,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <string notr="true"/>
       </property>
       <widget class="QWidget" name="page">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="styleSheet">
         <string notr="true">QWidget#page{
 background-image: url(:/image/image/Weightlifting.jpg);
@@ -468,18 +471,20 @@ background-color: transparent</string>
          <string/>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_4">
+       <widget class="QPushButton" name="Left_button_page_1">
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>390</y>
+          <y>410</y>
           <width>71</width>
           <height>61</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">image: url(:/icons/icons/left_arrow.png);
-background-color: transparent;
+         <string notr="true">QPushButton{
+	image: url(:/icons/icons/left_arrow.png);
+	background-color: transparent;
+}
 </string>
         </property>
         <property name="text">
@@ -489,17 +494,22 @@ background-color: transparent;
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_5">
+       <widget class="QPushButton" name="Right_button_page_1">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>940</x>
-          <y>390</y>
-          <width>81</width>
+          <y>420</y>
+          <width>71</width>
           <height>61</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">image: url(:/icons/icons/right_arrow.png);</string>
+         <string notr="true">QPushButton{
+image: url(:/icons/icons/right_arrow.png);
+}</string>
         </property>
         <property name="text">
          <string/>
@@ -508,7 +518,7 @@ background-color: transparent;
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_12">
+       <widget class="QPushButton" name="push_button">
         <property name="geometry">
          <rect>
           <x>400</x>
@@ -667,7 +677,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Заслуги:&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; Имеет опыт работы с клиентами всех возрастов и уровней подготовки. Получил сертификаты по йоге и пилатесу. Помог многим улучшить свою гибкость и освободиться от болей в спине.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_6">
+       <widget class="QPushButton" name="Right_button_page_2">
         <property name="geometry">
          <rect>
           <x>940</x>
@@ -711,7 +721,7 @@ color: white;</string>
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_7">
+       <widget class="QPushButton" name="Left_button_page_2">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -798,7 +808,13 @@ background-color: transparent;
        </widget>
       </widget>
       <widget class="QWidget" name="page_3">
-       <widget class="QPushButton" name="pushButton_9">
+       <property name="styleSheet">
+        <string notr="true">QWidget#page_3{
+	
+	background-image: url(:/image/image/Motivation.jpg);
+}</string>
+       </property>
+       <widget class="QPushButton" name="Left_button_page_3">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -819,7 +835,7 @@ background-color: transparent;
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_8">
+       <widget class="QPushButton" name="Right_button_page_3">
         <property name="geometry">
          <rect>
           <x>930</x>
