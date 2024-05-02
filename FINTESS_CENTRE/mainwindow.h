@@ -19,6 +19,7 @@ public:
 private slots:
     void on_RightButtonClicked();
     void on_LeftButtonClicked();
+    void on_SeasonTicket_1_Clicked();
 
 private:
     Ui::MainWindow *ui;

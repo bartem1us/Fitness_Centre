@@ -27,7 +27,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>30</y>
+      <y>0</y>
       <width>1031</width>
       <height>601</height>
      </rect>
@@ -36,7 +36,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <property name="styleSheet">
@@ -50,7 +50,7 @@
      <attribute name="title">
       <string>Абонементы</string>
      </attribute>
-     <widget class="QToolButton" name="toolButton_2">
+     <widget class="QToolButton" name="SeasonTicket_2">
       <property name="geometry">
        <rect>
         <x>440</x>
@@ -72,7 +72,7 @@
        <string>Купить тариф</string>
       </property>
      </widget>
-     <widget class="QToolButton" name="toolButton_3">
+     <widget class="QToolButton" name="SeasonTicket_3">
       <property name="geometry">
        <rect>
         <x>770</x>
@@ -94,9 +94,9 @@
        <string>Купить тариф</string>
       </property>
      </widget>
-     <widget class="QToolButton" name="toolButton">
+     <widget class="QToolButton" name="SeasonTicket_1">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
@@ -107,7 +107,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QToolButton#toolButton {
+       <string notr="true">QToolButton#SeasonTicket_1 {
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);
 	color: white;
     border: 2px solid gray;
@@ -251,9 +251,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <zorder>textEdit_3</zorder>
      <zorder>textEdit_2</zorder>
      <zorder>textEdit</zorder>
-     <zorder>toolButton_2</zorder>
-     <zorder>toolButton_3</zorder>
-     <zorder>toolButton</zorder>
+     <zorder>SeasonTicket_2</zorder>
+     <zorder>SeasonTicket_3</zorder>
+     <zorder>SeasonTicket_1</zorder>
     </widget>
     <widget class="QWidget" name="tab_2">
      <property name="enabled">
@@ -1071,28 +1071,290 @@ color: white;</string>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_3">
+     <property name="styleSheet">
+      <string notr="true">QWidget#tab_3{
+	background-repeat: no-repeat;
+	background-image: url(C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/fitnes_image.jpg);
+	background-position: center;
+}
+</string>
+     </property>
      <attribute name="title">
       <string>Аккаунт</string>
      </attribute>
-    </widget>
-    <widget class="QWidget" name="tab_4">
-     <attribute name="title">
-      <string>Корзина</string>
-     </attribute>
-     <widget class="QTextEdit" name="textEdit_4">
+     <widget class="QLineEdit" name="PhoneNumber">
       <property name="geometry">
        <rect>
-        <x>200</x>
-        <y>30</y>
-        <width>271</width>
-        <height>381</height>
+        <x>280</x>
+        <y>70</y>
+        <width>401</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QTextEdit {
+       <string notr="true">QLineEdit {
     color: white;
     background-color: rgb(39, 39, 39);
 }</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="FullName">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>140</y>
+        <width>401</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: white;
+    background-color: rgb(39, 39, 39);
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Trainer">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>210</y>
+        <width>401</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: white;
+    background-color: rgb(39, 39, 39);
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SeasonTicket">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>290</y>
+        <width>401</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: white;
+    background-color: rgb(39, 39, 39);
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_18">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>30</y>
+        <width>181</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+background-color: transparent;
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Номер телефона</string>
+      </property>
+      <property name="frame">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_19">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>110</y>
+        <width>141</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+background-color: transparent;
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Полное имя</string>
+      </property>
+      <property name="frame">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_21">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>180</y>
+        <width>141</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+background-color: transparent;
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Ваш тренер</string>
+      </property>
+      <property name="frame">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_22">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>260</y>
+        <width>171</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+background-color: transparent;
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Ваш абонемент</string>
+      </property>
+      <property name="frame">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <property name="styleSheet">
+      <string notr="true">QWidget#tab_4{
+	background-repeat: no-repeat;
+	background-image: url(C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/fitnes_image.jpg);
+	background-position: center;
+}
+</string>
+     </property>
+     <attribute name="title">
+      <string>Корзина</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>130</y>
+        <width>41</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>180</y>
+        <width>41</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_15">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>180</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_14">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>130</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_16">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>180</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>360</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);
+	color: white;
+    border: 2px solid gray;
+    border-radius: 10px; /* Радиус закругления */
+    padding: 2px 10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Ваша корзина пуста</string>
       </property>
      </widget>
     </widget>

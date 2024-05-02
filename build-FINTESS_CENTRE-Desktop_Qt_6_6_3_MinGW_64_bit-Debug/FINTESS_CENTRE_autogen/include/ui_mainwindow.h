@@ -29,9 +29,9 @@ public:
     QWidget *centralwidget;
     QTabWidget *tabWidget;
     QWidget *tab;
-    QToolButton *toolButton_2;
-    QToolButton *toolButton_3;
-    QToolButton *toolButton;
+    QToolButton *SeasonTicket_2;
+    QToolButton *SeasonTicket_3;
+    QToolButton *SeasonTicket_1;
     QTextEdit *textEdit;
     QTextEdit *textEdit_2;
     QTextEdit *textEdit_3;
@@ -74,8 +74,21 @@ public:
     QLabel *label_5;
     QPushButton *pushButton_10;
     QWidget *tab_3;
+    QLineEdit *PhoneNumber;
+    QLineEdit *FullName;
+    QLineEdit *Trainer;
+    QLineEdit *SeasonTicket;
+    QLineEdit *lineEdit_18;
+    QLineEdit *lineEdit_19;
+    QLineEdit *lineEdit_21;
+    QLineEdit *lineEdit_22;
     QWidget *tab_4;
-    QTextEdit *textEdit_4;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton;
+    QLineEdit *lineEdit_15;
+    QLineEdit *lineEdit_14;
+    QLineEdit *lineEdit_16;
+    QPushButton *pushButton_3;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -89,7 +102,7 @@ public:
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName("tabWidget");
         tabWidget->setEnabled(true);
-        tabWidget->setGeometry(QRect(0, 30, 1031, 601));
+        tabWidget->setGeometry(QRect(0, 0, 1031, 601));
         tabWidget->setStyleSheet(QString::fromUtf8(""));
         tab = new QWidget();
         tab->setObjectName("tab");
@@ -99,38 +112,38 @@ public:
 "	background-position: center;\n"
 "}\n"
 ""));
-        toolButton_2 = new QToolButton(tab);
-        toolButton_2->setObjectName("toolButton_2");
-        toolButton_2->setGeometry(QRect(440, 390, 141, 31));
-        toolButton_2->setStyleSheet(QString::fromUtf8("QToolButton {\n"
+        SeasonTicket_2 = new QToolButton(tab);
+        SeasonTicket_2->setObjectName("SeasonTicket_2");
+        SeasonTicket_2->setGeometry(QRect(440, 390, 141, 31));
+        SeasonTicket_2->setStyleSheet(QString::fromUtf8("QToolButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
-        toolButton_3 = new QToolButton(tab);
-        toolButton_3->setObjectName("toolButton_3");
-        toolButton_3->setGeometry(QRect(770, 390, 141, 31));
-        toolButton_3->setStyleSheet(QString::fromUtf8("QToolButton {\n"
+        SeasonTicket_3 = new QToolButton(tab);
+        SeasonTicket_3->setObjectName("SeasonTicket_3");
+        SeasonTicket_3->setGeometry(QRect(770, 390, 141, 31));
+        SeasonTicket_3->setStyleSheet(QString::fromUtf8("QToolButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
-        toolButton = new QToolButton(tab);
-        toolButton->setObjectName("toolButton");
-        toolButton->setEnabled(false);
-        toolButton->setGeometry(QRect(130, 390, 141, 31));
-        toolButton->setStyleSheet(QString::fromUtf8("QToolButton#toolButton {\n"
+        SeasonTicket_1 = new QToolButton(tab);
+        SeasonTicket_1->setObjectName("SeasonTicket_1");
+        SeasonTicket_1->setEnabled(true);
+        SeasonTicket_1->setGeometry(QRect(130, 390, 141, 31));
+        SeasonTicket_1->setStyleSheet(QString::fromUtf8("QToolButton#SeasonTicket_1 {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
-        toolButton->setAutoRepeat(false);
+        SeasonTicket_1->setAutoRepeat(false);
         textEdit = new QTextEdit(tab);
         textEdit->setObjectName("textEdit");
         textEdit->setGeometry(QRect(50, 20, 291, 411));
@@ -163,9 +176,9 @@ public:
         textEdit_3->raise();
         textEdit_2->raise();
         textEdit->raise();
-        toolButton_2->raise();
-        toolButton_3->raise();
-        toolButton->raise();
+        SeasonTicket_2->raise();
+        SeasonTicket_3->raise();
+        SeasonTicket_1->raise();
         tab_2 = new QWidget();
         tab_2->setObjectName("tab_2");
         tab_2->setEnabled(true);
@@ -433,22 +446,120 @@ public:
         tabWidget->addTab(tab_2, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName("tab_3");
+        tab_3->setStyleSheet(QString::fromUtf8("QWidget#tab_3{\n"
+"	background-repeat: no-repeat;\n"
+"	background-image: url(C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/fitnes_image.jpg);\n"
+"	background-position: center;\n"
+"}\n"
+""));
+        PhoneNumber = new QLineEdit(tab_3);
+        PhoneNumber->setObjectName("PhoneNumber");
+        PhoneNumber->setGeometry(QRect(280, 70, 401, 31));
+        PhoneNumber->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    color: white;\n"
+"    background-color: rgb(39, 39, 39);\n"
+"}"));
+        FullName = new QLineEdit(tab_3);
+        FullName->setObjectName("FullName");
+        FullName->setGeometry(QRect(280, 140, 401, 31));
+        FullName->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    color: white;\n"
+"    background-color: rgb(39, 39, 39);\n"
+"}"));
+        Trainer = new QLineEdit(tab_3);
+        Trainer->setObjectName("Trainer");
+        Trainer->setGeometry(QRect(280, 210, 401, 31));
+        Trainer->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    color: white;\n"
+"    background-color: rgb(39, 39, 39);\n"
+"}"));
+        SeasonTicket = new QLineEdit(tab_3);
+        SeasonTicket->setObjectName("SeasonTicket");
+        SeasonTicket->setGeometry(QRect(280, 290, 401, 31));
+        SeasonTicket->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    color: white;\n"
+"    background-color: rgb(39, 39, 39);\n"
+"}"));
+        lineEdit_18 = new QLineEdit(tab_3);
+        lineEdit_18->setObjectName("lineEdit_18");
+        lineEdit_18->setGeometry(QRect(380, 30, 181, 26));
+        lineEdit_18->setFont(font2);
+        lineEdit_18->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"background-color: transparent;\n"
+"color:white;\n"
+"}"));
+        lineEdit_18->setFrame(false);
+        lineEdit_18->setAlignment(Qt::AlignCenter);
+        lineEdit_19 = new QLineEdit(tab_3);
+        lineEdit_19->setObjectName("lineEdit_19");
+        lineEdit_19->setGeometry(QRect(400, 110, 141, 26));
+        lineEdit_19->setFont(font2);
+        lineEdit_19->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"background-color: transparent;\n"
+"color:white;\n"
+"}"));
+        lineEdit_19->setFrame(false);
+        lineEdit_19->setAlignment(Qt::AlignCenter);
+        lineEdit_21 = new QLineEdit(tab_3);
+        lineEdit_21->setObjectName("lineEdit_21");
+        lineEdit_21->setGeometry(QRect(400, 180, 141, 26));
+        lineEdit_21->setFont(font2);
+        lineEdit_21->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"background-color: transparent;\n"
+"color:white;\n"
+"}"));
+        lineEdit_21->setFrame(false);
+        lineEdit_21->setAlignment(Qt::AlignCenter);
+        lineEdit_22 = new QLineEdit(tab_3);
+        lineEdit_22->setObjectName("lineEdit_22");
+        lineEdit_22->setGeometry(QRect(390, 260, 171, 26));
+        lineEdit_22->setFont(font2);
+        lineEdit_22->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"background-color: transparent;\n"
+"color:white;\n"
+"}"));
+        lineEdit_22->setFrame(false);
+        lineEdit_22->setAlignment(Qt::AlignCenter);
         tabWidget->addTab(tab_3, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName("tab_4");
-        textEdit_4 = new QTextEdit(tab_4);
-        textEdit_4->setObjectName("textEdit_4");
-        textEdit_4->setGeometry(QRect(200, 30, 271, 381));
-        textEdit_4->setStyleSheet(QString::fromUtf8("QTextEdit {\n"
-"    color: white;\n"
-"    background-color: rgb(39, 39, 39);\n"
+        tab_4->setStyleSheet(QString::fromUtf8("QWidget#tab_4{\n"
+"	background-repeat: no-repeat;\n"
+"	background-image: url(C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/fitnes_image.jpg);\n"
+"	background-position: center;\n"
+"}\n"
+""));
+        pushButton_2 = new QPushButton(tab_4);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(160, 130, 41, 29));
+        pushButton = new QPushButton(tab_4);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(160, 180, 41, 29));
+        lineEdit_15 = new QLineEdit(tab_4);
+        lineEdit_15->setObjectName("lineEdit_15");
+        lineEdit_15->setGeometry(QRect(240, 180, 201, 31));
+        lineEdit_14 = new QLineEdit(tab_4);
+        lineEdit_14->setObjectName("lineEdit_14");
+        lineEdit_14->setGeometry(QRect(500, 130, 113, 31));
+        lineEdit_16 = new QLineEdit(tab_4);
+        lineEdit_16->setObjectName("lineEdit_16");
+        lineEdit_16->setGeometry(QRect(500, 180, 111, 31));
+        pushButton_3 = new QPushButton(tab_4);
+        pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setGeometry(QRect(390, 360, 171, 41));
+        pushButton_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
+"	color: white;\n"
+"    border: 2px solid gray;\n"
+"    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
+"    padding: 2px 10px;\n"
 "}"));
         tabWidget->addTab(tab_4, QString());
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -457,9 +568,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        toolButton_2->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
-        toolButton_3->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
-        toolButton->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
+        SeasonTicket_2->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
+        SeasonTicket_3->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
+        SeasonTicket_1->setText(QCoreApplication::translate("MainWindow", "\320\232\321\203\320\277\320\270\321\202\321\214 \321\202\320\260\321\200\320\270\321\204", nullptr));
         textEdit->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -610,7 +721,14 @@ public:
         label_5->setText(QString());
         pushButton_10->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\202\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "\320\242\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
+        lineEdit_18->setText(QCoreApplication::translate("MainWindow", "\320\235\320\276\320\274\320\265\321\200 \321\202\320\265\320\273\320\265\321\204\320\276\320\275\320\260", nullptr));
+        lineEdit_19->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\273\320\275\320\276\320\265 \320\270\320\274\321\217", nullptr));
+        lineEdit_21->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210 \321\202\321\200\320\265\320\275\320\265\321\200", nullptr));
+        lineEdit_22->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210 \320\260\320\261\320\276\320\275\320\265\320\274\320\265\320\275\321\202", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("MainWindow", "\320\220\320\272\320\272\320\260\321\203\320\275\321\202", nullptr));
+        pushButton_2->setText(QString());
+        pushButton->setText(QString());
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210\320\260 \320\272\320\276\321\200\320\267\320\270\320\275\320\260 \320\277\321\203\321\201\321\202\320\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("MainWindow", "\320\232\320\276\321\200\320\267\320\270\320\275\320\260", nullptr));
     } // retranslateUi
 

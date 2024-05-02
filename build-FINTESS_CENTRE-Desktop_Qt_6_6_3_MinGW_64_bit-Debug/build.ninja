@@ -233,7 +233,7 @@ build FINTESS_CENTRE_autogen/EWIEGA46WW/qrc_resources.cpp | ${cmake_ninja_workdi
 #############################################
 # Phony custom command for CMakeFiles\FINTESS_CENTRE_autogen_timestamp_deps
 
-build CMakeFiles/FINTESS_CENTRE_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/FINTESS_CENTRE_autogen_timestamp_deps: phony C$:/Qt/6.6.3/mingw_64/./bin/uic.exe C$:/Qt/6.6.3/mingw_64/./bin/moc.exe C$:/Program$ Files/PostgreSQL/12/lib/libpq.lib C$:/Qt/6.6.3/mingw_64/lib/libQt6Core.a C$:/Qt/6.6.3/mingw_64/lib/libQt6Widgets.a
+build CMakeFiles/FINTESS_CENTRE_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/FINTESS_CENTRE_autogen_timestamp_deps: phony C$:/Qt/6.6.3/mingw_64/./bin/moc.exe C$:/Qt/6.6.3/mingw_64/./bin/uic.exe C$:/Program$ Files/PostgreSQL/12/lib/libpq.lib C$:/Qt/6.6.3/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.3/mingw_64/lib/libQt6Core.a
 
 
 #############################################
