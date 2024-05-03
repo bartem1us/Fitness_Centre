@@ -19,7 +19,8 @@
 		"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/icons/right_arrow.png",
 		"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/icons/left_arrow.png",
 		"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/icons/star.png",
-		"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/icons/abonement-check-mark.svg"
+		"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/icons/abonement-check-mark.svg",
+		"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/icons/cross.svg"
 	],
 	"LOCK_FILE" : "C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/FINTESS_CENTRE_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

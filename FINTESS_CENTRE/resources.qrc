@@ -5,6 +5,7 @@
         <file>icons/star.png</file>
         <file>icons/left_arrow.png</file>
         <file>icons/right_arrow.png</file>
+        <file>icons/cross.svg</file>
     </qresource>
     <qresource prefix="/image">
         <file>image/Ivan.jpg</file>

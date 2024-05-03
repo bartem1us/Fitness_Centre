@@ -18,7 +18,6 @@
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTextEdit>
-#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -29,9 +28,9 @@ public:
     QWidget *centralwidget;
     QTabWidget *tabWidget;
     QWidget *tab;
-    QToolButton *SeasonTicket_2;
-    QToolButton *SeasonTicket_3;
-    QToolButton *SeasonTicket_1;
+    QPushButton *SeasonTicket_2;
+    QPushButton *SeasonTicket_3;
+    QPushButton *SeasonTicket_1;
     QTextEdit *textEdit;
     QTextEdit *textEdit_2;
     QTextEdit *textEdit_3;
@@ -48,7 +47,7 @@ public:
     QLabel *label_2;
     QPushButton *Left_button_page_1;
     QPushButton *Right_button_page_1;
-    QPushButton *push_button;
+    QPushButton *Choose_Button_1;
     QWidget *page_2;
     QLineEdit *lineEdit_5;
     QLineEdit *lineEdit_8;
@@ -60,7 +59,7 @@ public:
     QPushButton *Left_button_page_2;
     QLabel *label_3;
     QLabel *label_4;
-    QPushButton *pushButton_11;
+    QPushButton *Choose_Button_2;
     QWidget *page_3;
     QPushButton *Left_button_page_3;
     QPushButton *Right_button_page_3;
@@ -72,7 +71,7 @@ public:
     QLabel *label_6;
     QLineEdit *lineEdit_12;
     QLabel *label_5;
-    QPushButton *pushButton_10;
+    QPushButton *Choose_Button_3;
     QWidget *tab_3;
     QLineEdit *PhoneNumber;
     QLineEdit *FullName;
@@ -83,12 +82,7 @@ public:
     QLineEdit *lineEdit_21;
     QLineEdit *lineEdit_22;
     QWidget *tab_4;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton;
-    QLineEdit *lineEdit_15;
-    QLineEdit *lineEdit_14;
-    QLineEdit *lineEdit_16;
-    QPushButton *pushButton_3;
+    QPushButton *BuyButton;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -112,31 +106,31 @@ public:
 "	background-position: center;\n"
 "}\n"
 ""));
-        SeasonTicket_2 = new QToolButton(tab);
+        SeasonTicket_2 = new QPushButton(tab);
         SeasonTicket_2->setObjectName("SeasonTicket_2");
         SeasonTicket_2->setGeometry(QRect(440, 390, 141, 31));
-        SeasonTicket_2->setStyleSheet(QString::fromUtf8("QToolButton {\n"
+        SeasonTicket_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
-        SeasonTicket_3 = new QToolButton(tab);
+        SeasonTicket_3 = new QPushButton(tab);
         SeasonTicket_3->setObjectName("SeasonTicket_3");
         SeasonTicket_3->setGeometry(QRect(770, 390, 141, 31));
-        SeasonTicket_3->setStyleSheet(QString::fromUtf8("QToolButton {\n"
+        SeasonTicket_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
-        SeasonTicket_1 = new QToolButton(tab);
+        SeasonTicket_1 = new QPushButton(tab);
         SeasonTicket_1->setObjectName("SeasonTicket_1");
         SeasonTicket_1->setEnabled(true);
         SeasonTicket_1->setGeometry(QRect(130, 390, 141, 31));
-        SeasonTicket_1->setStyleSheet(QString::fromUtf8("QToolButton#SeasonTicket_1 {\n"
+        SeasonTicket_1->setStyleSheet(QString::fromUtf8("QPushButton#SeasonTicket_1 {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
@@ -271,11 +265,11 @@ public:
 "image: url(:/icons/icons/right_arrow.png);\n"
 "}"));
         Right_button_page_1->setFlat(true);
-        push_button = new QPushButton(page);
-        push_button->setObjectName("push_button");
-        push_button->setGeometry(QRect(400, 450, 231, 41));
-        push_button->setFont(font1);
-        push_button->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        Choose_Button_1 = new QPushButton(page);
+        Choose_Button_1->setObjectName("Choose_Button_1");
+        Choose_Button_1->setGeometry(QRect(400, 450, 231, 41));
+        Choose_Button_1->setFont(font1);
+        Choose_Button_1->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
@@ -351,11 +345,11 @@ public:
         label_4->setGeometry(QRect(150, 160, 41, 31));
         label_4->setFont(font4);
         label_4->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star.png);"));
-        pushButton_11 = new QPushButton(page_2);
-        pushButton_11->setObjectName("pushButton_11");
-        pushButton_11->setGeometry(QRect(410, 470, 231, 41));
-        pushButton_11->setFont(font1);
-        pushButton_11->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        Choose_Button_2 = new QPushButton(page_2);
+        Choose_Button_2->setObjectName("Choose_Button_2");
+        Choose_Button_2->setGeometry(QRect(410, 470, 231, 41));
+        Choose_Button_2->setFont(font1);
+        Choose_Button_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
@@ -431,11 +425,11 @@ public:
         label_5->setGeometry(QRect(160, 160, 41, 31));
         label_5->setFont(font4);
         label_5->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star.png);"));
-        pushButton_10 = new QPushButton(page_3);
-        pushButton_10->setObjectName("pushButton_10");
-        pushButton_10->setGeometry(QRect(400, 450, 231, 41));
-        pushButton_10->setFont(font1);
-        pushButton_10->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        Choose_Button_3 = new QPushButton(page_3);
+        Choose_Button_3->setObjectName("Choose_Button_3");
+        Choose_Button_3->setGeometry(QRect(400, 450, 231, 41));
+        Choose_Button_3->setFont(font1);
+        Choose_Button_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
@@ -529,25 +523,10 @@ public:
 "	background-position: center;\n"
 "}\n"
 ""));
-        pushButton_2 = new QPushButton(tab_4);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(160, 130, 41, 29));
-        pushButton = new QPushButton(tab_4);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(160, 180, 41, 29));
-        lineEdit_15 = new QLineEdit(tab_4);
-        lineEdit_15->setObjectName("lineEdit_15");
-        lineEdit_15->setGeometry(QRect(240, 180, 201, 31));
-        lineEdit_14 = new QLineEdit(tab_4);
-        lineEdit_14->setObjectName("lineEdit_14");
-        lineEdit_14->setGeometry(QRect(500, 130, 113, 31));
-        lineEdit_16 = new QLineEdit(tab_4);
-        lineEdit_16->setObjectName("lineEdit_16");
-        lineEdit_16->setGeometry(QRect(500, 180, 111, 31));
-        pushButton_3 = new QPushButton(tab_4);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(390, 360, 171, 41));
-        pushButton_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        BuyButton = new QPushButton(tab_4);
+        BuyButton->setObjectName("BuyButton");
+        BuyButton->setGeometry(QRect(410, 350, 181, 41));
+        BuyButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
 "	color: white;\n"
 "    border: 2px solid gray;\n"
@@ -559,7 +538,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -621,24 +600,24 @@ public:
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320\242\320\260\321\200\320\270\321\204 \320\241\321\202\320\260\320\275\320\264\320\260\321\200\321\202</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">&quot;5+1 \320\261\320\265\321\201\320\277\320\273\320\260\321"
-                        "\202\320\275\320\276&quot;</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320\242\320\260\321\200\320\270\321\204</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">&quot;\320\234\320\276\320\273\320\276\320\264\321\221\320\266\321\214 \320\234\320\276\321\201\320\272\320\262\321\213&quot;</"
+                        "span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><br /></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  6 \320\274\320\265\321\201\321\217\321\206\320\265\320\262 \320\261\320\265\320\267\320\273\320\270\320\274\320\270\321\202\320\275\320\276\320\263\320\276 \320\264\320\276\321\201\321\202\321\203\320\277\320\260 \320\262 \320\276\320\264\320\270\320\275 \320\272\320\273\321\203\320\261</p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\242\321\200\320\265\320\275\320\260\320\266\321\221\321\200\320\275\321\213\320\271 \320\267\320\260\320\273</p>\n"
-"<p style=\" m"
-                        "argin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\223\321\200\321\203\320\277\320\277\320\276\320\262\321\213\320\265 \321\202\321\200\320\265\320\275\320\270\321\200\320\276\320\262\320\272\320\270</p>\n"
+"<p style=\" margin-top:12px; margin-botto"
+                        "m:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\223\321\200\321\203\320\277\320\277\320\276\320\262\321\213\320\265 \321\202\321\200\320\265\320\275\320\270\321\200\320\276\320\262\320\272\320\270</p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\240\320\265\320\263\321\203\320\273\321\217\321\200\320\275\321\213\320\271 \320\260\320\275\320\260\320\273\320\270\320\267 \321\201\320\276\321\201\321\202\320\260\320\262 \321\202\320\265\320\273\320\260 InBody</p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\244\320\270\320\275\321\201\320\272\320\270\320\265 \321\201\320\260\321\203\320\275\321\213 \320\270 \321\205"
-                        "\320\260\320\274\320\274\320\260\320\274</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><img src=\":/icons/icons/abonement-check-mark.svg\" />  \320\244\320\270\320\275\321\201\320\272\320\270\320\265 \321\201\320\260\321\203\320\275\321\213 \320\270 \321\205\320\260\320\274\320\274\320"
+                        "\260\320\274</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\"><br /></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\320\241\321\202\320\276\320\270\320\274\320\276\321\201\321\202\321\214 \320\274\320\265\321\201\321\217\321\206\320\260<span style=\" color:#ff55ff;\"> </span><span style=\" font-size:14pt; color:#ff55ff;\">1190 </span><span style=\" font-family:'Google Sans','arial','sans-serif'; font-size:20px; font-weight:500; color:#f451f4;\">\342\202\275</span></p>\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\"><br /></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "\320\220\320\261\320\276\320\275\320\265\320\274\320\265\320\275\321\202\321\213", nullptr));
         label->setText(QString());
         lineEdit->setText(QCoreApplication::translate("MainWindow", " \320\242\321\217\320\266\321\221\320\273\320\260\321\217 \320\220\321\202\320\273\320\265\321\202\320\270\320\272\320\260", nullptr));
-        lineEdit_2->setText(QCoreApplication::translate("MainWindow", "\320\242\321\200\320\265\320\275\320\265\321\200 \320\223\320\265\320\275\320\275\320\260\320\264\320\270\320\271", nullptr));
+        lineEdit_2->setText(QCoreApplication::translate("MainWindow", "\320\242\321\200\320\265\320\275\320\265\321\200 \320\241\320\265\321\200\320\263\320\265\320\271", nullptr));
         textEdit_8->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -663,7 +642,7 @@ public:
         label_2->setText(QString());
         Left_button_page_1->setText(QString());
         Right_button_page_1->setText(QString());
-        push_button->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\202\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
+        Choose_Button_1->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\202\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
         lineEdit_5->setText(QCoreApplication::translate("MainWindow", "\320\223\320\270\320\261\320\272\320\276\321\201\321\202\321\214", nullptr));
         lineEdit_8->setText(QCoreApplication::translate("MainWindow", "4,8", nullptr));
         lineEdit_6->setText(QCoreApplication::translate("MainWindow", "\320\242\321\200\320\265\320\275\320\265\321\200 \320\223\320\265\320\275\320\275\320\260\320\264\320\270\320\271", nullptr));
@@ -690,7 +669,7 @@ public:
         Left_button_page_2->setText(QString());
         label_3->setText(QString());
         label_4->setText(QString());
-        pushButton_11->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\202\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
+        Choose_Button_2->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\202\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
         Left_button_page_3->setText(QString());
         Right_button_page_3->setText(QString());
         textEdit_14->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -715,20 +694,18 @@ public:
                         " \320\277\321\201\320\270\321\205\320\276\320\273\320\276\320\263\320\270\321\207\320\265\321\201\320\272\320\276\320\263\320\276 \320\261\320\273\320\260\320\263\320\276\320\277\320\276\320\273\321\203\321\207\320\270\321\217.</span></p></body></html>", nullptr));
         lineEdit_10->setText(QCoreApplication::translate("MainWindow", "4,8", nullptr));
         lineEdit_9->setText(QCoreApplication::translate("MainWindow", "\320\242\321\200\320\265\320\275\320\265\321\200 \320\230\320\262\320\260\320\275", nullptr));
-        lineEdit_11->setText(QCoreApplication::translate("MainWindow", "\320\223\320\270\320\261\320\272\320\276\321\201\321\202\321\214", nullptr));
+        lineEdit_11->setText(QCoreApplication::translate("MainWindow", "\320\234\320\276\321\202\320\270\320\262\320\260\321\206\320\270\321\217", nullptr));
         label_6->setText(QString());
         lineEdit_12->setText(QCoreApplication::translate("MainWindow", "\320\240\320\265\320\271\321\202\320\270\320\275\320\263", nullptr));
         label_5->setText(QString());
-        pushButton_10->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\202\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
+        Choose_Button_3->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\202\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "\320\242\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
         lineEdit_18->setText(QCoreApplication::translate("MainWindow", "\320\235\320\276\320\274\320\265\321\200 \321\202\320\265\320\273\320\265\321\204\320\276\320\275\320\260", nullptr));
         lineEdit_19->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\273\320\275\320\276\320\265 \320\270\320\274\321\217", nullptr));
         lineEdit_21->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210 \321\202\321\200\320\265\320\275\320\265\321\200", nullptr));
         lineEdit_22->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210 \320\260\320\261\320\276\320\275\320\265\320\274\320\265\320\275\321\202", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("MainWindow", "\320\220\320\272\320\272\320\260\321\203\320\275\321\202", nullptr));
-        pushButton_2->setText(QString());
-        pushButton->setText(QString());
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210\320\260 \320\272\320\276\321\200\320\267\320\270\320\275\320\260 \320\277\321\203\321\201\321\202\320\260", nullptr));
+        BuyButton->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210\320\260 \320\272\320\276\321\200\320\267\320\270\320\275\320\260 \320\277\321\203\321\201\321\202\320\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("MainWindow", "\320\232\320\276\321\200\320\267\320\270\320\275\320\260", nullptr));
     } // retranslateUi
 
