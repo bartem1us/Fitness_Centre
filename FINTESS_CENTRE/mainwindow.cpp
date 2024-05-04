@@ -75,7 +75,7 @@ void MainWindow::fillBasketCoaches(const std::string CoachNameText)
         CrossButton->setObjectName("Cross_2");
         CrossButton->setFlat(true);
         CrossButton->setStyleSheet("QPushButton {image: url(:/icons/icons/cross.svg);}");
-
+        ui->BuyButton->setText("Оплатить");
 
 
     }

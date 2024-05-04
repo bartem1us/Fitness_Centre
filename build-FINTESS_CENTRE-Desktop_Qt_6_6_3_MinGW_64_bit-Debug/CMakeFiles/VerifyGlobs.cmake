@@ -41,6 +41,7 @@ endif()
 # _directory_contents at C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/*.cpp")
 set(OLD_GLOB
+  "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.cpp"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/login.cpp"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/main.cpp"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/mainwindow.cpp"
@@ -65,6 +66,7 @@ endif()
 # _directory_contents at C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/*.h")
 set(OLD_GLOB
+  "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.h"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/login.h"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/mainwindow.h"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/pgconnection.h"
@@ -170,6 +172,7 @@ endif()
 # _directory_contents at C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/*.ui")
 set(OLD_GLOB
+  "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.ui"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/login.ui"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/mainwindow.ui"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/registration.ui"

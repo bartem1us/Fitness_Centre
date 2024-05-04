@@ -81,6 +81,7 @@ public:
     QLineEdit *lineEdit_19;
     QLineEdit *lineEdit_21;
     QLineEdit *lineEdit_22;
+    QPushButton *LeaveFeedback;
     QWidget *tab_4;
     QPushButton *BuyButton;
 
@@ -116,6 +117,7 @@ public:
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
+        SeasonTicket_2->setFlat(false);
         SeasonTicket_3 = new QPushButton(tab);
         SeasonTicket_3->setObjectName("SeasonTicket_3");
         SeasonTicket_3->setGeometry(QRect(770, 390, 141, 31));
@@ -140,6 +142,7 @@ public:
         SeasonTicket_1->setAutoRepeat(false);
         textEdit = new QTextEdit(tab);
         textEdit->setObjectName("textEdit");
+        textEdit->setEnabled(true);
         textEdit->setGeometry(QRect(50, 20, 291, 411));
         QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
         sizePolicy.setHorizontalStretch(0);
@@ -152,20 +155,25 @@ public:
 "    color: white;\n"
 "    background-color: rgb(39, 39, 39);\n"
 "}"));
+        textEdit->setTextInteractionFlags(Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
         textEdit_2 = new QTextEdit(tab);
         textEdit_2->setObjectName("textEdit_2");
+        textEdit_2->setEnabled(true);
         textEdit_2->setGeometry(QRect(370, 20, 291, 411));
         textEdit_2->setStyleSheet(QString::fromUtf8("QTextEdit {\n"
 "    color: white;\n"
 "    background-color: rgb(39, 39, 39);\n"
 "}"));
+        textEdit_2->setTextInteractionFlags(Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
         textEdit_3 = new QTextEdit(tab);
         textEdit_3->setObjectName("textEdit_3");
+        textEdit_3->setEnabled(true);
         textEdit_3->setGeometry(QRect(690, 20, 291, 411));
         textEdit_3->setStyleSheet(QString::fromUtf8("QTextEdit {\n"
 "    color: white;\n"
 "    background-color: rgb(39, 39, 39);\n"
 "}"));
+        textEdit_3->setTextInteractionFlags(Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
         tabWidget->addTab(tab, QString());
         textEdit_3->raise();
         textEdit_2->raise();
@@ -195,6 +203,7 @@ public:
 "}"));
         lineEdit = new QLineEdit(page);
         lineEdit->setObjectName("lineEdit");
+        lineEdit->setEnabled(false);
         lineEdit->setGeometry(QRect(380, 0, 281, 41));
         QFont font;
         font.setPointSize(18);
@@ -205,6 +214,7 @@ public:
 "}"));
         lineEdit_2 = new QLineEdit(page);
         lineEdit_2->setObjectName("lineEdit_2");
+        lineEdit_2->setEnabled(false);
         lineEdit_2->setGeometry(QRect(10, 120, 171, 31));
         QFont font1;
         font1.setPointSize(12);
@@ -215,16 +225,19 @@ public:
 "}"));
         textEdit_8 = new QTextEdit(page);
         textEdit_8->setObjectName("textEdit_8");
+        textEdit_8->setEnabled(false);
         textEdit_8->setGeometry(QRect(210, 110, 761, 91));
         textEdit_8->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: rgb(39, 39, 39);"));
         textEdit_9 = new QTextEdit(page);
         textEdit_9->setObjectName("textEdit_9");
+        textEdit_9->setEnabled(false);
         textEdit_9->setGeometry(QRect(210, 250, 751, 91));
         textEdit_9->setStyleSheet(QString::fromUtf8("background-color: rgb(39, 39, 39);\n"
 "color: rgb(255, 255, 255);"));
         lineEdit_3 = new QLineEdit(page);
         lineEdit_3->setObjectName("lineEdit_3");
+        lineEdit_3->setEnabled(false);
         lineEdit_3->setGeometry(QRect(10, 170, 81, 31));
         QFont font2;
         font2.setPointSize(13);
@@ -260,9 +273,10 @@ public:
         Right_button_page_1 = new QPushButton(page);
         Right_button_page_1->setObjectName("Right_button_page_1");
         Right_button_page_1->setEnabled(true);
-        Right_button_page_1->setGeometry(QRect(940, 420, 71, 61));
+        Right_button_page_1->setGeometry(QRect(940, 410, 71, 61));
         Right_button_page_1->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "image: url(:/icons/icons/right_arrow.png);\n"
+"background-color: transparent;\n"
 "}"));
         Right_button_page_1->setFlat(true);
         Choose_Button_1 = new QPushButton(page);
@@ -285,6 +299,7 @@ public:
 "}"));
         lineEdit_5 = new QLineEdit(page_2);
         lineEdit_5->setObjectName("lineEdit_5");
+        lineEdit_5->setEnabled(false);
         lineEdit_5->setGeometry(QRect(360, 0, 281, 41));
         lineEdit_5->setFont(font);
         lineEdit_5->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
@@ -301,6 +316,7 @@ public:
         lineEdit_8->setFrame(false);
         lineEdit_6 = new QLineEdit(page_2);
         lineEdit_6->setObjectName("lineEdit_6");
+        lineEdit_6->setEnabled(false);
         lineEdit_6->setGeometry(QRect(10, 110, 171, 31));
         lineEdit_6->setFont(font1);
         lineEdit_6->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
@@ -312,15 +328,18 @@ public:
         textEdit_12->setGeometry(QRect(210, 240, 751, 91));
         textEdit_12->setStyleSheet(QString::fromUtf8("background-color: rgb(39, 39, 39);\n"
 "color: rgb(255, 255, 255);"));
+        textEdit_12->setTextInteractionFlags(Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
         textEdit_11 = new QTextEdit(page_2);
         textEdit_11->setObjectName("textEdit_11");
         textEdit_11->setGeometry(QRect(210, 120, 751, 91));
         textEdit_11->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: rgb(39, 39, 39);"));
+        textEdit_11->setTextInteractionFlags(Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
         Right_button_page_2 = new QPushButton(page_2);
         Right_button_page_2->setObjectName("Right_button_page_2");
-        Right_button_page_2->setGeometry(QRect(940, 390, 81, 61));
-        Right_button_page_2->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/right_arrow.png);"));
+        Right_button_page_2->setGeometry(QRect(940, 380, 71, 61));
+        Right_button_page_2->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/right_arrow.png);\n"
+"background-color: transparent;"));
         Right_button_page_2->setFlat(true);
         lineEdit_7 = new QLineEdit(page_2);
         lineEdit_7->setObjectName("lineEdit_7");
@@ -373,15 +392,18 @@ public:
         Right_button_page_3 = new QPushButton(page_3);
         Right_button_page_3->setObjectName("Right_button_page_3");
         Right_button_page_3->setGeometry(QRect(930, 440, 81, 61));
-        Right_button_page_3->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/right_arrow.png);"));
+        Right_button_page_3->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/right_arrow.png);\n"
+"background-color: transparent;"));
         Right_button_page_3->setFlat(true);
         textEdit_14 = new QTextEdit(page_3);
         textEdit_14->setObjectName("textEdit_14");
+        textEdit_14->setEnabled(false);
         textEdit_14->setGeometry(QRect(220, 120, 721, 121));
         textEdit_14->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: rgb(39, 39, 39);"));
         textEdit_13 = new QTextEdit(page_3);
         textEdit_13->setObjectName("textEdit_13");
+        textEdit_13->setEnabled(false);
         textEdit_13->setGeometry(QRect(220, 280, 721, 121));
         textEdit_13->setStyleSheet(QString::fromUtf8("background-color: rgb(39, 39, 39);\n"
 "color: rgb(255, 255, 255);"));
@@ -394,6 +416,7 @@ public:
         lineEdit_10->setFrame(false);
         lineEdit_9 = new QLineEdit(page_3);
         lineEdit_9->setObjectName("lineEdit_9");
+        lineEdit_9->setEnabled(false);
         lineEdit_9->setGeometry(QRect(20, 110, 171, 31));
         lineEdit_9->setFont(font1);
         lineEdit_9->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
@@ -402,6 +425,7 @@ public:
 "}"));
         lineEdit_11 = new QLineEdit(page_3);
         lineEdit_11->setObjectName("lineEdit_11");
+        lineEdit_11->setEnabled(false);
         lineEdit_11->setGeometry(QRect(370, 0, 281, 41));
         lineEdit_11->setFont(font);
         lineEdit_11->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
@@ -415,6 +439,7 @@ public:
         label_6->setStyleSheet(QString::fromUtf8("image: url(:/image/image/Ivan3.jpg);"));
         lineEdit_12 = new QLineEdit(page_3);
         lineEdit_12->setObjectName("lineEdit_12");
+        lineEdit_12->setEnabled(false);
         lineEdit_12->setGeometry(QRect(20, 160, 81, 31));
         lineEdit_12->setFont(font2);
         lineEdit_12->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
@@ -448,32 +473,40 @@ public:
 ""));
         PhoneNumber = new QLineEdit(tab_3);
         PhoneNumber->setObjectName("PhoneNumber");
+        PhoneNumber->setEnabled(false);
         PhoneNumber->setGeometry(QRect(280, 70, 401, 31));
         PhoneNumber->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    color: white;\n"
 "    background-color: rgb(39, 39, 39);\n"
 "}"));
+        PhoneNumber->setAlignment(Qt::AlignCenter);
         FullName = new QLineEdit(tab_3);
         FullName->setObjectName("FullName");
+        FullName->setEnabled(false);
         FullName->setGeometry(QRect(280, 140, 401, 31));
         FullName->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    color: white;\n"
 "    background-color: rgb(39, 39, 39);\n"
 "}"));
+        FullName->setAlignment(Qt::AlignCenter);
         Trainer = new QLineEdit(tab_3);
         Trainer->setObjectName("Trainer");
+        Trainer->setEnabled(false);
         Trainer->setGeometry(QRect(280, 210, 401, 31));
         Trainer->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    color: white;\n"
 "    background-color: rgb(39, 39, 39);\n"
 "}"));
+        Trainer->setAlignment(Qt::AlignCenter);
         SeasonTicket = new QLineEdit(tab_3);
         SeasonTicket->setObjectName("SeasonTicket");
+        SeasonTicket->setEnabled(false);
         SeasonTicket->setGeometry(QRect(280, 290, 401, 31));
         SeasonTicket->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    color: white;\n"
 "    background-color: rgb(39, 39, 39);\n"
 "}"));
+        SeasonTicket->setAlignment(Qt::AlignCenter);
         lineEdit_18 = new QLineEdit(tab_3);
         lineEdit_18->setObjectName("lineEdit_18");
         lineEdit_18->setGeometry(QRect(380, 30, 181, 26));
@@ -514,6 +547,14 @@ public:
 "}"));
         lineEdit_22->setFrame(false);
         lineEdit_22->setAlignment(Qt::AlignCenter);
+        LeaveFeedback = new QPushButton(tab_3);
+        LeaveFeedback->setObjectName("LeaveFeedback");
+        LeaveFeedback->setGeometry(QRect(710, 210, 121, 31));
+        LeaveFeedback->setStyleSheet(QString::fromUtf8("QPushButton#LeaveFeedback{\n"
+"    background-color: rgb(39, 39, 39);\n"
+"	color:white;\n"
+"}"));
+        LeaveFeedback->setFlat(false);
         tabWidget->addTab(tab_3, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName("tab_4");
@@ -538,7 +579,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(3);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -704,6 +745,7 @@ public:
         lineEdit_19->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\273\320\275\320\276\320\265 \320\270\320\274\321\217", nullptr));
         lineEdit_21->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210 \321\202\321\200\320\265\320\275\320\265\321\200", nullptr));
         lineEdit_22->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210 \320\260\320\261\320\276\320\275\320\265\320\274\320\265\320\275\321\202", nullptr));
+        LeaveFeedback->setText(QCoreApplication::translate("MainWindow", "\320\236\321\201\321\202\320\260\320\262\320\270\321\202\321\214 \320\276\321\202\320\267\321\213\320\262", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("MainWindow", "\320\220\320\272\320\272\320\260\321\203\320\275\321\202", nullptr));
         BuyButton->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210\320\260 \320\272\320\276\321\200\320\267\320\270\320\275\320\260 \320\277\321\203\321\201\321\202\320\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("MainWindow", "\320\232\320\276\321\200\320\267\320\270\320\275\320\260", nullptr));
