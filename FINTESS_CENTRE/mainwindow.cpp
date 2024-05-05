@@ -36,7 +36,14 @@ MainWindow::MainWindow(const QString& fullname ,const QString& number ,QWidget *
     connect(ui->Choose_Button_1,&QPushButton::clicked,this,&MainWindow::on_Coach_1_Clicked);
     connect(ui->Choose_Button_2,&QPushButton::clicked,this,&MainWindow::on_Coach_2_Clicked);
     connect(ui->Choose_Button_3,&QPushButton::clicked,this,&MainWindow::on_Coach_3_Clicked);
+    connect(ui->LeaveFeedback,&QPushButton::clicked,this,&MainWindow::leaveComment);
 }
+
+void MainWindow::leaveComment()
+{
+
+}
+
 void MainWindow::on_LeftButtonClicked()
 {
     int currentIndex = ui->stackedWidget->currentIndex();

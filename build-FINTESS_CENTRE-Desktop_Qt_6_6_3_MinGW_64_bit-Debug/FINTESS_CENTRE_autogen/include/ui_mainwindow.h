@@ -247,6 +247,7 @@ public:
         lineEdit_3->setFrame(false);
         lineEdit_4 = new QLineEdit(page);
         lineEdit_4->setObjectName("lineEdit_4");
+        lineEdit_4->setEnabled(false);
         lineEdit_4->setGeometry(QRect(110, 170, 41, 31));
         QFont font3;
         font3.setPointSize(15);
@@ -309,6 +310,7 @@ public:
         lineEdit_5->setAlignment(Qt::AlignCenter);
         lineEdit_8 = new QLineEdit(page_2);
         lineEdit_8->setObjectName("lineEdit_8");
+        lineEdit_8->setEnabled(false);
         lineEdit_8->setGeometry(QRect(110, 160, 41, 31));
         lineEdit_8->setFont(font3);
         lineEdit_8->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);\n"
@@ -409,6 +411,7 @@ public:
 "color: rgb(255, 255, 255);"));
         lineEdit_10 = new QLineEdit(page_3);
         lineEdit_10->setObjectName("lineEdit_10");
+        lineEdit_10->setEnabled(false);
         lineEdit_10->setGeometry(QRect(120, 160, 41, 31));
         lineEdit_10->setFont(font3);
         lineEdit_10->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);\n"
@@ -579,7 +582,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

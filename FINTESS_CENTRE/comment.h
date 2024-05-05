@@ -11,6 +11,8 @@ class Comment : public QWidget
 {
     Q_OBJECT
 
+
+
 public:
     explicit Comment(QWidget *parent = nullptr);
     ~Comment();
