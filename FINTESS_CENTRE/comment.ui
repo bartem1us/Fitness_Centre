@@ -20,7 +20,7 @@
 	background-position: center;
 }</string>
   </property>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="trainerName">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -34,6 +34,9 @@
 	color: rgb(255, 255, 255);
 	background-color: rgb(39, 39, 39);
 }</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -75,7 +78,7 @@
     <string>Ваш отзыв</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="comment">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -92,7 +95,7 @@
 }</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="addComment">
    <property name="geometry">
     <rect>
      <x>340</x>
@@ -133,7 +136,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="rating">
    <property name="geometry">
     <rect>
      <x>340</x>
@@ -141,6 +144,9 @@
      <width>121</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>

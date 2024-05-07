@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include "comment.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -41,7 +41,10 @@ MainWindow::MainWindow(const QString& fullname ,const QString& number ,QWidget *
 
 void MainWindow::leaveComment()
 {
-
+    if (!ui->Trainer->text().isEmpty()) {
+        Comment *com = new Comment(ui->Trainer->text());
+        com->show();
+    }
 }
 
 void MainWindow::on_LeftButtonClicked()
