@@ -17,3 +17,11 @@ std::string query::get_user(const std::string& phone_number , const std::string 
     return "SELECT * FROM clients WHERE phonenumber = '" + phone_number +
            "' AND passwordhash = '" + hash_password + "';";
 }
+
+std::string input_comment(const std::string & TrainerName , const std::string& rating)
+{
+    return "INSERT INTO coachs (fullname, phonenumber, rating) VALUES ('"
+           +TrainerName+"', "
+           +""+", '"
+           +rating+ "');";
+}

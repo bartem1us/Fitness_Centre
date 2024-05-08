@@ -2,6 +2,7 @@
 #define COMMENT_H
 
 #include <QWidget>
+#include "pgconnection.h"
 
 namespace Ui {
 class Comment;
@@ -20,6 +21,7 @@ public:
     ~Comment();
 
 private:
+    std::shared_ptr<PostgreSQLConnection> pg;
     Ui::Comment *ui;
 };
 
