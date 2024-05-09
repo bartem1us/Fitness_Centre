@@ -31,16 +31,13 @@ QString hashPassword(const QString &password)
 void login::on_LoginButton_clicked()
 {
 
-
-    // При нажатии на кнопку "OK" создаем главное окно и отображаем его
-
     QString number = ui->lineEdit->text();
     QString password_hash = hashPassword(ui->lineEdit_2->text());
 
     std::unique_ptr<PGresult,decltype(&PQclear)> res(PQexec(pg->getConnection().get(),
                                                               query::get_user(number.toStdString(),
                                                                               password_hash.toStdString()).c_str()),
-                                                      PQclear);
+                                                     PQclear);
 
 
     if (PQntuples(res.get())!=0)
@@ -51,7 +48,6 @@ void login::on_LoginButton_clicked()
         MainWindow *mainWindow = new MainWindow(foundName.c_str(),foundNumber.c_str());
         mainWindow->show();
         this->close();
-
     }
 
 }

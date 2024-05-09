@@ -42,7 +42,7 @@ MainWindow::MainWindow(const QString& fullname ,const QString& number ,QWidget *
 void MainWindow::leaveComment()
 {
     if (!ui->Trainer->text().isEmpty()) {
-        Comment *com = new Comment(ui->Trainer->text());
+        Comment *com = new Comment(ui->Trainer->text(),std::make_shared<PostgreSQLConnection>());
         com->show();
     }
 }
@@ -164,10 +164,6 @@ void MainWindow::on_SeasonTicket_3_Clicked()
 {
     fillBasketSeasonTicket("1190 ₽","Абонемент: Молодёжь Москвы");
 }
-
-
-
-
 
 MainWindow::~MainWindow()
 {

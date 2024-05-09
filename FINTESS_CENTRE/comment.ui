@@ -145,6 +145,9 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="inputMask">
+    <string>d</string>
+   </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>

@@ -1219,6 +1219,9 @@ color: white;</string>
     background-color: rgb(39, 39, 39);
 }</string>
       </property>
+      <property name="text">
+       <string>Сергей</string>
+      </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
       </property>

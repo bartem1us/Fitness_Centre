@@ -1716,7 +1716,11 @@ C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/registration.cpp
 C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.h
  mmc:Q_OBJECT
  mdp:C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.h
+ mdp:C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/pgconnection.h
  mdp:C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/FINTESS_CENTRE_autogen/moc_predefs.h
+ mdp:C:/Program Files/PostgreSQL/12/include/libpq-fe.h
+ mdp:C:/Program Files/PostgreSQL/12/include/pg_config_ext.h
+ mdp:C:/Program Files/PostgreSQL/12/include/postgres_ext.h
  mdp:C:/Program Files/PostgreSQL/12/include/pthread.h
  mdp:C:/Program Files/PostgreSQL/12/include/sched.h
  mdp:C:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h

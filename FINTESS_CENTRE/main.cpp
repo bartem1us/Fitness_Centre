@@ -2,7 +2,7 @@
 
 #include <QApplication>
 #include <QLocale>
-#include <iostream>
+
 #include <QTranslator>
 #include "mainwindow.h"
 #include "login.h"

@@ -18,10 +18,27 @@ std::string query::get_user(const std::string& phone_number , const std::string 
            "' AND passwordhash = '" + hash_password + "';";
 }
 
-std::string input_comment(const std::string & TrainerName , const std::string& rating)
+std::string query::input_trainer(const std::string & TrainerName , const std::string& rating)
 {
     return "INSERT INTO coachs (fullname, phonenumber, rating) VALUES ('"
            +TrainerName+"', "
            +""+", '"
            +rating+ "');";
 }
+
+std::string query::find_trainer_id(const std::string& TrainerName)
+{
+    return "SELECT id FROM coachs WHERE fullname = '"+TrainerName+"';";
+}
+
+std::string query::input_comment(const std::string& coach_id , const std::string& review , const std::string& rate)
+{
+    return "INSERT INTO reviews (coach_id, reviews , rate) VALUES('"
+            +coach_id+"', "
+            +review+"', "
+            +rate+"');";
+}
+
+
+
+

@@ -1,5 +1,9 @@
 C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/FINTESS_CENTRE_autogen/EWIEGA46WW/moc_comment.cpp: C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.h \
   C:/DB_FINTESS_CENTRE/build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug/FINTESS_CENTRE_autogen/moc_predefs.h \
+  C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/pgconnection.h \
+  C:/Program\ Files/PostgreSQL/12/include/libpq-fe.h \
+  C:/Program\ Files/PostgreSQL/12/include/pg_config_ext.h \
+  C:/Program\ Files/PostgreSQL/12/include/postgres_ext.h \
   C:/Program\ Files/PostgreSQL/12/include/pthread.h \
   C:/Program\ Files/PostgreSQL/12/include/sched.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \

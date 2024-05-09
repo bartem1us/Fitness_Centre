@@ -744,6 +744,7 @@ public:
         label_5->setText(QString());
         Choose_Button_3->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214 \321\202\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "\320\242\321\200\320\265\320\275\320\265\321\200\320\260", nullptr));
+        Trainer->setText(QCoreApplication::translate("MainWindow", "\320\241\320\265\321\200\320\263\320\265\320\271", nullptr));
         lineEdit_18->setText(QCoreApplication::translate("MainWindow", "\320\235\320\276\320\274\320\265\321\200 \321\202\320\265\320\273\320\265\321\204\320\276\320\275\320\260", nullptr));
         lineEdit_19->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\273\320\275\320\276\320\265 \320\270\320\274\321\217", nullptr));
         lineEdit_21->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210 \321\202\321\200\320\265\320\275\320\265\321\200", nullptr));

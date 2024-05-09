@@ -15,8 +15,11 @@ class Comment : public QWidget
 
 
 public:
-    explicit Comment(QWidget *parent = nullptr);
-    Comment(const QString &TrainerName, QWidget *parent = nullptr);
+    explicit Comment(QWidget *parent = nullptr,
+                     std::shared_ptr<PostgreSQLConnection> pg = nullptr);
+    Comment(const QString &TrainerName,
+            std::shared_ptr<PostgreSQLConnection> pg = nullptr,
+            QWidget *parent = nullptr);
     void on_AddComment_clicked ();
     ~Comment();
 

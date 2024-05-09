@@ -101,6 +101,7 @@ public:
         label_2->setText(QCoreApplication::translate("Comment", "\320\222\320\260\321\210 \320\276\321\202\320\267\321\213\320\262", nullptr));
         addComment->setText(QCoreApplication::translate("Comment", "\320\236\321\201\321\202\320\260\320\262\320\270\321\202\321\214 \320\276\321\202\320\267\321\213\320\262", nullptr));
         label_3->setText(QCoreApplication::translate("Comment", "\320\222\320\260\321\210\320\260 \320\276\321\206\320\265\320\275\320\272\320\260", nullptr));
+        rating->setInputMask(QCoreApplication::translate("Comment", "d", nullptr));
     } // retranslateUi
 
 };
