@@ -38,6 +38,8 @@ void Comment::on_AddComment_clicked()
                                                                rating.toStdString()).c_str());
         auto a = PQresultStatus(res) == PGRES_COMMAND_OK;
 
+        std::string b = query::input_comment(coach_id.toStdString(),comment.toStdString(),rating.toStdString()).c_str();
+
 
         this->close();
     }

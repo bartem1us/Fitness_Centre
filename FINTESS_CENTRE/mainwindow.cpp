@@ -37,6 +37,25 @@ MainWindow::MainWindow(const QString& fullname ,const QString& number ,QWidget *
     connect(ui->Choose_Button_2,&QPushButton::clicked,this,&MainWindow::on_Coach_2_Clicked);
     connect(ui->Choose_Button_3,&QPushButton::clicked,this,&MainWindow::on_Coach_3_Clicked);
     connect(ui->LeaveFeedback,&QPushButton::clicked,this,&MainWindow::leaveComment);
+
+    connect(ui->BuyButton,&QPushButton::clicked,this,&MainWindow::on_Purchase_Clicked);
+}
+
+void MainWindow::on_Purchase_Clicked()
+{
+    QLineEdit *CoachName = ui->tab_4->findChild<QLineEdit*>("CoachName");
+    QLineEdit *SeasonTicketName = ui->tab_4->findChild<QLineEdit*>("SeasonTicketName");
+    QLineEdit *SeasonTicketPrice= ui->tab_4->findChild<QLineEdit*>("SeasonTicketPrice");
+
+    if(!CoachName && !SeasonTicketName && !SeasonTicketPrice)
+    {
+        ui->Trainer->setText(CoachName->text());
+        ui->SeasonTicket->setText(SeasonTicketName->text());
+    }
+    else
+    {
+
+    }
 }
 
 void MainWindow::leaveComment()
@@ -86,7 +105,6 @@ void MainWindow::fillBasketCoaches(const std::string CoachNameText)
         CrossButton->setFlat(true);
         CrossButton->setStyleSheet("QPushButton {image: url(:/icons/icons/cross.svg);}");
         ui->BuyButton->setText("Оплатить");
-
 
     }
     else

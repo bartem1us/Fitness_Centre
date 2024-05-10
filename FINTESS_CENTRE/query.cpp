@@ -34,9 +34,9 @@ std::string query::find_trainer_id(const std::string& TrainerName)
 std::string query::input_comment(const std::string& coach_id , const std::string& review , const std::string& rate)
 {
     return "INSERT INTO reviews (coach_id, reviews , rate) VALUES('"
-            +coach_id+"', "
-            +review+"', "
-            +rate+"');";
+            +coach_id+ "', '"
+            +review+ "', '"
+            +rate+ "');";
 }
 
 
