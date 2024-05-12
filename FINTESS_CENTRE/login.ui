@@ -124,10 +124,10 @@ border-radius: 10px;</string>
 }</string>
    </property>
    <property name="inputMask">
-    <string/>
+    <string>+9 (999) 999 99 99</string>
    </property>
    <property name="text">
-    <string/>
+    <string>+ ()   </string>
    </property>
    <property name="placeholderText">
     <string comment="Username" extracomment="Username">PhoneNumber</string>

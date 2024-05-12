@@ -28,6 +28,7 @@ private slots:
     void fillBasketSeasonTicket(const std::string& Price,const std::string& SeasonTicketText);
     void fillBasketCoaches(const std::string CoachNameText);
     void leaveComment();
+    void on_Purchase_Clicked();
 
 private:
     Ui::MainWindow *ui;

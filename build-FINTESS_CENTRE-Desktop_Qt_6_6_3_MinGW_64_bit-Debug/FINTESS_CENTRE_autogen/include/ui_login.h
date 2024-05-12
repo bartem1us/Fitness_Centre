@@ -100,8 +100,8 @@ public:
         lineEdit_2->setText(QString());
         lineEdit_2->setPlaceholderText(QCoreApplication::translate("login", "Password", nullptr));
         toolButton->setText(QCoreApplication::translate("login", "Reg", nullptr));
-        lineEdit->setInputMask(QString());
-        lineEdit->setText(QString());
+        lineEdit->setInputMask(QCoreApplication::translate("login", "+9 (999) 999 99 99", nullptr));
+        lineEdit->setText(QCoreApplication::translate("login", "+ ()   ", nullptr));
         lineEdit->setPlaceholderText(QCoreApplication::translate("login", "PhoneNumber", "Username"));
         toolButton_2->setText(QCoreApplication::translate("login", "Login", nullptr));
         radioButton->setText(QString());

@@ -54,11 +54,12 @@ constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::string
     "SeasonTicketText",
     "fillBasketCoaches",
     "CoachNameText",
-    "leaveComment"
+    "leaveComment",
+    "on_Purchase_Clicked"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[34];
+    uint offsetsAndSizes[36];
     char stringdata0[11];
     char stringdata1[22];
     char stringdata2[1];
@@ -76,6 +77,7 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata14[18];
     char stringdata15[14];
     char stringdata16[13];
+    char stringdata17[20];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -97,7 +99,8 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(231, 16),  // "SeasonTicketText"
         QT_MOC_LITERAL(248, 17),  // "fillBasketCoaches"
         QT_MOC_LITERAL(266, 13),  // "CoachNameText"
-        QT_MOC_LITERAL(280, 12)   // "leaveComment"
+        QT_MOC_LITERAL(280, 12),  // "leaveComment"
+        QT_MOC_LITERAL(293, 19)   // "on_Purchase_Clicked"
     },
     "MainWindow",
     "on_RightButtonClicked",
@@ -115,7 +118,8 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "SeasonTicketText",
     "fillBasketCoaches",
     "CoachNameText",
-    "leaveComment"
+    "leaveComment",
+    "on_Purchase_Clicked"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -127,7 +131,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      11,   14, // methods
+      12,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -135,17 +139,18 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   80,    2, 0x08,    1 /* Private */,
-       3,    0,   81,    2, 0x08,    2 /* Private */,
-       4,    0,   82,    2, 0x08,    3 /* Private */,
-       5,    0,   83,    2, 0x08,    4 /* Private */,
-       6,    0,   84,    2, 0x08,    5 /* Private */,
-       7,    0,   85,    2, 0x08,    6 /* Private */,
-       8,    0,   86,    2, 0x08,    7 /* Private */,
-       9,    0,   87,    2, 0x08,    8 /* Private */,
-      10,    2,   88,    2, 0x08,    9 /* Private */,
-      14,    1,   93,    2, 0x08,   12 /* Private */,
-      16,    0,   96,    2, 0x08,   14 /* Private */,
+       1,    0,   86,    2, 0x08,    1 /* Private */,
+       3,    0,   87,    2, 0x08,    2 /* Private */,
+       4,    0,   88,    2, 0x08,    3 /* Private */,
+       5,    0,   89,    2, 0x08,    4 /* Private */,
+       6,    0,   90,    2, 0x08,    5 /* Private */,
+       7,    0,   91,    2, 0x08,    6 /* Private */,
+       8,    0,   92,    2, 0x08,    7 /* Private */,
+       9,    0,   93,    2, 0x08,    8 /* Private */,
+      10,    2,   94,    2, 0x08,    9 /* Private */,
+      14,    1,   99,    2, 0x08,   12 /* Private */,
+      16,    0,  102,    2, 0x08,   14 /* Private */,
+      17,    0,  103,    2, 0x08,   15 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -158,6 +163,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 11, 0x80000000 | 11,   12,   13,
     QMetaType::Void, 0x80000000 | 11,   15,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -196,6 +202,8 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const std::string, std::false_type>,
         // method 'leaveComment'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_Purchase_Clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -218,6 +226,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 8: _t->fillBasketSeasonTicket((*reinterpret_cast< std::add_pointer_t<std::string>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<std::string>>(_a[2]))); break;
         case 9: _t->fillBasketCoaches((*reinterpret_cast< std::add_pointer_t<std::string>>(_a[1]))); break;
         case 10: _t->leaveComment(); break;
+        case 11: _t->on_Purchase_Clicked(); break;
         default: ;
         }
     }
@@ -242,13 +251,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 11)
+        if (_id < 12)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 11;
+        _id -= 12;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 11)
+        if (_id < 12)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 11;
+        _id -= 12;
     }
     return _id;
 }
