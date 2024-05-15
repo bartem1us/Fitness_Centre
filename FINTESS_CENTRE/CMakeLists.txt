@@ -43,6 +43,7 @@ qt_add_executable(FINTESS_CENTRE
         query.cpp
         resources.qrc
         comment.h comment.cpp comment.ui
+        animation.h animation.cpp
 
 
     )

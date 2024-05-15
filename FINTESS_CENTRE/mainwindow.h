@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "pgconnection.h"
 #include <memory>
+
 namespace Ui {
 class MainWindow;
 }

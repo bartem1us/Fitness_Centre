@@ -28,6 +28,7 @@ public:
     QLineEdit *lineEdit;
     QToolButton *toolButton_2;
     QRadioButton *radioButton;
+    QLabel *warningMessage;
 
     void setupUi(QWidget *login)
     {
@@ -41,13 +42,14 @@ public:
         label_2 = new QLabel(login);
         label_2->setObjectName("label_2");
         label_2->setEnabled(true);
-        label_2->setGeometry(QRect(121, 71, 89, 20));
+        label_2->setGeometry(QRect(150, 40, 91, 20));
         label_2->setToolTipDuration(-1);
         label_2->setLayoutDirection(Qt::LeftToRight);
         label_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         label_2->setFrameShape(QFrame::NoFrame);
         label_2->setLineWidth(-3);
         label_2->setTextFormat(Qt::PlainText);
+        label_2->setAlignment(Qt::AlignCenter);
         lineEdit_2 = new QLineEdit(login);
         lineEdit_2->setObjectName("lineEdit_2");
         lineEdit_2->setGeometry(QRect(121, 135, 147, 30));
@@ -86,6 +88,13 @@ public:
         radioButton = new QRadioButton(login);
         radioButton->setObjectName("radioButton");
         radioButton->setGeometry(QRect(270, 140, 16, 24));
+        warningMessage = new QLabel(login);
+        warningMessage->setObjectName("warningMessage");
+        warningMessage->setGeometry(QRect(70, 70, 251, 20));
+        warningMessage->setStyleSheet(QString::fromUtf8("QLabel{\n"
+"	color: rgb(255, 0, 0);\n"
+"}"));
+        warningMessage->setAlignment(Qt::AlignCenter);
 
         retranslateUi(login);
 
@@ -95,7 +104,7 @@ public:
     void retranslateUi(QWidget *login)
     {
         login->setWindowTitle(QCoreApplication::translate("login", "Form", nullptr));
-        label_2->setText(QCoreApplication::translate("login", "             Login", nullptr));
+        label_2->setText(QCoreApplication::translate("login", "Login", nullptr));
         lineEdit_2->setInputMask(QString());
         lineEdit_2->setText(QString());
         lineEdit_2->setPlaceholderText(QCoreApplication::translate("login", "Password", nullptr));
@@ -105,6 +114,7 @@ public:
         lineEdit->setPlaceholderText(QCoreApplication::translate("login", "PhoneNumber", "Username"));
         toolButton_2->setText(QCoreApplication::translate("login", "Login", nullptr));
         radioButton->setText(QString());
+        warningMessage->setText(QString());
     } // retranslateUi
 
 };

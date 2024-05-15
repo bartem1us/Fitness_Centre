@@ -483,6 +483,7 @@ public:
 "    background-color: rgb(39, 39, 39);\n"
 "}"));
         PhoneNumber->setAlignment(Qt::AlignCenter);
+        PhoneNumber->setReadOnly(true);
         FullName = new QLineEdit(tab_3);
         FullName->setObjectName("FullName");
         FullName->setEnabled(false);
@@ -492,6 +493,7 @@ public:
 "    background-color: rgb(39, 39, 39);\n"
 "}"));
         FullName->setAlignment(Qt::AlignCenter);
+        FullName->setReadOnly(true);
         Trainer = new QLineEdit(tab_3);
         Trainer->setObjectName("Trainer");
         Trainer->setEnabled(false);
@@ -501,6 +503,7 @@ public:
 "    background-color: rgb(39, 39, 39);\n"
 "}"));
         Trainer->setAlignment(Qt::AlignCenter);
+        Trainer->setReadOnly(true);
         SeasonTicket = new QLineEdit(tab_3);
         SeasonTicket->setObjectName("SeasonTicket");
         SeasonTicket->setEnabled(false);
@@ -510,6 +513,7 @@ public:
 "    background-color: rgb(39, 39, 39);\n"
 "}"));
         SeasonTicket->setAlignment(Qt::AlignCenter);
+        SeasonTicket->setReadOnly(true);
         lineEdit_18 = new QLineEdit(tab_3);
         lineEdit_18->setObjectName("lineEdit_18");
         lineEdit_18->setGeometry(QRect(380, 30, 181, 26));
@@ -520,6 +524,7 @@ public:
 "}"));
         lineEdit_18->setFrame(false);
         lineEdit_18->setAlignment(Qt::AlignCenter);
+        lineEdit_18->setReadOnly(true);
         lineEdit_19 = new QLineEdit(tab_3);
         lineEdit_19->setObjectName("lineEdit_19");
         lineEdit_19->setGeometry(QRect(400, 110, 141, 26));
@@ -530,6 +535,7 @@ public:
 "}"));
         lineEdit_19->setFrame(false);
         lineEdit_19->setAlignment(Qt::AlignCenter);
+        lineEdit_19->setReadOnly(true);
         lineEdit_21 = new QLineEdit(tab_3);
         lineEdit_21->setObjectName("lineEdit_21");
         lineEdit_21->setGeometry(QRect(400, 180, 141, 26));
@@ -540,6 +546,7 @@ public:
 "}"));
         lineEdit_21->setFrame(false);
         lineEdit_21->setAlignment(Qt::AlignCenter);
+        lineEdit_21->setReadOnly(true);
         lineEdit_22 = new QLineEdit(tab_3);
         lineEdit_22->setObjectName("lineEdit_22");
         lineEdit_22->setGeometry(QRect(390, 260, 171, 26));
@@ -550,6 +557,7 @@ public:
 "}"));
         lineEdit_22->setFrame(false);
         lineEdit_22->setAlignment(Qt::AlignCenter);
+        lineEdit_22->setReadOnly(true);
         LeaveFeedback = new QPushButton(tab_3);
         LeaveFeedback->setObjectName("LeaveFeedback");
         LeaveFeedback->setGeometry(QRect(710, 210, 121, 31));

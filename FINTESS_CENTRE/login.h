@@ -4,6 +4,7 @@
 #include <libpq-fe.h>
 #include "pgconnection.h"
 #include <memory>
+#include <QMessageBox>
 
 namespace Ui {
 class login;

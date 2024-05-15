@@ -31,12 +31,13 @@ public:
     QLabel *label_4;
     QLabel *label_5;
     QLineEdit *lineEdit_3;
+    QLabel *warningMessage;
 
     void setupUi(QWidget *Registration)
     {
         if (Registration->objectName().isEmpty())
             Registration->setObjectName("Registration");
-        Registration->resize(400, 300);
+        Registration->resize(355, 300);
         Registration->setStyleSheet(QString::fromUtf8("QWidget {\n"
 "	background-color: rgb(138, 136, 135);\n"
 "     /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 \321\203\320\263\320\273\320\276\320\262 */\n"
@@ -44,7 +45,7 @@ public:
         pushButton = new QPushButton(Registration);
         pushButton->setObjectName("pushButton");
         pushButton->setEnabled(true);
-        pushButton->setGeometry(QRect(90, 220, 161, 29));
+        pushButton->setGeometry(QRect(80, 240, 171, 29));
         pushButton->setStyleSheet(QString::fromUtf8("border-color: rgb(63, 6, 161);\n"
 "background-color: rgb(85, 162, 255);\n"
 "color: rgb(255, 255, 255);\n"
@@ -119,6 +120,14 @@ public:
 " }"));
         lineEdit_3->setCursorPosition(18);
         lineEdit_3->setCursorMoveStyle(Qt::VisualMoveStyle);
+        warningMessage = new QLabel(Registration);
+        warningMessage->setObjectName("warningMessage");
+        warningMessage->setGeometry(QRect(40, 210, 251, 20));
+        warningMessage->setStyleSheet(QString::fromUtf8("QLabel#warningMessage\n"
+"{\n"
+"	color: rgb(255, 0, 0);\n"
+"}"));
+        warningMessage->setAlignment(Qt::AlignCenter);
 
         retranslateUi(Registration);
 
@@ -137,6 +146,7 @@ public:
         lineEdit_3->setInputMask(QCoreApplication::translate("Registration", "+9 (999) 999 99 99", nullptr));
         lineEdit_3->setText(QCoreApplication::translate("Registration", "+ ()   ", nullptr));
         lineEdit_3->setPlaceholderText(QCoreApplication::translate("Registration", "+7 (999) 999 99 99", nullptr));
+        warningMessage->setText(QString());
     } // retranslateUi
 
 };

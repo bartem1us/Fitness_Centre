@@ -49,6 +49,10 @@ void login::on_LoginButton_clicked()
         mainWindow->show();
         this->close();
     }
+    else
+    {
+        ui->warningMessage->setText("неправильный логин или пароль");
+    }
 
 }
 

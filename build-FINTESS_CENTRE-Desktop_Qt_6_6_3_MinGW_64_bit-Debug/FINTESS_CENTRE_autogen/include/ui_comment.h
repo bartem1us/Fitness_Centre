@@ -71,11 +71,13 @@ public:
 "}"));
         addComment = new QPushButton(Comment);
         addComment->setObjectName("addComment");
-        addComment->setGeometry(QRect(340, 380, 121, 29));
-        addComment->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(39, 39, 39);\n"
+        addComment->setGeometry(QRect(330, 380, 141, 29));
+        addComment->setStyleSheet(QString::fromUtf8("QPushButton#addComment {\n"
+"	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
+"	color: white;\n"
+"    border: 2px solid gray;\n"
+"    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
+"    padding: 2px 10px;\n"
 "}"));
         label_3 = new QLabel(Comment);
         label_3->setObjectName("label_3");

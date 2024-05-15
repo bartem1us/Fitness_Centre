@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>355</width>
     <height>300</height>
    </rect>
   </property>
@@ -25,9 +25,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>220</y>
-     <width>161</width>
+     <x>80</x>
+     <y>240</y>
+     <width>171</width>
      <height>29</height>
     </rect>
    </property>
@@ -220,6 +220,28 @@ width: 2px;
    </property>
    <property name="cursorMoveStyle">
     <enum>Qt::VisualMoveStyle</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="warningMessage">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>210</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#warningMessage
+{
+	color: rgb(255, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>

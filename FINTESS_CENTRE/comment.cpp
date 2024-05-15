@@ -33,13 +33,9 @@ void Comment::on_AddComment_clicked()
     if (PQntuples(res.get())!=0)
     {
         QString coach_id = PQgetvalue(res.get(), 0, PQfnumber(res.get(), "id"));
-        PGresult *res =PQexec(pg->getConnection().get(), query::input_comment(coach_id.toStdString(),
+        PQexec(pg->getConnection().get(), query::input_comment(coach_id.toStdString(),
                                                                comment.toStdString(),
                                                                rating.toStdString()).c_str());
-        auto a = PQresultStatus(res) == PGRES_COMMAND_OK;
-
-        std::string b = query::input_comment(coach_id.toStdString(),comment.toStdString(),rating.toStdString()).c_str();
-
 
         this->close();
     }

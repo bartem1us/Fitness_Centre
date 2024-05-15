@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
     }
     MainWindow *m=new MainWindow("Фильков Василий Андреевич","792322322343");
     m->show();
-    //login *log = new login(nullptr , std::make_shared<PostgreSQLConnection>());
-    //log->show();
+    login *log = new login(nullptr , std::make_shared<PostgreSQLConnection>());
+    log->show();
 
 
     return a.exec();

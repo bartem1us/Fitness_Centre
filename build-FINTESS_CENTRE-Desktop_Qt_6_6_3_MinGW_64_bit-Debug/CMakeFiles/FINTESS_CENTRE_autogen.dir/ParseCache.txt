@@ -147,7 +147,11 @@ C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/login.h
  mdp:C:/Qt/6.6.3/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.6.3/mingw_64/include/QtWidgets/QMessageBox
  mdp:C:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget
+ mdp:C:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialog.h
+ mdp:C:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+ mdp:C:/Qt/6.6.3/mingw_64/include/QtWidgets/qmessagebox.h
  mdp:C:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsexports.h
@@ -2279,3 +2283,5 @@ C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wtypesbase.h
 C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.cpp
  uic:ui_comment.h
+C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/animation.h
+C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/animation.cpp

@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "comment.h"
+#include "animation.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -43,11 +44,13 @@ MainWindow::MainWindow(const QString& fullname ,const QString& number ,QWidget *
 
 void MainWindow::on_Purchase_Clicked()
 {
+    animation::animation_for_button(ui->BuyButton);
+
     QLineEdit *CoachName = ui->tab_4->findChild<QLineEdit*>("CoachName");
     QLineEdit *SeasonTicketName = ui->tab_4->findChild<QLineEdit*>("SeasonTicketName");
     QLineEdit *SeasonTicketPrice= ui->tab_4->findChild<QLineEdit*>("SeasonTicketPrice");
 
-    if(!CoachName && !SeasonTicketName && !SeasonTicketPrice)
+    if(CoachName && SeasonTicketName && SeasonTicketPrice)
     {
         ui->Trainer->setText(CoachName->text());
         ui->SeasonTicket->setText(SeasonTicketName->text());

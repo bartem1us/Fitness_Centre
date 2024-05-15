@@ -1,5 +1,7 @@
 FINTESS_CENTRE_autogen/timestamp: \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/CMakeLists.txt \
+  C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/animation.cpp \
+  C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/animation.h \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.cpp \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.h \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.ui \
@@ -176,8 +178,12 @@ FINTESS_CENTRE_autogen/timestamp: \
   C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgets-config.h \

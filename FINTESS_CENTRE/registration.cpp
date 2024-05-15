@@ -19,18 +19,32 @@ void Registration::on_RegButton_clicked()
     QString surname = ui->lineEdit->text();
     QString name = ui->lineEdit_2->text();
     QString password_hash = hashPassword(ui->lineEdit_4->text());
+    if (number.isEmpty() || number == "+ ()   ")
+    {
+        ui->warningMessage->setText("заполнение формы номер телефона: обязательно");
+    }
+    else if(name.isEmpty())
+    {
+        ui->warningMessage->setText("заполнение формы имя: обязательно");
+    }
+    else if(surname.isEmpty())
+    {
+        ui->warningMessage->setText("заполнение формы фамилия: обязательно");
+    }
+    else if (password_hash.isEmpty())
+    {
+        ui->warningMessage->setText("заполнение пароля: обязательно");
+    }
+    else
+    {
 
-
-    PQexec(pg->getConnection().get(), query::insert_user(name.toStdString() ,surname.toStdString()
+        PQexec(pg->getConnection().get(), query::insert_user(name.toStdString() ,surname.toStdString()
                                                    ,number.toStdString() , password_hash.toStdString()).c_str());
 
-
-    // При нажатии на кнопку "OK" создаем главное окно и отображаем его
-
-    MainWindow *mainWindow = new MainWindow(name+" "+surname,number);
-    mainWindow->show();
-    // Закрываем окно входа
-    this->close();
+        MainWindow *mainWindow = new MainWindow(name+" "+surname,number);
+        mainWindow->show();
+        this->close();
+    }
 }
 QString Registration::hashPassword(const QString &password)
 {
