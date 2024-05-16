@@ -2,6 +2,7 @@
 #include "ui_comment.h"
 #include "query.h"
 
+
 Comment::Comment(QWidget *parent,
                  std::shared_ptr<PostgreSQLConnection> pg)
     : QWidget(parent)
@@ -20,6 +21,11 @@ Comment::Comment(const QString &TrainerName,
     ui->setupUi(this);
     ui->trainerName->setText(TrainerName);
     connect(ui->addComment,&QPushButton::clicked,this,&Comment::on_AddComment_clicked);
+    connect(ui->pushButton,&CustomButton::clicked,this,&Comment::test);
+}
+void Comment::test()
+{
+    ui->pushButton->animation_for_button();
 }
 void Comment::on_AddComment_clicked()
 {

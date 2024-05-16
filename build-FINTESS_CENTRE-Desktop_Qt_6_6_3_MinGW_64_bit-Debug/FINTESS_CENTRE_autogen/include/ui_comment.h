@@ -16,6 +16,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
+#include <custombutton.h>
 
 QT_BEGIN_NAMESPACE
 
@@ -29,6 +30,7 @@ public:
     QPushButton *addComment;
     QLabel *label_3;
     QLineEdit *rating;
+    CustomButton *pushButton;
 
     void setupUi(QWidget *Comment)
     {
@@ -90,6 +92,16 @@ public:
         rating->setObjectName("rating");
         rating->setGeometry(QRect(340, 340, 121, 26));
         rating->setAlignment(Qt::AlignCenter);
+        pushButton = new CustomButton(Comment);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(550, 320, 201, 71));
+        pushButton->setStyleSheet(QString::fromUtf8("\n"
+"	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
+"	color: white;\n"
+"    border: 2px solid gray;\n"
+"    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
+"    padding: 2px 10px;\n"
+""));
 
         retranslateUi(Comment);
 
@@ -104,6 +116,7 @@ public:
         addComment->setText(QCoreApplication::translate("Comment", "\320\236\321\201\321\202\320\260\320\262\320\270\321\202\321\214 \320\276\321\202\320\267\321\213\320\262", nullptr));
         label_3->setText(QCoreApplication::translate("Comment", "\320\222\320\260\321\210\320\260 \320\276\321\206\320\265\320\275\320\272\320\260", nullptr));
         rating->setInputMask(QCoreApplication::translate("Comment", "d", nullptr));
+        pushButton->setText(QCoreApplication::translate("Comment", "PushButton", nullptr));
     } // retranslateUi
 
 };

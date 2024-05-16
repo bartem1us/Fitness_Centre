@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "comment.h"
-#include "animation.h"
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->Left_button_page_1,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
     connect(ui->Left_button_page_2,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
     connect(ui->Left_button_page_3,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
+
 }
 
 MainWindow::MainWindow(const QString& fullname ,const QString& number ,QWidget *parent)
@@ -44,7 +45,7 @@ MainWindow::MainWindow(const QString& fullname ,const QString& number ,QWidget *
 
 void MainWindow::on_Purchase_Clicked()
 {
-    animation::animation_for_button(ui->BuyButton);
+
 
     QLineEdit *CoachName = ui->tab_4->findChild<QLineEdit*>("CoachName");
     QLineEdit *SeasonTicketName = ui->tab_4->findChild<QLineEdit*>("SeasonTicketName");

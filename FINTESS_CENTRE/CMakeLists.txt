@@ -15,8 +15,7 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt6 COMPONENTS Widgets REQUIRED)
 find_package(PostgreSQL REQUIRED)
-
-
+include_directories(${CMAKE_SOURCE_DIR})
 set(TS_FILES FINTESS_CENTRE_ru_RU.ts)
 
 
@@ -43,7 +42,8 @@ qt_add_executable(FINTESS_CENTRE
         query.cpp
         resources.qrc
         comment.h comment.cpp comment.ui
-        animation.h animation.cpp
+
+        custombutton.h custombutton.cpp
 
 
     )

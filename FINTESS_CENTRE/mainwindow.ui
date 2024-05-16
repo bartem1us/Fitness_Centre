@@ -36,7 +36,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="tab">
      <property name="styleSheet">
@@ -1449,10 +1449,30 @@ color:white;
        <string>Ваша корзина пуста</string>
       </property>
      </widget>
+     <widget class="CustomButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>140</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">custombutton.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

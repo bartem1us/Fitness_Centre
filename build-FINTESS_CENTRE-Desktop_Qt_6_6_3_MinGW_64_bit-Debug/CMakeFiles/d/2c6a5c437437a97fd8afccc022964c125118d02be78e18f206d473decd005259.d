@@ -1,10 +1,10 @@
 FINTESS_CENTRE_autogen/timestamp: \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/CMakeLists.txt \
-  C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/animation.cpp \
-  C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/animation.h \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.cpp \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.h \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.ui \
+  C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/custombutton.cpp \
+  C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/custombutton.h \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/login.cpp \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/login.h \
   C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/login.ui \
@@ -33,10 +33,13 @@ FINTESS_CENTRE_autogen/timestamp: \
   C:/Qt/6.6.3/mingw_64/include/QtCore/QCoreApplication \
   C:/Qt/6.6.3/mingw_64/include/QtCore/QCryptographicHash \
   C:/Qt/6.6.3/mingw_64/include/QtCore/QDebug \
+  C:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.6.3/mingw_64/include/QtCore/QPropertyAnimation \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.6.3/mingw_64/include/QtCore/qabstractanimation.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qarraydata.h \
@@ -68,6 +71,7 @@ FINTESS_CENTRE_autogen/timestamp: \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.6.3/mingw_64/include/QtCore/qeasingcurve.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qflags.h \
@@ -105,6 +109,7 @@ FINTESS_CENTRE_autogen/timestamp: \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qpair.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qpoint.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qprocessordetection.h \
+  C:/Qt/6.6.3/mingw_64/include/QtCore/qpropertyanimation.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qrefcount.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qscopedpointer.h \
@@ -149,6 +154,7 @@ FINTESS_CENTRE_autogen/timestamp: \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qtypes.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
+  C:/Qt/6.6.3/mingw_64/include/QtCore/qvariantanimation.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
@@ -179,11 +185,14 @@ FINTESS_CENTRE_autogen/timestamp: \
   C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/QMessageBox \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qmessagebox.h \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgets-config.h \

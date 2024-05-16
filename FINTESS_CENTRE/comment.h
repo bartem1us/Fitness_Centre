@@ -21,6 +21,7 @@ public:
             std::shared_ptr<PostgreSQLConnection> pg = nullptr,
             QWidget *parent = nullptr);
     void on_AddComment_clicked ();
+    void test();
     ~Comment();
 
 private:
