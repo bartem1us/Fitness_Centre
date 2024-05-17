@@ -7,12 +7,12 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    connect(ui->Right_button_page_1, &QPushButton::clicked, this, &MainWindow::on_RightButtonClicked);
-    connect(ui->Right_button_page_2,&QPushButton::clicked, this, &MainWindow::on_RightButtonClicked);
-    connect(ui->Right_button_page_3,&QPushButton::clicked, this, &MainWindow::on_RightButtonClicked);
-    connect(ui->Left_button_page_1,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
-    connect(ui->Left_button_page_2,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
-    connect(ui->Left_button_page_3,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
+    //connect(ui->Right_button_page_1, &QPushButton::clicked, this, &MainWindow::on_RightButtonClicked);
+    //connect(ui->Right_button_page_2,&QPushButton::clicked, this, &MainWindow::on_RightButtonClicked);
+    //connect(ui->Right_button_page_3,&QPushButton::clicked, this, &MainWindow::on_RightButtonClicked);
+    //connect(ui->Left_button_page_1,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
+    //connect(ui->Left_button_page_2,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
+    //connect(ui->Left_button_page_3,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
 
 }
 
@@ -31,14 +31,15 @@ MainWindow::MainWindow(const QString& fullname ,const QString& number ,QWidget *
     connect(ui->Left_button_page_1,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
     connect(ui->Left_button_page_2,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
     connect(ui->Left_button_page_3,&QPushButton::clicked, this, &MainWindow::on_LeftButtonClicked);
-    connect(ui->SeasonTicket_1,&QPushButton::clicked,this,&MainWindow::on_SeasonTicket_1_Clicked);
-    connect(ui->SeasonTicket_2,&QPushButton::clicked,this,&MainWindow::on_SeasonTicket_2_Clicked);
-    connect(ui->SeasonTicket_3,&QPushButton::clicked,this,&MainWindow::on_SeasonTicket_3_Clicked);
 
-    connect(ui->Choose_Button_1,&QPushButton::clicked,this,&MainWindow::on_Coach_1_Clicked);
-    connect(ui->Choose_Button_2,&QPushButton::clicked,this,&MainWindow::on_Coach_2_Clicked);
-    connect(ui->Choose_Button_3,&QPushButton::clicked,this,&MainWindow::on_Coach_3_Clicked);
-    connect(ui->LeaveFeedback,&QPushButton::clicked,this,&MainWindow::leaveComment);
+    connect(ui->SeasonTicket_1,&CustomButton::clicked,this,&MainWindow::on_SeasonTicket_1_Clicked);
+    connect(ui->SeasonTicket_2,&CustomButton::clicked,this,&MainWindow::on_SeasonTicket_2_Clicked);
+    connect(ui->SeasonTicket_3,&CustomButton::clicked,this,&MainWindow::on_SeasonTicket_3_Clicked);
+
+    connect(ui->Choose_Button_1,&CustomButton::clicked,this,&MainWindow::on_Coach_1_Clicked);
+    connect(ui->Choose_Button_2,&CustomButton::clicked,this,&MainWindow::on_Coach_2_Clicked);
+    connect(ui->Choose_Button_3,&CustomButton::clicked,this,&MainWindow::on_Coach_3_Clicked);
+    connect(ui->LeaveFeedback,&CustomButton::clicked,this,&MainWindow::leaveComment);
 
     connect(ui->BuyButton,&QPushButton::clicked,this,&MainWindow::on_Purchase_Clicked);
 }
@@ -174,16 +175,19 @@ void MainWindow::fillBasketSeasonTicket(const std::string& Price,const std::stri
 
 void MainWindow::on_SeasonTicket_1_Clicked()
 {
+    ui->SeasonTicket_1->animation_for_button();
     fillBasketSeasonTicket("2500 ₽","Абонемент: Индивидуальный");
 }
 
 void MainWindow::on_SeasonTicket_2_Clicked()
 {
+    ui->SeasonTicket_2->animation_for_button();
     fillBasketSeasonTicket("1690 ₽","Абонемент: 5+1 бесплатно");
 }
 
 void MainWindow::on_SeasonTicket_3_Clicked()
 {
+    ui->SeasonTicket_3->animation_for_button();
     fillBasketSeasonTicket("1190 ₽","Абонемент: Молодёжь Москвы");
 }
 

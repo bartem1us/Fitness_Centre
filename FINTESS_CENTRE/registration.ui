@@ -19,7 +19,7 @@
      /* Радиус закругления углов */
 }</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="CustomButton" name="regButton">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -245,6 +245,13 @@ width: 2px;
    </property>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">custombutton.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

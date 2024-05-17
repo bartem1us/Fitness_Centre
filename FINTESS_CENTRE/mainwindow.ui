@@ -36,7 +36,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <property name="styleSheet">
@@ -50,7 +50,7 @@
      <attribute name="title">
       <string>Абонементы</string>
      </attribute>
-     <widget class="QPushButton" name="SeasonTicket_2">
+     <widget class="CustomButton" name="SeasonTicket_2">
       <property name="geometry">
        <rect>
         <x>440</x>
@@ -75,7 +75,7 @@
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="SeasonTicket_3">
+     <widget class="CustomButton" name="SeasonTicket_3">
       <property name="geometry">
        <rect>
         <x>770</x>
@@ -97,7 +97,7 @@
        <string>Купить тариф</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="SeasonTicket_1">
+     <widget class="CustomButton" name="SeasonTicket_1">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -558,7 +558,7 @@ background-color: transparent;
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QPushButton" name="Choose_Button_1">
+       <widget class="CustomButton" name="Choose_Button_1">
         <property name="geometry">
          <rect>
           <x>400</x>
@@ -835,11 +835,11 @@ background-color: transparent;
          <string/>
         </property>
        </widget>
-       <widget class="QPushButton" name="Choose_Button_2">
+       <widget class="CustomButton" name="Choose_Button_2">
         <property name="geometry">
          <rect>
-          <x>410</x>
-          <y>470</y>
+          <x>390</x>
+          <y>450</y>
           <width>231</width>
           <height>41</height>
          </rect>
@@ -1115,7 +1115,7 @@ color: white;</string>
          <string/>
         </property>
        </widget>
-       <widget class="QPushButton" name="Choose_Button_3">
+       <widget class="CustomButton" name="Choose_Button_3">
         <property name="geometry">
          <rect>
           <x>400</x>
@@ -1447,19 +1447,6 @@ color:white;
       </property>
       <property name="text">
        <string>Ваша корзина пуста</string>
-      </property>
-     </widget>
-     <widget class="CustomButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>390</x>
-        <y>140</y>
-        <width>93</width>
-        <height>29</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
      </widget>
     </widget>

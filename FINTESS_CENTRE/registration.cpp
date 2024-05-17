@@ -9,12 +9,13 @@ Registration::Registration(QWidget *parent , std::shared_ptr<PostgreSQLConnectio
     , pg(pg)
 {
     ui->setupUi(this);
-    connect(ui->pushButton, &QPushButton::clicked, this, &Registration::on_RegButton_clicked);
+    connect(ui->regButton, &CustomButton::clicked, this, &Registration::on_RegButton_clicked);
 
 }
 
 void Registration::on_RegButton_clicked()
 {
+
     QString number = ui->lineEdit_3->text();
     QString surname = ui->lineEdit->text();
     QString name = ui->lineEdit_2->text();

@@ -20,15 +20,12 @@ Comment::Comment(const QString &TrainerName,
 {
     ui->setupUi(this);
     ui->trainerName->setText(TrainerName);
-    connect(ui->addComment,&QPushButton::clicked,this,&Comment::on_AddComment_clicked);
-    connect(ui->pushButton,&CustomButton::clicked,this,&Comment::test);
+    connect(ui->addComment,&CustomButton::clicked,this,&Comment::on_AddComment_clicked);
 }
-void Comment::test()
-{
-    ui->pushButton->animation_for_button();
-}
+
 void Comment::on_AddComment_clicked()
 {
+    ui->addComment->animation_for_button();
     QString trainerName = ui->trainerName->text();
     QString comment = ui->comment->toPlainText();
     QString rating = ui->rating->text();

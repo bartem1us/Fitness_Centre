@@ -13,15 +13,15 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
+#include <custombutton.h>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_Registration
 {
 public:
-    QPushButton *pushButton;
+    CustomButton *pushButton;
     QLineEdit *lineEdit;
     QLineEdit *lineEdit_2;
     QLineEdit *lineEdit_4;
@@ -42,7 +42,7 @@ public:
 "	background-color: rgb(138, 136, 135);\n"
 "     /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 \321\203\320\263\320\273\320\276\320\262 */\n"
 "}"));
-        pushButton = new QPushButton(Registration);
+        pushButton = new CustomButton(Registration);
         pushButton->setObjectName("pushButton");
         pushButton->setEnabled(true);
         pushButton->setGeometry(QRect(80, 240, 171, 29));
