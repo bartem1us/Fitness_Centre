@@ -41,7 +41,7 @@ MainWindow::MainWindow(const QString& fullname ,const QString& number ,QWidget *
     connect(ui->Choose_Button_3,&CustomButton::clicked,this,&MainWindow::on_Coach_3_Clicked);
     connect(ui->LeaveFeedback,&CustomButton::clicked,this,&MainWindow::leaveComment);
 
-    connect(ui->BuyButton,&QPushButton::clicked,this,&MainWindow::on_Purchase_Clicked);
+    connect(ui->BuyButton,&CustomButton::clicked,this,&MainWindow::on_Purchase_Clicked);
 }
 
 void MainWindow::on_Purchase_Clicked()
@@ -121,16 +121,19 @@ void MainWindow::fillBasketCoaches(const std::string CoachNameText)
 
 void MainWindow::on_Coach_1_Clicked()
 {
+    ui->SeasonTicket_1->animation_for_button();
     fillBasketCoaches("Ваш тренер: Сергей - Тяжёлая Атлетика");
 }
 
 void MainWindow::on_Coach_2_Clicked()
 {
+    ui->SeasonTicket_2->animation_for_button();
     fillBasketCoaches("Ваш тренер: Геннадий - Гибкость");
 }
 
 void MainWindow::on_Coach_3_Clicked()
 {
+    ui->SeasonTicket_3->animation_for_button();
     fillBasketCoaches("Ваш тренер: Иван - Мотивация");
 }
 

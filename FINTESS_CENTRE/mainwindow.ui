@@ -36,7 +36,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="tab">
      <property name="styleSheet">
@@ -1392,7 +1392,7 @@ color:white;
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="LeaveFeedback">
+     <widget class="CustomButton" name="LeaveFeedback">
       <property name="geometry">
        <rect>
         <x>710</x>
@@ -1427,7 +1427,7 @@ color:white;
      <attribute name="title">
       <string>Корзина</string>
      </attribute>
-     <widget class="QPushButton" name="BuyButton">
+     <widget class="CustomButton" name="BuyButton">
       <property name="geometry">
        <rect>
         <x>410</x>
@@ -1447,6 +1447,16 @@ color:white;
       </property>
       <property name="text">
        <string>Ваша корзина пуста</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_13">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>400</y>
+        <width>231</width>
+        <height>26</height>
+       </rect>
       </property>
      </widget>
     </widget>
