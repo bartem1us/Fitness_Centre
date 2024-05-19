@@ -21,7 +21,7 @@ QT_BEGIN_NAMESPACE
 class Ui_Registration
 {
 public:
-    CustomButton *pushButton;
+    CustomButton *regButton;
     QLineEdit *lineEdit;
     QLineEdit *lineEdit_2;
     QLineEdit *lineEdit_4;
@@ -42,11 +42,11 @@ public:
 "	background-color: rgb(138, 136, 135);\n"
 "     /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 \321\203\320\263\320\273\320\276\320\262 */\n"
 "}"));
-        pushButton = new CustomButton(Registration);
-        pushButton->setObjectName("pushButton");
-        pushButton->setEnabled(true);
-        pushButton->setGeometry(QRect(80, 240, 171, 29));
-        pushButton->setStyleSheet(QString::fromUtf8("border-color: rgb(63, 6, 161);\n"
+        regButton = new CustomButton(Registration);
+        regButton->setObjectName("regButton");
+        regButton->setEnabled(true);
+        regButton->setGeometry(QRect(80, 240, 171, 29));
+        regButton->setStyleSheet(QString::fromUtf8("border-color: rgb(63, 6, 161);\n"
 "background-color: rgb(85, 162, 255);\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 10px;"));
@@ -137,7 +137,7 @@ public:
     void retranslateUi(QWidget *Registration)
     {
         Registration->setWindowTitle(QCoreApplication::translate("Registration", "Form", nullptr));
-        pushButton->setText(QCoreApplication::translate("Registration", "\320\227\320\260\321\200\320\265\320\263\320\270\321\201\321\202\321\200\320\270\321\200\320\276\320\262\320\260\321\202\321\214\321\201\321\217", nullptr));
+        regButton->setText(QCoreApplication::translate("Registration", "\320\227\320\260\321\200\320\265\320\263\320\270\321\201\321\202\321\200\320\270\321\200\320\276\320\262\320\260\321\202\321\214\321\201\321\217", nullptr));
         label->setText(QCoreApplication::translate("Registration", "\320\242\320\265\320\273\320\265\321\204\320\276\320\275", nullptr));
         label_2->setText(QCoreApplication::translate("Registration", "\320\230\320\274\321\217", nullptr));
         label_3->setText(QCoreApplication::translate("Registration", "\320\230\320\274\321\217", nullptr));

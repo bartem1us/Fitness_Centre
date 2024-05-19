@@ -29,9 +29,9 @@ public:
     QWidget *centralwidget;
     QTabWidget *tabWidget;
     QWidget *tab;
-    QPushButton *SeasonTicket_2;
-    QPushButton *SeasonTicket_3;
-    QPushButton *SeasonTicket_1;
+    CustomButton *SeasonTicket_2;
+    CustomButton *SeasonTicket_3;
+    CustomButton *SeasonTicket_1;
     QTextEdit *textEdit;
     QTextEdit *textEdit_2;
     QTextEdit *textEdit_3;
@@ -48,7 +48,7 @@ public:
     QLabel *label_2;
     QPushButton *Left_button_page_1;
     QPushButton *Right_button_page_1;
-    QPushButton *Choose_Button_1;
+    CustomButton *Choose_Button_1;
     QWidget *page_2;
     QLineEdit *lineEdit_5;
     QLineEdit *lineEdit_8;
@@ -60,7 +60,7 @@ public:
     QPushButton *Left_button_page_2;
     QLabel *label_3;
     QLabel *label_4;
-    QPushButton *Choose_Button_2;
+    CustomButton *Choose_Button_2;
     QWidget *page_3;
     QPushButton *Left_button_page_3;
     QPushButton *Right_button_page_3;
@@ -72,7 +72,7 @@ public:
     QLabel *label_6;
     QLineEdit *lineEdit_12;
     QLabel *label_5;
-    QPushButton *Choose_Button_3;
+    CustomButton *Choose_Button_3;
     QWidget *tab_3;
     QLineEdit *PhoneNumber;
     QLineEdit *FullName;
@@ -82,10 +82,10 @@ public:
     QLineEdit *lineEdit_19;
     QLineEdit *lineEdit_21;
     QLineEdit *lineEdit_22;
-    QPushButton *LeaveFeedback;
+    CustomButton *LeaveFeedback;
     QWidget *tab_4;
-    QPushButton *BuyButton;
-    CustomButton *pushButton;
+    CustomButton *BuyButton;
+    QLineEdit *lineEdit_13;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -109,7 +109,7 @@ public:
 "	background-position: center;\n"
 "}\n"
 ""));
-        SeasonTicket_2 = new QPushButton(tab);
+        SeasonTicket_2 = new CustomButton(tab);
         SeasonTicket_2->setObjectName("SeasonTicket_2");
         SeasonTicket_2->setGeometry(QRect(440, 390, 141, 31));
         SeasonTicket_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
@@ -120,7 +120,7 @@ public:
 "    padding: 2px 10px;\n"
 "}"));
         SeasonTicket_2->setFlat(false);
-        SeasonTicket_3 = new QPushButton(tab);
+        SeasonTicket_3 = new CustomButton(tab);
         SeasonTicket_3->setObjectName("SeasonTicket_3");
         SeasonTicket_3->setGeometry(QRect(770, 390, 141, 31));
         SeasonTicket_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
@@ -130,7 +130,7 @@ public:
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
-        SeasonTicket_1 = new QPushButton(tab);
+        SeasonTicket_1 = new CustomButton(tab);
         SeasonTicket_1->setObjectName("SeasonTicket_1");
         SeasonTicket_1->setEnabled(true);
         SeasonTicket_1->setGeometry(QRect(130, 390, 141, 31));
@@ -282,7 +282,7 @@ public:
 "background-color: transparent;\n"
 "}"));
         Right_button_page_1->setFlat(true);
-        Choose_Button_1 = new QPushButton(page);
+        Choose_Button_1 = new CustomButton(page);
         Choose_Button_1->setObjectName("Choose_Button_1");
         Choose_Button_1->setGeometry(QRect(400, 450, 231, 41));
         Choose_Button_1->setFont(font1);
@@ -368,9 +368,9 @@ public:
         label_4->setGeometry(QRect(150, 160, 41, 31));
         label_4->setFont(font4);
         label_4->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star.png);"));
-        Choose_Button_2 = new QPushButton(page_2);
+        Choose_Button_2 = new CustomButton(page_2);
         Choose_Button_2->setObjectName("Choose_Button_2");
-        Choose_Button_2->setGeometry(QRect(410, 470, 231, 41));
+        Choose_Button_2->setGeometry(QRect(390, 450, 231, 41));
         Choose_Button_2->setFont(font1);
         Choose_Button_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e100ff, stop:1 #ff006f);\n"
@@ -455,7 +455,7 @@ public:
         label_5->setGeometry(QRect(160, 160, 41, 31));
         label_5->setFont(font4);
         label_5->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star.png);"));
-        Choose_Button_3 = new QPushButton(page_3);
+        Choose_Button_3 = new CustomButton(page_3);
         Choose_Button_3->setObjectName("Choose_Button_3");
         Choose_Button_3->setGeometry(QRect(400, 450, 231, 41));
         Choose_Button_3->setFont(font1);
@@ -560,7 +560,7 @@ public:
         lineEdit_22->setFrame(false);
         lineEdit_22->setAlignment(Qt::AlignCenter);
         lineEdit_22->setReadOnly(true);
-        LeaveFeedback = new QPushButton(tab_3);
+        LeaveFeedback = new CustomButton(tab_3);
         LeaveFeedback->setObjectName("LeaveFeedback");
         LeaveFeedback->setGeometry(QRect(710, 210, 121, 31));
         LeaveFeedback->setStyleSheet(QString::fromUtf8("QPushButton#LeaveFeedback{\n"
@@ -577,7 +577,7 @@ public:
 "	background-position: center;\n"
 "}\n"
 ""));
-        BuyButton = new QPushButton(tab_4);
+        BuyButton = new CustomButton(tab_4);
         BuyButton->setObjectName("BuyButton");
         BuyButton->setGeometry(QRect(410, 350, 181, 41));
         BuyButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
@@ -587,15 +587,15 @@ public:
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
-        pushButton = new CustomButton(tab_4);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(390, 140, 93, 29));
+        lineEdit_13 = new QLineEdit(tab_4);
+        lineEdit_13->setObjectName("lineEdit_13");
+        lineEdit_13->setGeometry(QRect(380, 400, 231, 26));
         tabWidget->addTab(tab_4, QString());
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(3);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -765,7 +765,6 @@ public:
         LeaveFeedback->setText(QCoreApplication::translate("MainWindow", "\320\236\321\201\321\202\320\260\320\262\320\270\321\202\321\214 \320\276\321\202\320\267\321\213\320\262", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("MainWindow", "\320\220\320\272\320\272\320\260\321\203\320\275\321\202", nullptr));
         BuyButton->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210\320\260 \320\272\320\276\321\200\320\267\320\270\320\275\320\260 \320\277\321\203\321\201\321\202\320\260", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("MainWindow", "\320\232\320\276\321\200\320\267\320\270\320\275\320\260", nullptr));
     } // retranslateUi
 

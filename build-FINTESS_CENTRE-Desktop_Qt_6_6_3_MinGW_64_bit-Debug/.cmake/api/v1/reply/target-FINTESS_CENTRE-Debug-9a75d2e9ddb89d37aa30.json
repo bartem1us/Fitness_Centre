@@ -76,19 +76,19 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 91,
-				"parent" : 0
-			},
-			{
-				"command" : 5,
-				"file" : 1,
-				"line" : 73,
+				"line" : 92,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
 				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 75,
 				"parent" : 0
 			},
 			{
@@ -398,7 +398,8 @@
 				16,
 				19,
 				22,
-				28
+				24,
+				30
 			]
 		}
 	],
@@ -533,7 +534,8 @@
 				16,
 				19,
 				22,
-				28
+				24,
+				30
 			]
 		},
 		{
@@ -547,7 +549,7 @@
 				12,
 				17,
 				20,
-				27
+				29
 			]
 		},
 		{
@@ -562,17 +564,18 @@
 				18,
 				21,
 				23,
-				24,
 				25,
-				26
+				26,
+				27,
+				28
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				29,
-				30
+				31,
+				32
 			]
 		}
 	],
@@ -701,6 +704,17 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "custombutton.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "hoverbutton.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "hoverbutton.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

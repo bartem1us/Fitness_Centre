@@ -44,6 +44,7 @@ qt_add_executable(FINTESS_CENTRE
         comment.h comment.cpp comment.ui
 
         custombutton.h custombutton.cpp
+        hoverbutton.h hoverbutton.cpp
 
 
     )

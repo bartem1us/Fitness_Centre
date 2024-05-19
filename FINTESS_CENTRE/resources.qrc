@@ -5,6 +5,10 @@
         <file>icons/star.png</file>
         <file>icons/left_arrow.png</file>
         <file>icons/right_arrow.png</file>
+        <file>icons/star_empty.png</file>
+        <file>icons/star_empty_2.png</file>
+        <file>icons/star_fill.png</file>
+        <file>icons/star_fill_2.png</file>
         <file>icons/cross.svg</file>
     </qresource>
     <qresource prefix="/image">

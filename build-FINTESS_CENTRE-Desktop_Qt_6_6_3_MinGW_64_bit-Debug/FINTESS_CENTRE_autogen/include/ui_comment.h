@@ -16,6 +16,7 @@
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 #include <custombutton.h>
+#include <hoverbutton.h>
 
 QT_BEGIN_NAMESPACE
 
@@ -28,7 +29,12 @@ public:
     QTextEdit *comment;
     CustomButton *addComment;
     QLabel *label_3;
-    QLineEdit *rating;
+    QLineEdit *lineEdit;
+    HoverButton *star_1;
+    HoverButton *star_2;
+    HoverButton *star_3;
+    HoverButton *star_4;
+    HoverButton *star_5;
 
     void setupUi(QWidget *Comment)
     {
@@ -86,10 +92,34 @@ public:
 "	color: rgb(255, 255, 255);\n"
 "}"));
         label_3->setAlignment(Qt::AlignCenter);
-        rating = new QLineEdit(Comment);
-        rating->setObjectName("rating");
-        rating->setGeometry(QRect(340, 340, 121, 26));
-        rating->setAlignment(Qt::AlignCenter);
+        lineEdit = new QLineEdit(Comment);
+        lineEdit->setObjectName("lineEdit");
+        lineEdit->setGeometry(QRect(650, 140, 113, 26));
+        star_1 = new HoverButton(Comment);
+        star_1->setObjectName("star_1");
+        star_1->setGeometry(QRect(260, 330, 41, 31));
+        star_1->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);"));
+        star_1->setFlat(true);
+        star_2 = new HoverButton(Comment);
+        star_2->setObjectName("star_2");
+        star_2->setGeometry(QRect(320, 330, 41, 31));
+        star_2->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);"));
+        star_2->setFlat(true);
+        star_3 = new HoverButton(Comment);
+        star_3->setObjectName("star_3");
+        star_3->setGeometry(QRect(380, 330, 41, 31));
+        star_3->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);"));
+        star_3->setFlat(true);
+        star_4 = new HoverButton(Comment);
+        star_4->setObjectName("star_4");
+        star_4->setGeometry(QRect(440, 330, 41, 31));
+        star_4->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);"));
+        star_4->setFlat(true);
+        star_5 = new HoverButton(Comment);
+        star_5->setObjectName("star_5");
+        star_5->setGeometry(QRect(500, 330, 41, 31));
+        star_5->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);"));
+        star_5->setFlat(true);
 
         retranslateUi(Comment);
 
@@ -103,7 +133,11 @@ public:
         label_2->setText(QCoreApplication::translate("Comment", "\320\222\320\260\321\210 \320\276\321\202\320\267\321\213\320\262", nullptr));
         addComment->setText(QCoreApplication::translate("Comment", "\320\236\321\201\321\202\320\260\320\262\320\270\321\202\321\214 \320\276\321\202\320\267\321\213\320\262", nullptr));
         label_3->setText(QCoreApplication::translate("Comment", "\320\222\320\260\321\210\320\260 \320\276\321\206\320\265\320\275\320\272\320\260", nullptr));
-        rating->setInputMask(QCoreApplication::translate("Comment", "d", nullptr));
+        star_1->setText(QString());
+        star_2->setText(QString());
+        star_3->setText(QString());
+        star_4->setText(QString());
+        star_5->setText(QString());
     } // retranslateUi
 
 };

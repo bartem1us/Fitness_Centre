@@ -308,6 +308,12 @@
 			null
 		],
 		[
+			"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/hoverbutton.h",
+			"MU",
+			"EWIEGA46WW/moc_hoverbutton.cpp",
+			null
+		],
+		[
 			"C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/login.h",
 			"MU",
 			"EWIEGA46WW/moc_login.cpp",
@@ -413,6 +419,7 @@
 	[
 		[ "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.cpp", "MU", null ],
 		[ "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/custombutton.cpp", "MU", null ],
+		[ "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/hoverbutton.cpp", "MU", null ],
 		[ "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/login.cpp", "MU", null ],
 		[ "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/main.cpp", "MU", null ],
 		[ "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/mainwindow.cpp", "MU", null ],
