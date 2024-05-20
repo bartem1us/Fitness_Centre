@@ -158,7 +158,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">image: url(:/icons/icons/star_empty_2.png);</string>
+    <string notr="true">image: url(:/icons/icons/star_empty_2.png);
+background-color: transparent;</string>
    </property>
    <property name="text">
     <string/>
@@ -177,7 +178,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">image: url(:/icons/icons/star_empty_2.png);</string>
+    <string notr="true">image: url(:/icons/icons/star_empty_2.png);
+background-color: transparent;</string>
    </property>
    <property name="text">
     <string/>
@@ -196,7 +198,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">image: url(:/icons/icons/star_empty_2.png);</string>
+    <string notr="true">image: url(:/icons/icons/star_empty_2.png);
+background-color: transparent;</string>
    </property>
    <property name="text">
     <string/>
@@ -215,7 +218,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">image: url(:/icons/icons/star_empty_2.png);</string>
+    <string notr="true">image: url(:/icons/icons/star_empty_2.png);
+background-color: transparent;</string>
    </property>
    <property name="text">
     <string/>
@@ -234,7 +238,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">image: url(:/icons/icons/star_empty_2.png);</string>
+    <string notr="true">image: url(:/icons/icons/star_empty_2.png);
+background-color: transparent;</string>
    </property>
    <property name="text">
     <string/>

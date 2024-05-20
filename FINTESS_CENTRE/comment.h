@@ -17,18 +17,18 @@ public:
                      std::shared_ptr<PostgreSQLConnection> pg = nullptr);
     Comment(const QString &TrainerName,
             std::shared_ptr<PostgreSQLConnection> pg = nullptr,
-            QWidget *parent = nullptr ,
-            QVector<HoverButton*> starButtons = QVector<HoverButton*>());
+            QWidget *parent = nullptr);
     void on_AddComment_clicked ();
     void on_Star_hover(uint8_t index);
     void on_Star_unhover(uint8_t index);
+    void on_Star_clicked (uint8_t index);
     void test();
     ~Comment();
 
 private:
     std::shared_ptr<PostgreSQLConnection> pg;
     Ui::Comment *ui;
-    QVector<HoverButton*> starButtons;
+    QVector<QPair<HoverButton*, bool>> starButtons;
 };
 
 #endif // COMMENT_H

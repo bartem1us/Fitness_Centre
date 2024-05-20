@@ -13,65 +13,80 @@ Comment::Comment(QWidget *parent,
 }
 Comment::Comment(const QString &TrainerName,
                  std::shared_ptr<PostgreSQLConnection> pg,
-                 QWidget *parent , QVector<HoverButton*> starButtons)
+                 QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Comment)
     , pg(pg)
-    , starButtons{starButtons}
+
 {
     ui->setupUi(this);
     ui->trainerName->setText(TrainerName);
     if (starButtons.isEmpty()) {
-        this->starButtons.append(ui->star_1);
-        this->starButtons.append(ui->star_2);
-        this->starButtons.append(ui->star_3);
-        this->starButtons.append(ui->star_4);
-        this->starButtons.append(ui->star_5);
+        this->starButtons.append({ui->star_1 ,false});
+        this->starButtons.append({ui->star_2 ,false});
+        this->starButtons.append({ui->star_3 ,false});
+        this->starButtons.append({ui->star_4 ,false});
+        this->starButtons.append({ui->star_5 ,false});
     }
 
+
     connect(ui->addComment,&CustomButton::clicked,this,&Comment::on_AddComment_clicked);
-    connect(ui->star_1,&HoverButton::mouseEntered,this,[this](){
-        on_Star_hover(1);});
-    connect(ui->star_1,&HoverButton::mouseLeft,this,[this](){
-        on_Star_unhover(1);});
 
-    connect(ui->star_2,&HoverButton::mouseEntered,this,[this](){
-        on_Star_hover(2);});
-    connect(ui->star_2,&HoverButton::mouseLeft,this,[this](){
-        on_Star_unhover(2);});
+    for(size_t i = 0; i<starButtons.size() ; ++i)
+    {
+        connect(starButtons[i].first,&HoverButton::mouseEntered,this,[this,i](){
+            on_Star_hover(static_cast<uint8_t>(i+1));});
 
-    connect(ui->star_3,&HoverButton::mouseEntered,this,[this](){
-        on_Star_hover(3);});
-    connect(ui->star_3,&HoverButton::mouseLeft,this,[this](){
-        on_Star_unhover(3);});
+        connect(starButtons[i].first,&HoverButton::mouseLeft,this,[this,i](){
+            on_Star_unhover(static_cast<uint8_t>(i+1));});
 
-    connect(ui->star_4,&HoverButton::mouseEntered,this,[this](){
-        on_Star_hover(4);});
-    connect(ui->star_4,&HoverButton::mouseLeft,this,[this](){
-        on_Star_unhover(4);});
+        connect(starButtons[i].first,&HoverButton::clicked,this,[this,i](){
+            on_Star_clicked(static_cast<uint8_t>(i+1));});
+    }
 
-    connect(ui->star_5,&HoverButton::mouseEntered,this,[this](){
-        on_Star_hover(5);});
-    connect(ui->star_5,&HoverButton::mouseLeft,this,[this](){
-        on_Star_unhover(5);});
 
 
 }
 
+void Comment::on_Star_clicked(uint8_t index)
+{
+    for (size_t i = 0 ; i< starButtons.size() ; ++i)
+    {
+        if(i<index){
+            starButtons[i].second = true;
+        }
+        else
+        {
+            starButtons[i].second = false;
+            starButtons[i].first->setStyleSheet("image: url(:/icons/icons/star_empty_2.png);"
+                                                "background-color: transparent;");
+        }
+
+    }
+}
+
 void Comment::on_Star_unhover(uint8_t index)
 {
-    for(size_t i = 0 ; i<index ; ++i)
+    for(size_t i = 0 ; i< index ; ++i)
     {
-        starButtons[i]->setStyleSheet("image: url(:/icons/icons/star_empty_2.png);");
+        if(!starButtons[i].second){
+            starButtons[i].first->setStyleSheet("image: url(:/icons/icons/star_empty_2.png);"
+                                                "background-color: transparent;");
+        }
     }
 }
 
 void Comment::on_Star_hover(uint8_t index)
 {
-    for(size_t i = 0 ; i<index ; ++i)
+
+    for(size_t i = 0 ; i< index ; ++i)
     {
-        starButtons[i]->setStyleSheet("image: url(:/icons/icons/star_fill_2.png);");
+        if(!starButtons[i].second){
+            starButtons[i].first->setStyleSheet("image: url(:/icons/icons/star_fill_2.png);"
+                                                "background-color: transparent;");
+        }
     }
+
 }
 void Comment::on_AddComment_clicked()
 {

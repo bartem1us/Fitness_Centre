@@ -98,27 +98,32 @@ public:
         star_1 = new HoverButton(Comment);
         star_1->setObjectName("star_1");
         star_1->setGeometry(QRect(260, 330, 41, 31));
-        star_1->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);"));
+        star_1->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);\n"
+"background-color: transparent;"));
         star_1->setFlat(true);
         star_2 = new HoverButton(Comment);
         star_2->setObjectName("star_2");
         star_2->setGeometry(QRect(320, 330, 41, 31));
-        star_2->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);"));
+        star_2->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);\n"
+"background-color: transparent;"));
         star_2->setFlat(true);
         star_3 = new HoverButton(Comment);
         star_3->setObjectName("star_3");
         star_3->setGeometry(QRect(380, 330, 41, 31));
-        star_3->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);"));
+        star_3->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);\n"
+"background-color: transparent;"));
         star_3->setFlat(true);
         star_4 = new HoverButton(Comment);
         star_4->setObjectName("star_4");
         star_4->setGeometry(QRect(440, 330, 41, 31));
-        star_4->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);"));
+        star_4->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);\n"
+"background-color: transparent;"));
         star_4->setFlat(true);
         star_5 = new HoverButton(Comment);
         star_5->setObjectName("star_5");
         star_5->setGeometry(QRect(500, 330, 41, 31));
-        star_5->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);"));
+        star_5->setStyleSheet(QString::fromUtf8("image: url(:/icons/icons/star_empty_2.png);\n"
+"background-color: transparent;"));
         star_5->setFlat(true);
 
         retranslateUi(Comment);
