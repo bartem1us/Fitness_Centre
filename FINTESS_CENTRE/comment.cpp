@@ -94,6 +94,7 @@ void Comment::on_AddComment_clicked()
 {
     ui->addComment->animation_for_button();
     QString trainerName = ui->trainerName->text();
+
     QString comment = ui->comment->toPlainText();
 
     std::unique_ptr<PGresult,decltype(&PQclear)> res(PQexec(pg->getConnection().get(),
