@@ -238,6 +238,22 @@ background-color: transparent;</string>
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="QLabel" name="addCommentError">
+   <property name="geometry">
+    <rect>
+     <x>232</x>
+     <y>410</y>
+     <width>361</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>

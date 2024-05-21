@@ -6,7 +6,7 @@
 #include <QTranslator>
 #include "mainwindow.h"
 #include "login.h"
-#include "hoverbutton.h"
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -23,9 +23,6 @@ int main(int argc, char *argv[])
     MainWindow *m=new MainWindow("Фильков Василий Андреевич","792322322343");
     m->show();
     login *log = new login(nullptr , std::make_shared<PostgreSQLConnection>());
-    HoverButton *hoverButton = new HoverButton(log);
-    hoverButton->setNormalPixmap(QPixmap(":/icons/icons/star_empty.png"));
-    hoverButton->setHoverPixmap(QPixmap(":/icons/icons/star_fill.png"));
     log->show();
 
 
