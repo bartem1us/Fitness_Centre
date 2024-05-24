@@ -11,9 +11,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_BINARY_DIR}/conan_toolchain.cmake)
 
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
-find_package(Qt6 COMPONENTS Widgets REQUIRED)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools Core Network)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools Core Network)
+
+
 find_package(PostgreSQL REQUIRED)
 include_directories(${CMAKE_SOURCE_DIR})
 set(TS_FILES FINTESS_CENTRE_ru_RU.ts)
@@ -21,7 +22,6 @@ set(TS_FILES FINTESS_CENTRE_ru_RU.ts)
 
 set(PROJECT_SOURCES
         main.cpp
-
         ${TS_FILES}
 
 )
@@ -42,7 +42,7 @@ qt_add_executable(FINTESS_CENTRE
         query.cpp
         resources.qrc
         comment.h comment.cpp comment.ui
-
+        apiclient.cpp apiclient.h
         custombutton.h custombutton.cpp
         hoverbutton.h hoverbutton.cpp
 
@@ -73,6 +73,8 @@ endif()
 
 target_link_libraries(FINTESS_CENTRE PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 target_link_libraries(FINTESS_CENTRE PUBLIC PostgreSQL::PostgreSQL)
+target_link_libraries(FINTESS_CENTRE PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(FINTESS_CENTRE PRIVATE Qt${QT_VERSION_MAJOR}::Network)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
