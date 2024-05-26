@@ -5,7 +5,7 @@
 #include "pgconnection.h"
 #include <memory>
 #include <QMessageBox>
-
+#include "apiclient.h"
 namespace Ui {
 class login;
 }
@@ -25,6 +25,7 @@ private slots:
 private:
     Ui::login *ui;
     std::shared_ptr<PostgreSQLConnection> pg;
+    std::unique_ptr<ApiClient> apiClient;
 
 };
 
