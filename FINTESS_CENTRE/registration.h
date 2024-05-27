@@ -7,6 +7,7 @@
 #include <QDebug>
 #include <libpq-fe.h>
 #include "pgconnection.h"
+#include "apiclient.h"
 #include <memory>
 //C:\DB_FINTESS_CENTRE\build-FINTESS_CENTRE-Desktop_Qt_6_6_3_MinGW_64_bit-Debug\FINTESS_CENTRE_autogen\EWIEGA46WW\moc_loginwindow.cpp
 namespace Ui {
@@ -24,7 +25,7 @@ public:
 
 private:
     Ui::Registration *ui;
-    std::shared_ptr<PostgreSQLConnection> pg;
+    std::unique_ptr<ApiClient> apiClient;
 
 
 private slots:

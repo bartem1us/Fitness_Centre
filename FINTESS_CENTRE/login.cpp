@@ -3,6 +3,7 @@
 #include "mainwindow.h"
 #include "registration.h"
 #include "query.h"
+
 login::login(QWidget *parent ,
              std::shared_ptr<PostgreSQLConnection> pg)
     : QWidget(parent)
@@ -13,6 +14,7 @@ login::login(QWidget *parent ,
     connect(ui->toolButton_2, &QToolButton::clicked, this, &login::on_LoginButton_clicked);
     connect(ui->toolButton, &QToolButton::clicked, this, &login::on_RegButton_clicked);
     connect(ui->radioButton, &QRadioButton::clicked, this, &login::on_PasswordVisionButton_clicked);
+    apiClient= std::make_unique<ApiClient>(this);
 }
 
 QString hashPassword(const QString &password)
@@ -59,7 +61,7 @@ void login::on_LoginButton_clicked()
 void login::on_RegButton_clicked()
 {
 
-    Registration *reg = new Registration(nullptr , std::make_shared<PostgreSQLConnection>());
+    Registration *reg = new Registration(nullptr);
     reg->show();
     // Закрываем окно входа
     this->close();
