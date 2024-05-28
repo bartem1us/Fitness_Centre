@@ -1,15 +1,15 @@
 #include "registration.h"
 #include "ui_registration.h"
 #include "mainwindow.h"
-#include "query.h"
+
 
 Registration::Registration(QWidget *parent , std::shared_ptr<PostgreSQLConnection> pg)
     : QWidget(parent)
     , ui(new Ui::Registration)
-    , pg(pg)
 {
     ui->setupUi(this);
     connect(ui->regButton, &CustomButton::clicked, this, &Registration::on_RegButton_clicked);
+    apiClient = std::make_unique<ApiClient>(this);
 
 }
 
@@ -38,9 +38,8 @@ void Registration::on_RegButton_clicked()
     }
     else
     {
-
-        PQexec(pg->getConnection().get(), query::insert_user(name.toStdString() ,surname.toStdString()
-                                                   ,number.toStdString() , password_hash.toStdString()).c_str());
+        QString fullname = name+" "+surname;
+        apiClient->addUser(fullname,number,password_hash,false);
 
         MainWindow *mainWindow = new MainWindow(name+" "+surname,number);
         mainWindow->show();
