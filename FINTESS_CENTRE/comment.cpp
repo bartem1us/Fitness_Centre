@@ -102,7 +102,7 @@ void Comment::on_AddComment_clicked()
 
     if(rating == 0)
     {
-        ui->addCommentError->setText("Вам нужно оценить тренера");
+        //ui->addCommentError->setText("Вам нужно оценить тренера");
     }
     else if (PQntuples(res.get())!=0)
     {
