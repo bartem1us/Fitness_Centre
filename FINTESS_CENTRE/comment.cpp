@@ -60,9 +60,11 @@ void Comment::on_Star_clicked(uint8_t index)
             starButtons[i].second = false;
             starButtons[i].first->setStyleSheet("image: url(:/icons/icons/star_empty_2.png);"
                                                 "background-color: transparent;");
+            //сделать отдельную функцию под установку stylesheet
         }
 
     }
+    rating = index;
 }
 
 void Comment::on_Star_unhover(uint8_t index)
@@ -90,21 +92,22 @@ void Comment::on_Star_hover(uint8_t index)
 }
 void Comment::on_AddComment_clicked()
 {
+
     ui->addComment->animation_for_button();
     QString trainerName = ui->trainerName->text();
     QString comment = ui->comment->toPlainText();
-    //QString rating = ui->rating->text();
-    QString rating = "5";
+
     std::unique_ptr<PGresult,decltype(&PQclear)> res(PQexec(pg->getConnection().get(),
                                                             query::find_trainer_id(trainerName.toStdString()).c_str()),
                                                      PQclear);
+
 
     if (PQntuples(res.get())!=0)
     {
         QString coach_id = PQgetvalue(res.get(), 0, PQfnumber(res.get(), "id"));
         PQexec(pg->getConnection().get(), query::input_comment(coach_id.toStdString(),
                                                                comment.toStdString(),
-                                                               rating.toStdString()).c_str());
+                                                               std::to_string(rating).c_str()).c_str());
 
         this->close();
     }

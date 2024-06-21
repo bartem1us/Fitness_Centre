@@ -85,7 +85,6 @@ public:
     CustomButton *LeaveFeedback;
     QWidget *tab_4;
     CustomButton *BuyButton;
-    QLineEdit *lineEdit_13;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -587,15 +586,12 @@ public:
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
-        lineEdit_13 = new QLineEdit(tab_4);
-        lineEdit_13->setObjectName("lineEdit_13");
-        lineEdit_13->setGeometry(QRect(380, 400, 231, 26));
         tabWidget->addTab(tab_4, QString());
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

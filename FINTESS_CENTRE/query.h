@@ -11,6 +11,7 @@ struct query
 
     static std::string input_trainer(const std::string& TrainerName , const std::string& rating);
     static std::string find_trainer_id(const std::string& TrainerName);
+
     static std::string input_comment(const std::string& coach_id , const std::string& review , const std::string& rate);
 };
 

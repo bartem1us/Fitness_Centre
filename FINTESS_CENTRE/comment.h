@@ -29,6 +29,7 @@ private:
     std::shared_ptr<PostgreSQLConnection> pg;
     Ui::Comment *ui;
     QVector<QPair<HoverButton*, bool>> starButtons;
+    size_t rating;
 };
 
 #endif // COMMENT_H

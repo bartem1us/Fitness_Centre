@@ -29,7 +29,6 @@ public:
     QTextEdit *comment;
     CustomButton *addComment;
     QLabel *label_3;
-    QLineEdit *lineEdit;
     HoverButton *star_1;
     HoverButton *star_2;
     HoverButton *star_3;
@@ -92,9 +91,6 @@ public:
 "	color: rgb(255, 255, 255);\n"
 "}"));
         label_3->setAlignment(Qt::AlignCenter);
-        lineEdit = new QLineEdit(Comment);
-        lineEdit->setObjectName("lineEdit");
-        lineEdit->setGeometry(QRect(650, 140, 113, 26));
         star_1 = new HoverButton(Comment);
         star_1->setObjectName("star_1");
         star_1->setGeometry(QRect(260, 330, 41, 31));

@@ -138,16 +138,6 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>650</x>
-     <y>140</y>
-     <width>113</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="HoverButton" name="star_1">
    <property name="geometry">
     <rect>
