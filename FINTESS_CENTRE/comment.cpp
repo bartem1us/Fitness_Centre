@@ -92,7 +92,6 @@ void Comment::on_Star_hover(uint8_t index)
 }
 void Comment::on_AddComment_clicked()
 {
-
     ui->addComment->animation_for_button();
     QString trainerName = ui->trainerName->text();
     QString comment = ui->comment->toPlainText();
@@ -101,8 +100,11 @@ void Comment::on_AddComment_clicked()
                                                             query::find_trainer_id(trainerName.toStdString()).c_str()),
                                                      PQclear);
 
-
-    if (PQntuples(res.get())!=0)
+    if(rating == 0)
+    {
+        ui->addCommentError->setText("Вам нужно оценить тренера");
+    }
+    else if (PQntuples(res.get())!=0)
     {
         QString coach_id = PQgetvalue(res.get(), 0, PQfnumber(res.get(), "id"));
         PQexec(pg->getConnection().get(), query::input_comment(coach_id.toStdString(),
@@ -111,7 +113,6 @@ void Comment::on_AddComment_clicked()
 
         this->close();
     }
-    // Закрываем окно входа
 
 }
 Comment::~Comment()

@@ -59,7 +59,7 @@ void MainWindow::on_Purchase_Clicked()
     }
     else
     {
-
+        ui->BuyError->setText("Вам нужно выбрать абонемент и тренера для занятий");
     }
 }
 

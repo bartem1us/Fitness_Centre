@@ -85,6 +85,7 @@ public:
     CustomButton *LeaveFeedback;
     QWidget *tab_4;
     CustomButton *BuyButton;
+    QLabel *BuyError;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -586,6 +587,10 @@ public:
 "    border-radius: 10px; /* \320\240\320\260\320\264\320\270\321\203\321\201 \320\267\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\270\321\217 */\n"
 "    padding: 2px 10px;\n"
 "}"));
+        BuyError = new QLabel(tab_4);
+        BuyError->setObjectName("BuyError");
+        BuyError->setGeometry(QRect(410, 410, 181, 20));
+        BuyError->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         tabWidget->addTab(tab_4, QString());
         MainWindow->setCentralWidget(centralwidget);
 
@@ -761,6 +766,7 @@ public:
         LeaveFeedback->setText(QCoreApplication::translate("MainWindow", "\320\236\321\201\321\202\320\260\320\262\320\270\321\202\321\214 \320\276\321\202\320\267\321\213\320\262", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("MainWindow", "\320\220\320\272\320\272\320\260\321\203\320\275\321\202", nullptr));
         BuyButton->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210\320\260 \320\272\320\276\321\200\320\267\320\270\320\275\320\260 \320\277\321\203\321\201\321\202\320\260", nullptr));
+        BuyError->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("MainWindow", "\320\232\320\276\321\200\320\267\320\270\320\275\320\260", nullptr));
     } // retranslateUi
 
