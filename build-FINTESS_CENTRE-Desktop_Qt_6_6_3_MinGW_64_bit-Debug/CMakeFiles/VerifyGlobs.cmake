@@ -41,6 +41,7 @@ endif()
 # _directory_contents at C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/*.cpp")
 set(OLD_GLOB
+  "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/apiclient.cpp"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.cpp"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/custombutton.cpp"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/hoverbutton.cpp"
@@ -68,6 +69,7 @@ endif()
 # _directory_contents at C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/*.h")
 set(OLD_GLOB
+  "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/apiclient.h"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/comment.h"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/custombutton.h"
   "C:/DB_FINTESS_CENTRE/FINTESS_CENTRE/hoverbutton.h"
